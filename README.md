@@ -13,3 +13,8 @@
 --ExceptionHandlingPOC
 --ExceptionHandlingUsingMultiTryCatch
 --ExceptionHandlingUsingTryCatch
+
+-Dictionary
+--Check the availability of elements in the Dictionary
+--Dictionary creation
+--Remove and Clear methods of Dictionary 
