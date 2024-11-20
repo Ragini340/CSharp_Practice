@@ -5,7 +5,7 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OOPs_Practice.ExceptionHandlings
+namespace CSharps_Practice.ExceptionHandlings
 {
     public class ExceptionHandlingPOC
     {

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OOPs_Practice.OOPs.Constructor
+namespace CSharp_Practice.OOPs.Constructor
 {
     public class StaticConstructor
     {

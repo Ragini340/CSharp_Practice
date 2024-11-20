@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OOPs_Practice.OOPs.Inheritance
+namespace CSharp_Practice.OOPs.Inheritance
 {
     public class Animal
     {

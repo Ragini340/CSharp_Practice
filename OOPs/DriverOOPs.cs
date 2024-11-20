@@ -1,9 +1,9 @@
-﻿using OOPs_Practice.OOPs.Abstraction;
-using OOPs_Practice.OOPs.ClassAndObjects;
-using OOPs_Practice.OOPs.Constructor;
-using OOPs_Practice.OOPs.Inheritance;
+﻿using CSharp_Practice.OOPs.Abstraction;
+using CSharp_Practice.OOPs.ClassAndObjects;
+using CSharp_Practice.OOPs.Constructor;
+using CSharp_Practice.OOPs.Inheritance;
 
-namespace OOPs_Practice.OOPs
+namespace CSharp_Practice.OOPs
 {
     public class DriverOOPs
     {

@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OPs_Practice.ArrayLists
+namespace CSharp_Practice.ArrayLists
 {
     public class ArrayListCreation
     {

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OPs_Practice.Dictionary
+namespace CSharp_Practice.Dictionary
 {
     public class ContainsKeyAndContainsValueMethods
     {

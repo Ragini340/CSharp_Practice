@@ -1,11 +1,11 @@
-﻿using OOPs_Practice.OOPs.Abstraction;
+﻿using CSharp_Practice.OOPs.Abstraction;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OOPs_Practice.OOPs.Abstraction
+namespace CSharp_Practice.OOPs.Abstraction
 {
     abstract class AbstractionPOC
     {

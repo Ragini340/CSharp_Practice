@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OOPs_Practice.OOPs.ClassAndObjects
+namespace CSharp_Practice.OOPs.ClassAndObjects
 {
     public class ClassAndObject
     {

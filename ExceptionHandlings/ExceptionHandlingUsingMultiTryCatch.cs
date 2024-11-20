@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OOPs_Practice.ExceptionHandlings
+namespace CSharp_Practice.ExceptionHandlings
 {
     public class ExceptionHandlingUsingMultiTryCatch
     {
