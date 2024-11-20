@@ -27,3 +27,5 @@
 --Array of Strings
 --Reading String from User Input
 --String creation using literals
+--String creation using concatanation
+--String creation using Constructor
