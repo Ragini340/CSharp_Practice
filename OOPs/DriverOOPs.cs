@@ -1,12 +1,9 @@
-﻿using OOP_Practice.constructor;
-using OOP_Practice.inheritance;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using OOPs_Practice.OOPs.Abstraction;
+using OOPs_Practice.OOPs.ClassAndObjects;
+using OOPs_Practice.OOPs.Constructor;
+using OOPs_Practice.OOPs.Inheritance;
 
-namespace OOP_Practice
+namespace OOPs_Practice.OOPs
 {
     public class DriverOOPs
     {
@@ -77,7 +74,7 @@ namespace OOP_Practice
             ClassAndObject classAndObject = new ClassAndObject("Rag", "Abc", 5, "white");
             Console.WriteLine(classAndObject.ToString());
             Console.WriteLine();
-            
+
         }
 
     }
