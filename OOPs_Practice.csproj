@@ -5,12 +5,13 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>DictionaryPractice.RemoveClearInDictionary</StartupObject>
+    <StartupObject>OPs_Practice.ArrayLists.ArrayListCreation</StartupObject>
   </PropertyGroup>
 
   <ItemGroup>
     <Folder Include="ExceptionHandlings\" />
     <Folder Include="Dictionary\" />
+    <Folder Include="ArrayLists\" />
   </ItemGroup>
 
 </Project>

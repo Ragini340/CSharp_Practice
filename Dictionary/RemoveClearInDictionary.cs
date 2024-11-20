@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DictionaryPractice
+namespace OPs_Practice.Dictionary
 {
     public class RemoveClearInDictionary
     {
