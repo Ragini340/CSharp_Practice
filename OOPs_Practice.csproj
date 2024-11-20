@@ -5,7 +5,11 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>OOPs_Practice.OOPs.DriverOOPs</StartupObject>
+    <StartupObject>OOPs_Practice.ExceptionHandlings.ExceptionHandlingUsingTryCatch</StartupObject>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="ExceptionHandlings\" />
+  </ItemGroup>
 
 </Project>
