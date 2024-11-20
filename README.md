@@ -24,3 +24,5 @@
 
 -String
 --String Declaration and Initialization
+--Array of Strings
+--Reading String from User Input
