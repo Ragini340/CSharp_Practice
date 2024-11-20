@@ -26,3 +26,4 @@
 --String Declaration and Initialization
 --Array of Strings
 --Reading String from User Input
+--String creation using literals
