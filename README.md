@@ -30,3 +30,4 @@
 --String creation using concatanation
 --String creation using Constructor
 --Substring Extraction
+--Palindrome check
