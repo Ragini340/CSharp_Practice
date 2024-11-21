@@ -32,3 +32,6 @@
 --Substring Extraction
 --Palindrome check
 --String reverse
+
+-Enums
+--Enum creation

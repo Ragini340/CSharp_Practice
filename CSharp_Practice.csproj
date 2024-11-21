@@ -5,7 +5,7 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>CSharp_Practice.String_POC.Palindrome</StartupObject>
+    <StartupObject>CSharp_Practice.Enums.EnumPOC</StartupObject>
   </PropertyGroup>
 
   <ItemGroup>
