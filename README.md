@@ -31,3 +31,4 @@
 --String creation using Constructor
 --Substring Extraction
 --Palindrome check
+--String reverse
