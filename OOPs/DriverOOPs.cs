@@ -72,8 +72,13 @@ namespace CSharp_Practice.OOPs
             /*--ClassAndObject--*/
             // Creating object
             ClassAndObject classAndObject = new ClassAndObject("Rag", "Abc", 5, "white");
-            Console.WriteLine(classAndObject.ToString());
+            Console.WriteLine(classAndObject.PrintProperties());
             Console.WriteLine();
+
+            /*DefaultConstructor*/
+            DefaultConstructor defaultConstructor = new DefaultConstructor();
+            Console.WriteLine(defaultConstructor.num);
+            Console.WriteLine(defaultConstructor.age);
 
         }
 

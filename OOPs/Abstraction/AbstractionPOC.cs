@@ -11,6 +11,9 @@ namespace CSharp_Practice.OOPs.Abstraction
     {
         //Abstract method
         public abstract int area();
+        public void  calculate() { 
+            //concrete method
+        }
     }
 
     //Square class inheriting the AbstractionPOC class
@@ -19,7 +22,7 @@ namespace CSharp_Practice.OOPs.Abstraction
         //Private data member
         private int side;
 
-        //Method of Square class
+        //Constructor of Square class
         public Square(int x = 0)
         {
             side = x;

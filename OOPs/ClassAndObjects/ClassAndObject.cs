@@ -49,11 +49,11 @@ namespace CSharp_Practice.OOPs.ClassAndObjects
         }
 
         // Method 1
-        public String ToString()
+        public String PrintProperties()
         {
             return ("My name is " + this.GetName()
                     + ".\nMy breed, age and color are " + this.GetBreed()
-                    + ", " + this.GetAge() + ", " + this.GetColor());
+                    + ", " + this.GetAge().ToString() + ", " + this.GetColor());
         }
 
     }
