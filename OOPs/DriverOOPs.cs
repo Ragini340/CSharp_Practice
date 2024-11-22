@@ -79,7 +79,13 @@ namespace CSharp_Practice.OOPs
             DefaultConstructor defaultConstructor = new DefaultConstructor();
             Console.WriteLine(defaultConstructor.num);
             Console.WriteLine(defaultConstructor.age);
+            Console.WriteLine();
 
+            /*ParametrizedConstructor*/
+            ParameterizedConstructor parameterizedConstructor = new ParameterizedConstructor("Rag", 340);
+            Console.WriteLine("Name is: " + parameterizedConstructor.name);
+            Console.WriteLine("Id is: " + parameterizedConstructor.id);
+            Console.WriteLine();
         }
 
     }
