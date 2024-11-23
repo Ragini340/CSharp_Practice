@@ -1,6 +1,7 @@
 ﻿using CSharp_Practice.OOPs.Abstraction;
 using CSharp_Practice.OOPs.ClassAndObjects;
 using CSharp_Practice.OOPs.Constructor;
+using CSharp_Practice.OOPs.Encapsulation;
 using CSharp_Practice.OOPs.Inheritance;
 
 namespace CSharp_Practice.OOPs
@@ -85,6 +86,24 @@ namespace CSharp_Practice.OOPs
             ParameterizedConstructor parameterizedConstructor = new ParameterizedConstructor("Rag", 340);
             Console.WriteLine("Name is: " + parameterizedConstructor.name);
             Console.WriteLine("Id is: " + parameterizedConstructor.id);
+            Console.WriteLine();
+
+            /*EncapsulationPOC*/
+            EncapsulationPOC encapsulationPOC = new EncapsulationPOC();
+            encapsulationPOC.Name = "test";
+            encapsulationPOC.Age = 5;
+            Console.WriteLine("Name: " + encapsulationPOC.Name);
+            Console.WriteLine("Age: " +encapsulationPOC.Age);
+            Console.WriteLine();
+
+            /*Encapsulations*/
+            Encapsulations encapsulations = new Encapsulations();
+            encapsulations.Name = "Rag";
+            encapsulations.Email = "test1@gmail.com";
+            encapsulations.Id = 12;
+            Console.WriteLine("Name: " + encapsulations.Name);
+            Console.WriteLine("Email: " + encapsulations.Email);
+            Console.WriteLine("Id: " + encapsulations.Id);
             Console.WriteLine();
         }
 
