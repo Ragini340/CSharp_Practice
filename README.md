@@ -10,6 +10,10 @@
 -Abstraction
 -Class and Object
 
+-Encapsulation
+--EncapsulationPOC
+--Encapsulations
+
 -Driver class
 
 -ExceptionHandlings
