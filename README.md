@@ -43,3 +43,8 @@
 
 -Enums
 --Enum creation
+
+-Interface
+--InterfacePOC
+--InterfacePOCImplementor
+--Vehicle
