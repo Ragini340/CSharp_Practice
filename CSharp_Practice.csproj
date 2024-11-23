@@ -5,7 +5,7 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>CSharp_Practice.Interface.Vehicle</StartupObject>
+    <StartupObject>CSharp_Practice.Asynchronous_Programming.AsynchronousDemo</StartupObject>
   </PropertyGroup>
 
   <ItemGroup>
