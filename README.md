@@ -9,6 +9,7 @@
 -Inheritance
 -Abstraction
 -Class and Object
+--Static class example
 
 -Encapsulation
 --EncapsulationPOC
