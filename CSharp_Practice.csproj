@@ -5,7 +5,7 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>CSharp_Practice.OOPs.ClassAndObjects.DriverOfStaticClassEx</StartupObject>
+    <StartupObject>CSharp_Practice.Array.DuplicateElementsOfSortedArray</StartupObject>
   </PropertyGroup>
 
   <ItemGroup>
