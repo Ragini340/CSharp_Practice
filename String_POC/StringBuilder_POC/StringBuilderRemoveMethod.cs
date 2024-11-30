@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace CSharp_Practice.String_POC.StringBuilder_POC
 {
-    public class StringBuilderInsertMethod
+    public class StringBuilderRemoveMethod
     {
         public static void Main()
         {
-            StringBuilder s = new StringBuilder("Hello ", 20);
-            //"Abc" is inserted after 6th index 
-            s.Insert(6, "Abc");
+            StringBuilder s = new StringBuilder("Abcdefghi", 20);
+            //Remove starts from index 5 and remove happes 3 index after index 5 
+            s.Remove(5, 3);
             Console.WriteLine(s);
         }
 
