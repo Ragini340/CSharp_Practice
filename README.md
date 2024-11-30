@@ -43,6 +43,7 @@
 --String reverse
 --StringBuilderPOC
 ---StringBuilder Append Method
+---StringBuilder AppendFormat Method
 
 -Enums
 --Enum creation
