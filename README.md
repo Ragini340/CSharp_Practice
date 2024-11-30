@@ -44,6 +44,7 @@
 --StringBuilderPOC
 ---StringBuilder Append Method
 ---StringBuilder AppendFormat Method
+---StringBuilder Insert Method
 
 -Enums
 --Enum creation
