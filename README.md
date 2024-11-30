@@ -45,6 +45,7 @@
 ---StringBuilder Append Method
 ---StringBuilder AppendFormat Method
 ---StringBuilder Insert Method
+---StringBuilder Remove Method
 
 -Enums
 --Enum creation
