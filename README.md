@@ -41,6 +41,8 @@
 --Substring Extraction
 --Palindrome check
 --String reverse
+--StringBuilderPOC
+---StringBuilder Append Method
 
 -Enums
 --Enum creation
