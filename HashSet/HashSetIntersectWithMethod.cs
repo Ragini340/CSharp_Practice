@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CSharp_Practice.HashSet
 {
-    public class HashSetUnionWithMethod
+    public class HashSetIntersectWithMethod
     {
         public static void Main(string[] args)
         {
@@ -19,14 +19,14 @@ namespace CSharp_Practice.HashSet
             hashSet1.Add("F");
 
             HashSet<string> hashSet2 = new HashSet<string>();
-            hashSet2.Add("Aa");
+            hashSet2.Add("A");
             hashSet2.Add("Bb");
             hashSet2.Add("Cc");
             hashSet2.Add("Dd");
             hashSet2.Add("Ee");
-            hashSet2.Add("Ff");
+            hashSet2.Add("F");
 
-            hashSet1.UnionWith(hashSet2);
+            hashSet1.IntersectWith(hashSet2);
             foreach (var item in hashSet1)
             {
                 Console.WriteLine(item);

@@ -74,3 +74,4 @@
 --HashSetRemoveMethod
 --HashSetClearMethod
 --HashSetUnionWithMethod
+--HashSetIntersectWithMethod
