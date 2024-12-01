@@ -41,6 +41,7 @@
 --Substring Extraction
 --Palindrome check
 --String reverse
+--Duplicate characters in a string
 --StringBuilderPOC
 ---StringBuilder Append Method
 ---StringBuilder AppendFormat Method
