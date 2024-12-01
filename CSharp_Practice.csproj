@@ -5,7 +5,7 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>CSharp_Practice.HashSet.HashSetClearMethod</StartupObject>
+    <StartupObject>CSharp_Practice.HashSet.HashSetUnionWithMethod</StartupObject>
   </PropertyGroup>
 
   <ItemGroup>
