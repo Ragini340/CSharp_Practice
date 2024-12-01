@@ -68,3 +68,6 @@
 
 -SpecFlowCalculatorApp
 --BDD for CalculatorApp
+
+-HashSet
+--HashSetCreation
