@@ -71,3 +71,4 @@
 
 -HashSet
 --HashSetCreation
+--HashSetRemoveMethod
