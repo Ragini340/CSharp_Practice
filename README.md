@@ -75,3 +75,4 @@
 --HashSetClearMethod
 --HashSetUnionWithMethod
 --HashSetIntersectWithMethod
+--HashSetExceptWithMethod
