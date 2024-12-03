@@ -9,6 +9,7 @@
 -Inheritance
 -Abstraction
 -Class and Object
+--Nested classes
 --Static class example
 
 -Encapsulation
@@ -76,3 +77,6 @@
 --HashSetUnionWithMethod
 --HashSetIntersectWithMethod
 --HashSetExceptWithMethod
+
+-DependencyInjection
+--ConstructorInjection
