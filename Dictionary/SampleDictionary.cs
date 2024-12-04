@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json.Linq;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -54,7 +55,11 @@ namespace CSharp_Practice.Dictionary
             {
                 Console.WriteLine(value2.Value);
             }
+            Console.WriteLine();
 
+            //Printing value using index
+            Console.WriteLine("{0} {1} {2}", dic1[1], dic1[2], dic1[3]);
+            Console.WriteLine();
         }
 
     }
