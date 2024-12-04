@@ -83,3 +83,5 @@
 
 -DependencyInjection
 --ConstructorInjection
+
+-Get count of column based on condition inside JSON
