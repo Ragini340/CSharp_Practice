@@ -5,12 +5,11 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>CSharp_Practice.HTTPClientClass.HTTPClientClassPOC</StartupObject>
+    <StartupObject>CSharp_Practice.Dictionary.SampleDictionary</StartupObject>
   </PropertyGroup>
 
   <ItemGroup>
     <Folder Include="ExceptionHandlings\" />
-    <Folder Include="Dictionary\" />
     <Folder Include="ArrayLists\" />
   </ItemGroup>
 
