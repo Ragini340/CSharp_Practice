@@ -45,6 +45,7 @@
 --Palindrome check
 --String reverse
 --Duplicate characters in a string
+--String challenge
 --StringBuilderPOC
 ---StringBuilder Append Method
 ---StringBuilder AppendFormat Method
