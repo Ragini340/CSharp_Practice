@@ -5,10 +5,11 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>CSharp_Practice.HashSet.SampleHashSet</StartupObject>
+    <StartupObject>CSharp_Practice.CodingQuestions.Dictionary.FindNonRepeatingCharacter</StartupObject>
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="CodingQuestions\HashSet\" />
     <Folder Include="ExceptionHandlings\" />
     <Folder Include="ArrayLists\" />
   </ItemGroup>
