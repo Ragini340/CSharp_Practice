@@ -60,6 +60,39 @@ namespace CSharp_Practice.Dictionary
             //Printing value using index
             Console.WriteLine("{0} {1} {2}", dic1[1], dic1[2], dic1[3]);
             Console.WriteLine();
+
+            //Remove method
+            dic1.Remove(2);
+            foreach(KeyValuePair<int, string> removeElement in dic1)
+            {
+                Console.WriteLine("{0}  {1}", removeElement.Key, removeElement.Value);
+            }
+            Console.WriteLine();
+
+            //Clear method
+            dic2.Clear();
+            Console.WriteLine(dic2.Count);
+            Console.WriteLine();
+
+            //ContainsKey method
+            if (dic1.ContainsKey(1) == true)
+            {
+                Console.WriteLine("Key found");
+            }
+            else
+            {
+                Console.WriteLine("Key not found");
+            }
+
+            //ContainsValue method
+            if (dic1.ContainsValue("b") == true) 
+            {
+                Console.WriteLine("Value found");
+            }
+            else
+            {
+                Console.WriteLine("Value not found");
+            }
         }
 
     }
