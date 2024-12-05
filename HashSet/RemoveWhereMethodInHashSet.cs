@@ -22,6 +22,18 @@ namespace CSharp_Practice.HashSet
                 Console.WriteLine(value);
             }
 
+            //Remove Method
+            if (set.Contains(9))
+            {
+                set.Remove(9);
+            }
+            Console.WriteLine("Elements in HashSet after removing Element 9:");
+            foreach (int value in set)
+            {
+                Console.WriteLine(value);
+            }
+
+            //RemoveWhere Method
             set.RemoveWhere(isEven);
 
             Console.WriteLine("Elements in HashSet after calling RemoveWhere Method:");
