@@ -15,7 +15,7 @@ namespace CSharp_Practice.Dictionary
             {
                 { 1, "a" }, { 2, "b" }, { 3, "c" }
             };
-
+            
             Dictionary<string, int> dic2 = new Dictionary<string, int>();
             dic2.Add("abc", 11);
             dic2.Add("xyz", 12);
@@ -24,8 +24,11 @@ namespace CSharp_Practice.Dictionary
             //Printing key and value
             foreach(KeyValuePair<int, string> element1 in dic1)
             {
+               Console.WriteLine("HashCode is: " + element1.Key.GetHashCode());
                Console.WriteLine("{0}  {1}", element1.Key, element1.Value);
+               Console.WriteLine("Index is: " + (Math.Abs(element1.Key.GetHashCode() % 16)));
             }
+
             Console.WriteLine();
             foreach(KeyValuePair<string, int> element2 in dic2)
             {
