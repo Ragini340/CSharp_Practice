@@ -35,6 +35,7 @@ namespace CSharp_Practice.HashSet
                 Console.WriteLine(elemnt);
             }
 
+            //UnionWith
             HashSet<int> set3 = new HashSet<int>(set1);
             set3.UnionWith(set2);
             Console.WriteLine("Elements after Union of set1 and set2:");
@@ -43,6 +44,14 @@ namespace CSharp_Practice.HashSet
                 Console.WriteLine(element);
             }
 
+            //IntersectWith
+            set3.IntersectWith(set2);
+            Console.WriteLine("Elements after Intersection of set1 and set2:");
+            foreach (int element in set3)
+            {
+                Console.WriteLine(element);
+            }
         }
+
     }
 }
