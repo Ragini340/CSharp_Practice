@@ -29,6 +29,12 @@ namespace CSharp_Practice.String_POC
                     }
                 }
             }
+            Console.WriteLine("s1 elements are:");
+
+            foreach(KeyValuePair<char, int> kvp in s1)
+            {
+                Console.WriteLine("{0} {1}", kvp.Key, kvp.Value);
+            }
 
             for (int i = 0; i < str2.Length; i++)
             {
@@ -44,6 +50,13 @@ namespace CSharp_Practice.String_POC
                         s2[ch] = 1;
                     }
                 }
+            }
+
+            Console.WriteLine("s2 elements are:");
+
+            foreach (KeyValuePair<char, int> kvps in s2)
+            {
+                Console.WriteLine("{0} {1}", kvps.Key, kvps.Value);
             }
 
             foreach (char character in s2.Keys)
