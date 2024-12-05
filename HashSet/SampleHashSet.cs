@@ -19,6 +19,27 @@ namespace CSharp_Practice.HashSet
             {
                 Console.WriteLine(odds);
             }
+            Console.WriteLine();
+
+            //Count property
+            Console.WriteLine("Count of elements in the HashSet is: " + oddNumbers.Count);
+            Console.WriteLine();
+
+            //Contains method
+            if (oddNumbers.Contains(3) == true)
+            {
+                Console.WriteLine("Element is found");
+            }
+            else
+            {
+                Console.WriteLine("Element is not found");
+            }
+            Console.WriteLine();
+
+            //Clear method
+            oddNumbers.Clear();
+            Console.WriteLine("After using Clear method count of elements is: " + oddNumbers.Count);
+
         }
     }
 }
