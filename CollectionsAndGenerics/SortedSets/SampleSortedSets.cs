@@ -25,7 +25,7 @@ namespace CSharp_Practice.CollectionsAndGenerics.SortedSets
             sortedSet2.Add("xyd");
             sortedSet2.Add("qav");
             Console.WriteLine("Elements in sortedSet2 are:");
-            foreach(string value in sortedSet2)
+            foreach (string value in sortedSet2)
             {
                 Console.WriteLine(value);
             }
@@ -38,17 +38,27 @@ namespace CSharp_Practice.CollectionsAndGenerics.SortedSets
                 Console.WriteLine(set);
             }
 
+            //Contains method
+            if (sortedSet1.Contains(10) == true)
+            {
+                Console.WriteLine("Element is found");
+            }
+            else
+            {
+                Console.WriteLine("Element is not found");
+            }
+
             //Clear Method
             sortedSet2.Clear();
             Console.WriteLine("Count of elements in sortedSet2 after using Clear method: " + sortedSet2.Count);
-         
+
             SortedSet<int> sortedSet3 = new SortedSet<int>();
-            for(int i = 0; i<10; i++)
+            for (int i = 0; i < 10; i++)
             {
                 sortedSet3.Add(i);
             }
             Console.WriteLine("Elements of sortedSet3:");
-            foreach(int set in sortedSet3)
+            foreach (int set in sortedSet3)
             {
                 Console.WriteLine(set);
             }
@@ -68,4 +78,4 @@ namespace CSharp_Practice.CollectionsAndGenerics.SortedSets
         }
 
     }
-} 
+}
