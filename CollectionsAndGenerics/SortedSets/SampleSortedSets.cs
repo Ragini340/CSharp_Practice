@@ -38,6 +38,10 @@ namespace CSharp_Practice.CollectionsAndGenerics.SortedSets
                 Console.WriteLine(set);
             }
 
+            //Clear Method
+            sortedSet2.Clear();
+            Console.WriteLine("Count of elements in sortedSet2 after using Clear method: " + sortedSet2.Count);
+         
             SortedSet<int> sortedSet3 = new SortedSet<int>();
             for(int i = 0; i<10; i++)
             {
