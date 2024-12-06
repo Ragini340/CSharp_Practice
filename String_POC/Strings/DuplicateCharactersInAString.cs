@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CSharp_Practice.String_POC
+namespace CSharp_Practice.String_POC.Strings
 {
     public class DuplicateCharactersInAString
     {

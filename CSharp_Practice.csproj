@@ -15,7 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="bin\Debug\" />
+    <Folder Include="CollectionsAndGenerics\SortedSets\" />
     <Folder Include="ExceptionHandlings\" />
     <Folder Include="ArrayLists\" />
   </ItemGroup>

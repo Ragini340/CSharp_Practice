@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CSharp_Practice.String_POC
+namespace CSharp_Practice.String_POC.Strings
 {
     public class ReverseOfString
     {
@@ -14,7 +14,7 @@ namespace CSharp_Practice.String_POC
             char[] charArray = input.ToCharArray();
 
             //Declaring an empty string
-            string reversedString = String.Empty;
+            string reversedString = string.Empty;
 
             //Iterating the each character from right to left 
             for (int i = charArray.Length - 1; i > -1; i--)

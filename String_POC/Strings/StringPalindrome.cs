@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CSharp_Practice.String_POC
+namespace CSharp_Practice.String_POC.Strings
 {
     /*Time Complexity: O(n), where n is the length of the input string.
     Auxiliary Space: O(1), no extra data structures used.*/

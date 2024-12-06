@@ -4,18 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CSharp_Practice.String_POC
+namespace CSharp_Practice.String_POC.Strings
 {
     public class StringDeclarationAndInitialization
     {
         static void Main(string[] args)
         {
             //Declaring a string Name using "System.String" class
-            System.String Name;
+            string Name;
             //Initialization of String
             Name = "Rag";
             //Declaring a string id using an alias(shorthand) "String" of System.String class
-            String id;
+            string id;
             //Initialization of String
             id = "1";
             //Declaring a string using string keyword

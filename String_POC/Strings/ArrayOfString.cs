@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CSharp_Practice.String_POC
+namespace CSharp_Practice.String_POC.Strings
 {
     public class ArrayOfString
     {
         static void Main(string[] args)
         {
-            String[] str_arr = new String[3];
+            string[] str_arr = new string[3];
 
             // Initialising the array of strings
             str_arr[0] = "Ab";
