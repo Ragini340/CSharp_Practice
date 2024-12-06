@@ -5,7 +5,7 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>CSharp_Practice.CodingQuestions.Strings.FindMatchingWord</StartupObject>
+    <StartupObject>CSharp_Practice.CollectionsAndGenerics.SortedSets.SampleSortedSets</StartupObject>
   </PropertyGroup>
 
   <ItemGroup>
@@ -15,7 +15,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="CollectionsAndGenerics\SortedSets\" />
     <Folder Include="ExceptionHandlings\" />
     <Folder Include="ArrayLists\" />
   </ItemGroup>
