@@ -20,6 +20,8 @@ namespace CSharp_Practice.Collections.Dictionary
             dic2.Add("abc", 11);
             dic2.Add("xyz", 12);
             dic2.Add("aaa", 13);
+          //  dic2.Add("a");
+
 
             //Printing key and value
             foreach (KeyValuePair<int, string> element1 in dic1)
