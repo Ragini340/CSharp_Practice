@@ -38,6 +38,30 @@ namespace CSharp_Practice.CollectionsAndGenerics.SortedSets
                 Console.WriteLine(set);
             }
 
+            SortedSet<int> sortedSet3 = new SortedSet<int>();
+            for(int i = 0; i<10; i++)
+            {
+                sortedSet3.Add(i);
+            }
+            Console.WriteLine("Elements of sortedSet3:");
+            foreach(int set in sortedSet3)
+            {
+                Console.WriteLine(set);
+            }
+
+            //RemoveWhere method
+            sortedSet3.RemoveWhere(isEven);
+            Console.WriteLine("Elements of sortedSet3 after using RemoveWhere method:");
+            foreach (int set in sortedSet3)
+            {
+                Console.WriteLine(set);
+            }
         }
+
+        private static bool isEven(int value)
+        {
+            return value % 2 == 0;
+        }
+
     }
 } 
