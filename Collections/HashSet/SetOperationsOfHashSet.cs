@@ -5,7 +5,7 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CSharp_Practice.HashSet
+namespace CSharp_Practice.Collections.HashSet
 {
     public class SetOperationsOfHashSet
     {

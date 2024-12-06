@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CSharp_Practice.Dictionary
+namespace CSharp_Practice.Collections.Dictionary
 {
     public class DictionaryCreation
     {

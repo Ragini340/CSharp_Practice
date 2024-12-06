@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CSharp_Practice.HashSet
+namespace CSharp_Practice.Collections.HashSet
 {
-    public class HashSetIntersectWithMethod
+    public class HashSetRemoveMethod
     {
         public static void Main(string[] args)
         {
@@ -18,15 +18,8 @@ namespace CSharp_Practice.HashSet
             hashSet1.Add("E");
             hashSet1.Add("F");
 
-            HashSet<string> hashSet2 = new HashSet<string>();
-            hashSet2.Add("A");
-            hashSet2.Add("Bb");
-            hashSet2.Add("Cc");
-            hashSet2.Add("Dd");
-            hashSet2.Add("Ee");
-            hashSet2.Add("F");
-
-            hashSet1.IntersectWith(hashSet2);
+            hashSet1.Remove("F");
+            Console.WriteLine("Elements of hashset1 after removal are: ");
             foreach (var item in hashSet1)
             {
                 Console.WriteLine(item);

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CSharp_Practice.HashSet
+namespace CSharp_Practice.Collections.HashSet
 {
     public class RemoveWhereMethodInHashSet
     {
@@ -45,7 +45,7 @@ namespace CSharp_Practice.HashSet
 
         private static bool isEven(int i)
         {
-            return (i % 2 == 0);
+            return i % 2 == 0;
         }
 
     }

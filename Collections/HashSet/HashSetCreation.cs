@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CSharp_Practice.HashSet
+namespace CSharp_Practice.Collections.HashSet
 {
-    public class HashSetRemoveMethod
+    public class HashSetCreation
     {
-        public static void Main(String[] args)
+        public static void Main(string[] args)
         {
             HashSet<string> hashSet1 = new HashSet<string>();
             hashSet1.Add("A");
@@ -17,10 +17,20 @@ namespace CSharp_Practice.HashSet
             hashSet1.Add("D");
             hashSet1.Add("E");
             hashSet1.Add("F");
+            Console.WriteLine("Elements of Hashset1 are: ");
 
-            hashSet1.Remove("F");
-            Console.WriteLine("Elements of hashset1 after removal are: ");
             foreach (var item in hashSet1)
+            {
+                Console.WriteLine(item);
+            }
+
+            HashSet<int> hashSet2 = new HashSet<int>()
+            {
+              10, 20, 30, 40, 50, 60, 70, 80, 90, 100
+            };
+            Console.WriteLine("Elements of Hashset2 are: ");
+
+            foreach (var item in hashSet2)
             {
                 Console.WriteLine(item);
             }

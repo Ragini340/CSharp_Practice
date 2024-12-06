@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CSharp_Practice.HashSet
+namespace CSharp_Practice.Collections.HashSet
 {
-    public class HashSetCreation
+    public class HashSetIntersectWithMethod
     {
         public static void Main(string[] args)
         {
@@ -17,20 +17,17 @@ namespace CSharp_Practice.HashSet
             hashSet1.Add("D");
             hashSet1.Add("E");
             hashSet1.Add("F");
-            Console.WriteLine("Elements of Hashset1 are: ");
 
+            HashSet<string> hashSet2 = new HashSet<string>();
+            hashSet2.Add("A");
+            hashSet2.Add("Bb");
+            hashSet2.Add("Cc");
+            hashSet2.Add("Dd");
+            hashSet2.Add("Ee");
+            hashSet2.Add("F");
+
+            hashSet1.IntersectWith(hashSet2);
             foreach (var item in hashSet1)
-            {
-                Console.WriteLine(item);
-            }
-
-            HashSet<int> hashSet2 = new HashSet<int>()
-            {
-              10, 20, 30, 40, 50, 60, 70, 80, 90, 100
-            };
-            Console.WriteLine("Elements of Hashset2 are: ");
-
-            foreach (var item in hashSet2)
             {
                 Console.WriteLine(item);
             }

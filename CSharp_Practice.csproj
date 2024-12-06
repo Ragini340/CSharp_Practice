@@ -5,11 +5,17 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>CSharp_Practice.HashSet.SetOperationsOfHashSet</StartupObject>
+    <StartupObject>CSharp_Practice.CodingQuestions.Strings.FindMatchingWord</StartupObject>
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="CodingQuestions\HashSet\" />
+    <Compile Remove="CodingQuestions\HashSet\**" />
+    <EmbeddedResource Remove="CodingQuestions\HashSet\**" />
+    <None Remove="CodingQuestions\HashSet\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="bin\Debug\" />
     <Folder Include="ExceptionHandlings\" />
     <Folder Include="ArrayLists\" />
   </ItemGroup>

@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CSharp_Practice.Dictionary
+namespace CSharp_Practice.Collections.Dictionary
 {
     public class SampleDictionary
     {
@@ -15,22 +15,22 @@ namespace CSharp_Practice.Dictionary
             {
                 { 1, "a" }, { 2, "b" }, { 3, "c" }
             };
-            
+
             Dictionary<string, int> dic2 = new Dictionary<string, int>();
             dic2.Add("abc", 11);
             dic2.Add("xyz", 12);
             dic2.Add("aaa", 13);
 
             //Printing key and value
-            foreach(KeyValuePair<int, string> element1 in dic1)
+            foreach (KeyValuePair<int, string> element1 in dic1)
             {
-               Console.WriteLine("HashCode is: " + element1.Key.GetHashCode());
-               Console.WriteLine("{0}  {1}", element1.Key, element1.Value);
-               Console.WriteLine("Index is: " + (Math.Abs(element1.Key.GetHashCode() % 16)));
+                Console.WriteLine("HashCode is: " + element1.Key.GetHashCode());
+                Console.WriteLine("{0}  {1}", element1.Key, element1.Value);
+                Console.WriteLine("Index is: " + Math.Abs(element1.Key.GetHashCode() % 16));
             }
 
             Console.WriteLine();
-            foreach(KeyValuePair<string, int> element2 in dic2)
+            foreach (KeyValuePair<string, int> element2 in dic2)
             {
                 Console.WriteLine("{0}  {1}", element2.Key, element2.Value);
             }
@@ -49,12 +49,12 @@ namespace CSharp_Practice.Dictionary
             Console.WriteLine();
 
             //Printing only value
-            foreach(KeyValuePair<int, string> value1 in dic1)
+            foreach (KeyValuePair<int, string> value1 in dic1)
             {
-               Console.WriteLine(value1.Value);
+                Console.WriteLine(value1.Value);
             }
             Console.WriteLine();
-            foreach(KeyValuePair<string, int> value2 in dic2)
+            foreach (KeyValuePair<string, int> value2 in dic2)
             {
                 Console.WriteLine(value2.Value);
             }
@@ -66,7 +66,7 @@ namespace CSharp_Practice.Dictionary
 
             //Remove method
             dic1.Remove(2);
-            foreach(KeyValuePair<int, string> removeElement in dic1)
+            foreach (KeyValuePair<int, string> removeElement in dic1)
             {
                 Console.WriteLine("{0}  {1}", removeElement.Key, removeElement.Value);
             }
@@ -88,7 +88,7 @@ namespace CSharp_Practice.Dictionary
             }
 
             //ContainsValue method
-            if (dic1.ContainsValue("b") == true) 
+            if (dic1.ContainsValue("b") == true)
             {
                 Console.WriteLine("Value found");
             }

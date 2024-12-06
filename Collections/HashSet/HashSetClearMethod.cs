@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CSharp_Practice.HashSet
+namespace CSharp_Practice.Collections.HashSet
 {
     public class HashSetClearMethod
     {
-        public static void Main(String[] args)
+        public static void Main(string[] args)
         {
             HashSet<string> hashSet1 = new HashSet<string>();
             hashSet1.Add("A");

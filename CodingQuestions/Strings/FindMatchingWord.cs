@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CSharp_Practice.String_POC
+namespace CSharp_Practice.CodingQuestions.Strings
 {
     public class FindMatchingWord
     {
@@ -31,7 +31,7 @@ namespace CSharp_Practice.String_POC
             }
             Console.WriteLine("s1 elements are:");
 
-            foreach(KeyValuePair<char, int> kvp in s1)
+            foreach (KeyValuePair<char, int> kvp in s1)
             {
                 Console.WriteLine("{0} {1}", kvp.Key, kvp.Value);
             }

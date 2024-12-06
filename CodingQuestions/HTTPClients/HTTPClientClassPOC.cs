@@ -3,16 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Text.Json;
-using System.Text.Json.Nodes;
 using System.Threading.Tasks;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
 
-namespace CSharp_Practice.HTTPClientClass
+namespace CSharp_Practice.CodingQuestions.HTTPClients
 {
     public class HTTPClientClassPOC
     {
-
         static async Task Main()
         {
             HttpClient client = new HttpClient();
