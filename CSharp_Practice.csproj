@@ -5,7 +5,7 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>CSharp_Practice.CollectionsAndGenerics.List.SampleList</StartupObject>
+    <StartupObject>CSharp_Practice.Design_Pattern.Creational_Design_Pattern.Singleton_Design_Pattern.Singleton4</StartupObject>
   </PropertyGroup>
 
   <ItemGroup>

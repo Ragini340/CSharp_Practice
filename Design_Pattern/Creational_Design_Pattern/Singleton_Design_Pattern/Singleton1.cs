@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace CSharp_Practice.Design_Pattern.Creational_Design_Pattern.Singleton_Design_Pattern
 {
+    //Lazy initialization
     public class Singleton1
     {
         private static Singleton1 instance;
@@ -13,7 +14,7 @@ namespace CSharp_Practice.Design_Pattern.Creational_Design_Pattern.Singleton_Des
         {
         }
 
-        private static Singleton1 GetInstance()
+        public static Singleton1 GetInstance()
         {
             if (instance == null)
             {
