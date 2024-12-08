@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Threading;
 
-namespace CSharp_Practice.MultiThreading
+namespace CSharp_Practice.Threads
 {
     public class ThreadNameProperty
     {

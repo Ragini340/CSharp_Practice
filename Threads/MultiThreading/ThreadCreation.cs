@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CSharp_Practice.MultiThreading
+namespace CSharp_Practice.Threads.MultiThreading
 {
     public class ThreadCreation
     {

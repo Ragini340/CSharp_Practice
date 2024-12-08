@@ -4,15 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CSharp_Practice.MultiThreading
+namespace CSharp_Practice.Threads.Single_Thread
 {
-    public class ImplementingSleepInSingleThread
+    public class SingleThreadedEx
     {
         public static void Method1()
         {
             for (int i = 0; i < 4; i++)
             {
-                Console.WriteLine("This is Method1: " + i);
+                Console.WriteLine("This is method1:" + i);
             }
         }
 
@@ -20,13 +20,7 @@ namespace CSharp_Practice.MultiThreading
         {
             for (int i = 0; i < 4; i++)
             {
-                Console.WriteLine("This is Method2: " + i);
-                if (i == 3)
-                {
-                    Console.WriteLine("Performing the Database Operation...");
-                    Thread.Sleep(10000);
-                    Console.WriteLine("Database Operation Completed.");
-                }
+                Console.WriteLine("This is method2:" + i);
             }
         }
 
@@ -34,7 +28,7 @@ namespace CSharp_Practice.MultiThreading
         {
             for (int i = 0; i < 4; i++)
             {
-                Console.WriteLine("This is Method3: " + i);
+                Console.WriteLine("This is method3:" + i);
             }
         }
 
@@ -45,6 +39,7 @@ namespace CSharp_Practice.MultiThreading
             Method2();
             Console.WriteLine();
             Method3();
+            Console.WriteLine();
         }
 
     }
