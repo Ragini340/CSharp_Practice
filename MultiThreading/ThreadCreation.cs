@@ -18,9 +18,9 @@ namespace CSharp_Practice.MultiThreading
                 Console.WriteLine("Main thread is doing some work");
                 Thread.Sleep(100);
             }
+
             thread.Join();
             Console.WriteLine("Work done");
-
         }
 
         public static void Worker()
@@ -31,5 +31,6 @@ namespace CSharp_Practice.MultiThreading
                 Thread.Sleep(100);
             }
         }
+
     }
 }
