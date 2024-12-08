@@ -26,10 +26,27 @@ namespace CSharp_Practice.CollectionsAndGenerics.List
             //AddRange method
             list1.AddRange(list1);
             Console.WriteLine("Elements of lists after using AddRange method are:");
-            foreach (int list in list1)
+            foreach (int newList in list1)
             {
-                Console.WriteLine(list);
+                Console.WriteLine(newList);
             }
+
+            //Remove method
+            list1.Remove(1);
+            Console.WriteLine("Elements of lists after removing first element:");
+            foreach (int newList in list1)
+            {
+                Console.WriteLine(newList);
+            }
+
+            //RemoveAll method
+            List<int> list2 = new List<int>();
+            for(int i = 0; i < 10; i++)
+            {
+                list2.Add(i);
+            }
+
+
         }
     }
 }
