@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CSharp_Practice.MultiThreading
 {
-    public class ImplementingSleep
+    public class ImplementingSleepInSingleThread
     {
         public static void Method1()
         {
