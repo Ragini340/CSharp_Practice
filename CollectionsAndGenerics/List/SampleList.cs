@@ -16,9 +16,9 @@ namespace CSharp_Practice.CollectionsAndGenerics.List
             list1.Add(3);
             list1.Add(4);
             list1.Add(5);
-           
+
             Console.WriteLine("Elements of lists are:");
-            foreach(int list in list1)
+            foreach (int list in list1)
             {
                 Console.WriteLine(list);
             }
@@ -38,14 +38,6 @@ namespace CSharp_Practice.CollectionsAndGenerics.List
             {
                 Console.WriteLine(newList);
             }
-
-            //RemoveAll method
-            List<int> list2 = new List<int>();
-            for(int i = 0; i < 10; i++)
-            {
-                list2.Add(i);
-            }
-
 
         }
     }
