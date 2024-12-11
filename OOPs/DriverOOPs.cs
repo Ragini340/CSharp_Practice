@@ -1,4 +1,7 @@
-﻿using CSharp_Practice.OOPs.Abstraction;
+﻿using CSharp_Practice.AccessModifiers.Private;
+using CSharp_Practice.AccessModifiers.Protected;
+using CSharp_Practice.AccessModifiers.Public;
+using CSharp_Practice.OOPs.Abstraction;
 using CSharp_Practice.OOPs.ClassAndObjects;
 using CSharp_Practice.OOPs.Constructor;
 using CSharp_Practice.OOPs.Encapsulation;
@@ -66,8 +69,8 @@ namespace CSharp_Practice.OOPs
             /*--Abstraction--*/
             //Creating reference of shape class which refer to AbstractionPOC class instance
             AbstractionPOC abstractionPOC = new Square(4);
-            int result = abstractionPOC.area();
-            Console.Write("{0}", result);
+            //var result = abstractionPOC.area();
+            //Console.Write("{0}", result);
             Console.WriteLine();
 
             /*--ClassAndObject--*/
@@ -105,6 +108,33 @@ namespace CSharp_Practice.OOPs
             Console.WriteLine("Email: " + encapsulations.Email);
             Console.WriteLine("Id: " + encapsulations.Id);
             Console.WriteLine();
+
+            //Abstractions
+            ChildAbstract_Implementor childAbstract = new ChildAbstract_Implementor(); //Here reference of child class 
+            childAbstract.area();
+            childAbstract.calculate();
+
+            ChildAbstract obj = new ChildAbstract_Implementor(); //Here reference of Abstract class, so it is calling calculate of Abstract class method
+            obj.calculate();
+
+            //PublicAccessModifierPOC
+            /*public: The public members can be accessed by any other code in the same assembly or another assembly that references it.*/
+            PublicAccessModifierPOC publicAccessModifierPOC = new PublicAccessModifierPOC();
+            publicAccessModifierPOC.data = 1;
+
+            //PrivateAccessModifierPOC
+            /*private: The private members can be accessed only by code in the same class.*/
+            PrivateAccessModifierPOC privateAccessModifierPOC = new PrivateAccessModifierPOC();
+            /* We cannot access data in below:
+            privateAccessModifierPOC.data = 1;
+            */
+
+            //ProtectedAccessModifierPOC
+            /*protected: The protected Members in C# are available within the same class as well as to the classes that are derived from that class.*/
+            ProtectedAccessModifierPOC protectedAccessModifierPOC = new ProtectedAccessModifierPOC();
+            /*'member' is inaccessible due to its protection level 
+            protectedAccessModifierPOC.data = 1;
+            */
         }
 
     }

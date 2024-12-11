@@ -7,13 +7,24 @@ using System.Threading.Tasks;
 
 namespace CSharp_Practice.OOPs.Abstraction
 {
-    abstract class AbstractionPOC
+    public abstract class AbstractionPOC
     {
         //Abstract method
-        public abstract int area();
-        public void  calculate() { 
-            //concrete method
-        }
+        //We can't declare this abstract method in child class non abstract 
+        public abstract void area();
+
+        /*Below calculate method cannot be overriden in abstract child class because it is not marked
+         with abstract or virtual or override*/
+
+        /*public void calculate()
+        {
+            Console.WriteLine("I am the parent abstract class");
+        }*/
+
+        /*public abstract void Print()
+        {
+         We cannot declare the body here beacuse the method is marked as abstract.
+        }*/
     }
 
     //Square class inheriting the AbstractionPOC class
@@ -28,10 +39,10 @@ namespace CSharp_Practice.OOPs.Abstraction
             side = x;
         }
 
-        public override int area()
+        public override void area()
         {
             Console.Write("Area of Square: ");
-            return (side * side);
+            //return (side * side);
         }
 
     }
