@@ -7,9 +7,10 @@ using System.Threading.Tasks;
 
 namespace CSharp_Practice.OOPs.StaticClassPOC
 {
-    public static class  StaticDemo
+    public static class StaticDemo
     {
         public static int data;
+
         /*Below constructor cannot be created
         StaticDemo()
         {
@@ -17,9 +18,8 @@ namespace CSharp_Practice.OOPs.StaticClassPOC
         }
         */
 
-
-        //Area of recctange
-        public  static int area(int a,int b)
+        //Area of rectange
+        public static int area(int a, int b)
         {
             return a * b;
         }
@@ -34,5 +34,6 @@ namespace CSharp_Practice.OOPs.StaticClassPOC
         {
             Console.WriteLine("Static method");
         }
+
     }
 }
