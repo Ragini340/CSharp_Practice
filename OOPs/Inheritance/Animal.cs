@@ -20,6 +20,13 @@ namespace CSharp_Practice.OOPs.Inheritance
         {
             Console.WriteLine("Dog is barking");
         }
+
+        /*
+        public void Eat()
+        {
+            Console.WriteLine("Child class ");
+
+        }*/
     }
 
     //Multi - level inheritance
