@@ -129,12 +129,6 @@ namespace CSharp_Practice.OOPs
             privateAccessModifierPOC.data = 1;
             */
 
-            //ProtectedAccessSpecifiersPOC
-            /*protected: The protected Members in C# are available within the same class as well as to the classes that are derived from that class.*/
-            ProtectedAccessSpecifiersPOC protectedAccessModifierPOC = new ProtectedAccessSpecifiersPOC();
-            /*'member' is inaccessible due to its protection level 
-            protectedAccessModifierPOC.data = 1;
-            */
         }
 
     }
