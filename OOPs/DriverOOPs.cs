@@ -1,5 +1,4 @@
 ﻿using CSharp_Practice.AccessSpecifiers.Private;
-using CSharp_Practice.AccessSpecifiers.Protected;
 using CSharp_Practice.AccessSpecifiers.Public;
 using CSharp_Practice.OOPs.Abstraction;
 using CSharp_Practice.OOPs.ClassAndObjects;

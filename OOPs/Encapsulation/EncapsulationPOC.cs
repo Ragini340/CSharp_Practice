@@ -10,8 +10,10 @@ namespace CSharp_Practice.OOPs.Encapsulation
     {
         private string studentName;
         private int studentAge;
+        public string Name { get; set; }
+        public int Age { get; set; }
 
-        public string Name
+        /*public string Name
         {
             get
             {
@@ -34,6 +36,6 @@ namespace CSharp_Practice.OOPs.Encapsulation
                 studentAge = value;
             }
         }
-
+        */
     }
 }
