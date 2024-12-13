@@ -5,7 +5,7 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>CSharp_Practice.Threads.MultiThreading.MultiThreadedEx</StartupObject>
+    <StartupObject>CSharp_Practice.Interface.Diamond_Problem.Driver</StartupObject>
   </PropertyGroup>
 
   <ItemGroup>
