@@ -21,9 +21,19 @@ namespace CSharp_Practice.CodingQuestions.Strings
             {
                 string reverseWord = "";
                 reverseWord = reverseWord + arrStr[i];
-                reverseWord1 = reverseWord1 + reverseWord + " ";
+
+                //If we don't have to use function Trim
+                if (i == 0)
+                {
+                    reverseWord1 = reverseWord1 + reverseWord;
+                }
+                else
+                {
+                    reverseWord1 = reverseWord1 + reverseWord + " ";
+                }
             }
-            reverseWord1 = reverseWord1.Trim();
+
+            //reverseWord1 = reverseWord1.Trim(); 
 
             Console.WriteLine("Revered sentence is: " + reverseWord1);
             Console.WriteLine("Length of the revered sentence is: " + reverseWord1.Length);
