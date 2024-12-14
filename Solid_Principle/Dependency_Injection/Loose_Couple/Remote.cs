@@ -10,9 +10,10 @@ namespace CSharp_Practice.Solid_Principle.Dependency_Injection.Loose_Couple
     {
         IRemote remote;
 
-        public Remote(IRemote remote)  // Loosely coupled , Here we are not sure which object will pass . It can be Laptop , Television or Refrigerator beacuse we passing here refrence of Iremote which has implemnted multiples class .
-                                       //It is injection other object so It called depndecny injection //and here we are injceting in constructor so It called countror dependecny injection
-                                       // Here we could have televsion object but Itwill be useful only for Televesion so that is not correct designing , Here  we are any object , Televesion , Laptop or Refrigerator
+        public Remote(IRemote remote)  //Loosely coupled, here we are not sure which object will pass. It can be Laptop, Television, or Refrigerator because we are passing here reference of IRemote iterface which has implemented multiple classes.
+                                       //It is injecting other object, so it is called Dependency Injection.
+                                       //Here we are injecting in constructor, so it called Constructor Dependecny Injection.
+                                       //Here we could have Television object but it will be useful only for Television so that it is not correct designing. Here can be any object Televesion, Laptop or Refrigerator.
         {                             
             this.remote = remote;
         }
