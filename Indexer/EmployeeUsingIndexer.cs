@@ -28,7 +28,11 @@ namespace CSharp_Practice.Indexer
         }
 
         //Indexer creation
-        public object this[int index]
+        public object this[int index] 
+            //public: Access Modifier
+            //object: This is return type and here we are returning integer and string member's value, so it's return type is object
+            //this: keyword
+            //[int index]: indexer of integer
         {
             get
             {
