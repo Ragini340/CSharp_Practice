@@ -9,6 +9,9 @@ namespace CSharp_Practice.CodingQuestions.Lists
     public class SecondLargestElementInList
     {
         //Program to find second largest number in a list
+        /*Time Complexity: O(N + N) = O(2N) = N 
+          Space Complexity: O(1)
+        */
         public static void Main(string[] args)
         {
             List<int> lists = new List<int> { 5, 3, 2, 6, 7, 7, 7 };

@@ -7,9 +7,12 @@ using System.Threading.Tasks;
 
 namespace CSharp_Practice.CodingQuestions.Lists
 {
+    //Program to find third smallest number in a list
+    /*Time Complexity: O(N + N) = O(2N) = N 
+      Space Complexity: O(1)
+    */
     public class ThirdSmallestElementInList
     {
-        //Program to find third smallest number in a list
         public static void Main(string[] args)
         {
             List<int> lists = new List<int> { 5, 4, 3, 2, 2, 7, 7, 6, 7, 7, 7 };
