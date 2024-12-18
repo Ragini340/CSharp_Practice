@@ -28,6 +28,7 @@ namespace CSharp_Practice.CodingQuestions.Lists
             }
             Console.WriteLine();
 
+            /*1st way :- Not correct approach as need to reverse the elements which were sorted in ascending order.
             lists.Reverse();
             Console.WriteLine("Sorted list's elements in descending order are: ");
             for (int i = 0; i < lists.Count; i++)
@@ -43,6 +44,18 @@ namespace CSharp_Practice.CodingQuestions.Lists
             for (int i = lists.Count - 2; i >= 0; i--)
             {
                 if (lists[i] != lists[lists.Count - 1])
+                {
+                    int num = lists[i];
+                    Console.WriteLine("Second smallest number is: " + num);
+                    break;
+                }
+            } 
+            */
+
+            //2nd way:- Correct way no need to reverse the elements.
+            for (int i = 1; i < lists.Count; i++)
+            {
+                if (lists[0] != lists[i])
                 {
                     int num = lists[i];
                     Console.WriteLine("Second smallest number is: " + num);
