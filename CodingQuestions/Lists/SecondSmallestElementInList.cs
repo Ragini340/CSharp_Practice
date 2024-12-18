@@ -6,9 +6,12 @@ using System.Threading.Tasks;
 
 namespace CSharp_Practice.CodingQuestions.Lists
 {
+    //Program to find second smallest number in a list
+    /*Time Complexity: O(N + N) = O(2N) = N 
+      Space Complexity: O(1)
+    */
     public class SecondSmallestElementInList
     {
-        //Program to find second smallest number in a list
         public static void Main(string[] args)
         {
             List<int> lists = new List<int> { 5, 3, 2, 2, 6, 7, 7, 7 };
