@@ -16,6 +16,8 @@ namespace CSharp_Practice.CodingQuestions.Lists
         public static void Main(string[] args)
         {
             List<int> lists = new List<int> { 5, 4, 3, 2, 2, 7, 7, 6, 7, 7, 7 };
+            //Checking for negative scenario with below list:-
+            // List<int> lists = new List<int> { 2, 2, 2 };
             Console.WriteLine("Elements of list are: ");
             foreach (int list in lists)
             {
@@ -46,21 +48,27 @@ namespace CSharp_Practice.CodingQuestions.Lists
             }
             Console.WriteLine();
 
+            bool flag = false;
+            int thirdSmallest = int.MinValue;
             if (index != -1)
             {
                 for (int i = index + 1; i <= lists.Count - 1; i++)
                 {
                     if (lists[index] != lists[i])
                     {
-                        int num2 = lists[i];
-                        Console.WriteLine("Third smallest number is: " + num2);
+                        thirdSmallest = lists[i];
+                        flag = true;
                         break;
                     }
                 }
             }
+            if (flag)
+            {
+                Console.WriteLine("Third smallest number is: " + thirdSmallest);
+            }
             else
             {
-                Console.WriteLine("There is  no second and third smallest elements");
+                Console.WriteLine("Element not found");
             }
         }
         

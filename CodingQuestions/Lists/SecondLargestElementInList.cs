@@ -14,7 +14,9 @@ namespace CSharp_Practice.CodingQuestions.Lists
     {
         public static void Main(string[] args)
         {
-            List<int> lists = new List<int> { 5, 3, 2, 6, 7, 7, 7 };
+           List<int> lists = new List<int> { 5, 3, 2, 6, 7, 7, 7 };
+           //Checking for negative scenario with below list:-
+           // List<int> lists = new List<int> { 7, 7, 7 };
             Console.WriteLine("Elements of list are: ");
             foreach (int list in lists)
             {
@@ -34,15 +36,25 @@ namespace CSharp_Practice.CodingQuestions.Lists
             Console.WriteLine("Size of the list is: " + lists.Count);
             Console.WriteLine();
 
+            bool flag = false;
+            int secondLargest = int.MinValue;
             for (int i = lists.Count - 2; i >= 0; i--)
             {
                 if (lists[i] != lists[lists.Count - 1])
                 {
-                    int num = lists[i];
-                    Console.WriteLine("Second largest number is: " + num);
-                    break;
+                   secondLargest = lists[i];
+                   flag = true;
+                   break;
                 }
+            }
+            if (flag)
+            {
+                Console.WriteLine("Second largest number is: " + secondLargest);
             } 
+            else
+            {
+                Console.WriteLine("Element not found");
+            }
         }
 
     }

@@ -15,6 +15,8 @@ namespace CSharp_Practice.CodingQuestions.Lists
         public static void Main(string[] args)
         {
             List<int> lists = new List<int> { 7, 2, 3, 7, 6, 5, 5, 7, 8 };
+            //Checking for negative scenario with below list:-
+            //List<int> lists = new List<int> { 7, 7, 7 };
             Console.WriteLine("Elements of list are: ");
             foreach (int list in lists)
             {
@@ -48,21 +50,27 @@ namespace CSharp_Practice.CodingQuestions.Lists
             }
             Console.WriteLine();
 
+            bool flag = false;
+            int thirdLargest = int.MinValue;
             if (index != -1)
             {
                 for (int i = index - 1; i >= 0; i--)
                 {
                     if (lists[index] != lists[i])
                     {
-                        int num2 = lists[i];
-                        Console.WriteLine("Third largest number is: " + num2);
+                        thirdLargest = lists[i];
+                        flag = true;
                         break;
                     }
                 }
             }
+            if (flag)
+            {
+                Console.WriteLine("Third largest number is: " + thirdLargest);
+            }
             else
             {
-                Console.WriteLine("There is  no second and third largest elements");
+                Console.WriteLine("Element not found");
             }
 
         }
