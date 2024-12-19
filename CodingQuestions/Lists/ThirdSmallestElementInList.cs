@@ -49,7 +49,7 @@ namespace CSharp_Practice.CodingQuestions.Lists
             Console.WriteLine();
 
             bool flag = false;
-            int thirdSmallest = int.MinValue;
+            int thirdSmallest = int.MaxValue;
             if (index != -1)
             {
                 for (int i = index + 1; i <= lists.Count - 1; i++)

@@ -59,7 +59,7 @@ namespace CSharp_Practice.CodingQuestions.Lists
 
             //2nd way:- Correct way no need to reverse the elements.
             bool flag = false;
-            int secondSmallest = int.MinValue;
+            int secondSmallest = int.MaxValue;
             for (int i = 1; i < lists.Count; i++)
             {
                 if (lists[0] != lists[i])
