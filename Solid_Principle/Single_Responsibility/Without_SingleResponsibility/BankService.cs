@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CSharp_Practice.Solid_Principle.Single_Responsibility.Without_SingleResponsibility
 {
-    //Here the BankService class has multiple reasons to change
+    //Here the BankService class has multiple reasons to change like Deposit, Withdraw, PrintPassbook, GetLoan,etc..can be
     public class BankService
     {
         public long Deposit(long amount, String accountNo)

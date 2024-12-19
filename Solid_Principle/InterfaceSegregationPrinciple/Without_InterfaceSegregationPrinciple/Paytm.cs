@@ -21,8 +21,8 @@ namespace CSharp_Practice.Solid_Principle.InterfaceSegregationPrinciple.Without_
 
         public void PayMoney()
         {
-           //Write Logic
+            //Write Logic
         }
-
+    
     }
 }

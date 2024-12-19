@@ -12,7 +12,7 @@ namespace CSharp_Practice.Solid_Principle.DependencyInversionPrinciple.With_Depe
     {
         private BankCard bankCard;
 
-        public ShoppingMall(BankCard bankCard)
+        public ShoppingMall(BankCard bankCard) //Constructor injection
         {
             this.bankCard = bankCard;
         }
