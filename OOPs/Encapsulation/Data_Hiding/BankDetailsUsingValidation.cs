@@ -14,7 +14,6 @@ namespace CSharp_Practice.OOPs.Encapsulation.Data_Hiding
             return Amount;
         }
 
-        //Since the private class members cannot change by the client, we can validate the data before storing it in the variable.
         public void SetAmount(int Amount)
         {
             if (Amount > 0)
