@@ -11,10 +11,12 @@ namespace CSharp_Practice.OOPs.Constructor
         public int num = 1;
         public int age = 20;
 
-        public DefaultConstructor()
-        {
+        public DefaultConstructor(){
             Console.WriteLine("Default constructor called");
+            
         }
+
+     
 
     }
 }
