@@ -13,7 +13,8 @@ namespace CSharp_Practice.OOPs.Constructor
         int i;
         //If we are defining default constructor explicitely then the constructor is known as explicit constructor. Compiler implicitely defines only the default constructor, which is by default public and called implicit constructor.
         public ConstructorPOC()
-        {   //If we don't write any constructor in a class then by default when we create object of the class then the compiler will create default construtor.
+        {
+            //If we don't write any constructor in a class then by default when we create object of the class then the compiler will create default constructor.
             Console.WriteLine("Deafult constructor");
         }
         public ConstructorPOC(String str)

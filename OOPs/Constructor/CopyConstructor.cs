@@ -14,8 +14,8 @@ namespace CSharp_Practice.OOPs.Constructor
         //Copy constructor declaration
         public CopyConstructor(CopyConstructor copyConstructor)
         {
-            month = copyConstructor.month;
-            year = copyConstructor.year;
+           month = copyConstructor.month;
+           year = copyConstructor.year;
         }
 
         //Instace constructor
