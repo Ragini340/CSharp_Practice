@@ -32,16 +32,6 @@ namespace CSharp_Practice.OOPs
             Console.WriteLine(PrivateConstructor.count);
             Console.WriteLine();
 
-            /*--StaticConstructor--*/
-            // Here Both Static and instance constructors are invoked for first instance
-            StaticConstructor staticConstructor = new StaticConstructor(1);
-            Console.WriteLine(staticConstructor.StaticConstructorDetail("Rag", 1));
-            // Here only instance constructor
-            // will be invoked
-            StaticConstructor obj1 = new StaticConstructor(2);
-            Console.WriteLine(obj1.StaticConstructorDetail("RagSin", 2));
-            Console.WriteLine();
-
             /*--Animal--*/
             //Single inheritance
             Dog dog = new Dog();

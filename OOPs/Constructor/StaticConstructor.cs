@@ -8,23 +8,19 @@ namespace CSharp_Practice.OOPs.Constructor
 {
     public class StaticConstructor
     {
-        // It is invoked before the first instance constructor is run
+        //Static constructor
+        //The static constructors are never called explicitly, they are always called implicitly.
         static StaticConstructor()
         {
             // The following statement produces the first line of output, and the line occurs only once.
             Console.WriteLine("Static Constructor");
         }
 
-        //Instance constructor
-        public StaticConstructor(int i)
+        //Default constructor
+        public StaticConstructor()
         {
-            Console.WriteLine("Instance Constructor " + i);
-        }
-
-        //Instance Method
-        public string StaticConstructorDetail(string name, int id)
-        {
-            return "Name:" + name + " id:" + id;
+            //The non-static constructors are never called implicitly, they are always called explicitly.
+            Console.WriteLine("Default constructor has been called");
         }
 
     }
