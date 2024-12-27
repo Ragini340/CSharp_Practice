@@ -21,17 +21,6 @@ namespace CSharp_Practice.OOPs
             Console.WriteLine(copyConstructor2.Details);
             Console.WriteLine();
 
-            /*--PrivateConstructor--*/
-            PrivateConstructor.count = 99;
-            // Accessing without any instance of the class
-            PrivateConstructor.CountMethod();
-            Console.WriteLine("PrivateConstructor: ");
-            Console.WriteLine(PrivateConstructor.count);
-            // Accessing without any instance of the class
-            PrivateConstructor.CountMethod();
-            Console.WriteLine(PrivateConstructor.count);
-            Console.WriteLine();
-
             /*--Animal--*/
             //Single inheritance
             Dog dog = new Dog();
@@ -78,24 +67,6 @@ namespace CSharp_Practice.OOPs
             ParameterizedConstructor parameterizedConstructor = new ParameterizedConstructor("Rag", 340);
             Console.WriteLine("Name is: " + parameterizedConstructor.name);
             Console.WriteLine("Id is: " + parameterizedConstructor.id);
-            Console.WriteLine();
-
-            /*EncapsulationPOC*/
-            EncapsulationPOC encapsulationPOC = new EncapsulationPOC();
-            encapsulationPOC.Name = "test";
-            encapsulationPOC.Age = 5;
-            Console.WriteLine("Name: " + encapsulationPOC.Name);
-            Console.WriteLine("Age: " +encapsulationPOC.Age);
-            Console.WriteLine();
-
-            /*Encapsulations*/
-            Encapsulations encapsulations = new Encapsulations();
-            encapsulations.Name = "Rag";
-            encapsulations.Email = "test1@gmail.com";
-            encapsulations.Id = 12;
-            Console.WriteLine("Name: " + encapsulations.Name);
-            Console.WriteLine("Email: " + encapsulations.Email);
-            Console.WriteLine("Id: " + encapsulations.Id);
             Console.WriteLine();
 
             //Abstractions
