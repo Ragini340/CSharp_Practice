@@ -12,6 +12,8 @@ namespace CSharp_Practice.OOPs.Constructor
         {
             StaticConstructor staticConstructor = new StaticConstructor();
             Console.WriteLine("Main method execution has been started");
+            Console.WriteLine(staticConstructor.i);
+            Console.WriteLine(StaticConstructor.j);
         }
     }
 }

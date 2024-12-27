@@ -8,8 +8,8 @@ namespace CSharp_Practice.OOPs.Constructor
 {
     public class StaticConstructor
     {
-        int i;
-        static int j;
+        public int i;
+        public static int j;
         //Static constructor
         //The static constructors are never called explicitly, they are always called implicitly.
         static StaticConstructor()
@@ -20,7 +20,6 @@ namespace CSharp_Practice.OOPs.Constructor
             //Compile time error:- An object reference is required for the non-static field, method, or property 'member'
             j = 100;
         }
-
         //Default constructor
         public StaticConstructor()
         {

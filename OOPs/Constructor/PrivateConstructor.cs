@@ -8,19 +8,20 @@ namespace CSharp_Practice.OOPs.Constructor
 {
     public class PrivateConstructor
     {
+        /*Using Private Constructor we can implement the singleton design pattern.
+        We need to use the private constructor when the class contains only static members.
+        Using a private constructor it is not possible to create an instance from outside the class.
+         */
         //Declaring private constructor
         private PrivateConstructor()
         {
+            Console.WriteLine("Private constructor");
         }
 
-        //Declaring static variable field
-        public static int count;
-
-        //Declaring static method
-        public static int CountMethod()
+        public static void Main()
         {
-            return count++;
+            PrivateConstructor privateConstructor = new PrivateConstructor();
+            Console.WriteLine("Main method");
         }
-
     }
 }
