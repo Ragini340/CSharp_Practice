@@ -11,7 +11,8 @@ namespace CSharp_Practice.OOPs.Method_Overloading
         public static void Main(string[] args)
         {
             MethodOverloadingPOCs methodOverloadingPOCs = new MethodOverloadingPOCs();
-
+            MethodOverloadingPOCs obj = new MethodOverloadingPOCs(1, 2);
+         
             int sum1 = methodOverloadingPOCs.Add(1,2);
             Console.WriteLine("Sum of the two integer value: " + sum1);
             int sum2 = methodOverloadingPOCs.Add(1,2,3);

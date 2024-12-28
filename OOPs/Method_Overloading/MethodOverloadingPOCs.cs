@@ -63,5 +63,22 @@ namespace CSharp_Practice.OOPs.Method_Overloading
         it has to call. Only if both methods have different parameter types (so, they have the different signature), then Method
         overloading is possible. Hence, complile time error will be thrown.
         */
+
+        //Constructor overloading
+        public MethodOverloadingPOCs()
+        {
+           Console.WriteLine("Default constructor will also act as method overloading.");
+        }
+
+        public MethodOverloadingPOCs(int a, int b)
+        {
+            Console.WriteLine("Parametrized constructor will also act as method overloading.");
+        }
+
+        static MethodOverloadingPOCs()
+        {
+            Console.WriteLine("Static constructor will also act as method overloading.");
+        }
+
     }
 }
