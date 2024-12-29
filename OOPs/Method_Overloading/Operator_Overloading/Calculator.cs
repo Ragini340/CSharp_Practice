@@ -24,8 +24,8 @@ namespace CSharp_Practice.OOPs.Method_Overloading.Operator_Overloading
         }
 
         public static int operator +(Calculator a,int b)  //If we pass only premitive type of data for both parameter like +(int a,int b), it will
-        {                                                 //throw error for "One of the parameters of a binary operator must be the containing type"
-            return a + b;                                 //,it means operator overloading can't be perform on premitive data types.
+        {                                                 //throw error for "One of the parameters of a binary operator must be the containing type",
+            return a + b;                                 //it means operator overloading can't be perform on premitive data types.
         }
         public void Print()
         {

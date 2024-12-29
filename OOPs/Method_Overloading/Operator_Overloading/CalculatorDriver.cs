@@ -16,7 +16,7 @@ namespace CSharp_Practice.OOPs.Method_Overloading.Operator_Overloading
 
             int a = 10;
             int b = 20;
-            int result = a + b;  // Both operand is premitive data type, so it is not goining to call + opeartor overloading method.
+            int result = a + b;  //Both operand is premitive data type, so it is not goining to call + opeartor overloading method.
             Console.WriteLine(result);
         }
     }
