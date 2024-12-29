@@ -14,7 +14,14 @@ namespace CSharp_Practice.CollectionsAndGenerics.Generics
             int val = genericsClass.GenericMethod(200); //Generic method
             Console.WriteLine(val); //Generic member variable
             genericsClass.GenericProperty = 50; //Generic property
-            Console.WriteLine("GenericProperty is: " + genericsClass.GenericProperty); 
+            Console.WriteLine("Generic Property is: " + genericsClass.GenericProperty);
+            Console.WriteLine();
+
+            GenericsClass<string> genericsClassString = new GenericsClass<string>("Ragini"); //Generic constructor
+            string value = genericsClassString.GenericMethod("Singh"); //Generic method
+            Console.WriteLine(value); //Generic member variable
+            genericsClassString.GenericProperty = "Prop"; //Generic property
+            Console.WriteLine("Generic Property is: " + genericsClassString.GenericProperty);
         }
     }
 }
