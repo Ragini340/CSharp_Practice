@@ -11,7 +11,7 @@ namespace CSharp_Practice.OOPs.Method_Overloading.Operator_Overloading
         public static void Main(string[] args)
         {
             Calculator cal = new Calculator(10, -20);
-            cal = -cal;  //If here it is minus then we required - in operator overloading method, So basically this step is for operator overloading.
+            cal = -cal;  //If here it is minus then we required - in operator overloading method, so basically this step is for operator overloading.
             cal.Print();
 
             int a = 10;
