@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using CSharp_Practice.Indexer.Indexer_Real_Life_Example;
 
 namespace CSharp_Practice.Collections.NonGeneric.hashtable
 {
@@ -51,6 +52,55 @@ namespace CSharp_Practice.Collections.NonGeneric.hashtable
 
             //ContainsValue
             Console.WriteLine("Is Salary value exists in hashtable:" + hashtable.ContainsValue(null));
+
+            //Remove
+
+            // hashtable.Remove(null); //Unhandled exception. System.ArgumentNullException: Key cannot be null. (Parameter 'key')
+            //at System.Collections.Hashtable.Remove(Object key)
+
+
+            hashtable.Remove("Nickee"); //It will not throw any exception as key is not available in the Hashtable.
+            hashtable.Remove("Location");
+            Console.WriteLine("After removing key Location Hashtable elements are:- ");
+            foreach (string key in hashtable.Keys)
+            {
+                Console.WriteLine(key + " : " + hashtable[key]);
+            }
+            Console.WriteLine();
+
+            //Clear
+            hashtable.Clear();
+            Console.WriteLine("Total number of elements in hashtable is now: " + hashtable.Count);
+
+            //Assigning Values to a Hashtable with Indexer
+            Hashtable hashtable1 = new Hashtable();
+            hashtable1[1] = "Gaby";
+            hashtable1[2] = "Bree";
+            hashtable1[3] = "Susan";
+            foreach (DictionaryEntry dec in hashtable1)
+            {
+                Console.WriteLine($"Key: {dec.Key}, Value: {dec.Value}");
+            }
+            Console.WriteLine();
+
+            //Updating a Hashtable using Indexer
+            Hashtable emp = new Hashtable();
+            emp.Add("Id", 1);
+            emp.Add("Name", "Ragini");
+            emp.Add("Salary", 100);
+            emp.Add("Location", "BLR");
+            emp.Add("EmailId", "abc@gmail.com");
+            //emp.Add("EmailId", "abc@");
+
+            emp["Name"] = "Zach";
+            emp["Salary"] = 5000;
+
+            //Accessing Hashtable elements using index
+            string EmployeeName = (string)emp["Name"];
+            int EmployeeSalary = (int)emp["Salary"];
+            Console.WriteLine($"Employee Name: {EmployeeName}");
+            Console.WriteLine($"Employee Salary: {EmployeeSalary}");
+            Console.WriteLine();
         }
     }
 
