@@ -175,6 +175,21 @@ namespace CSharp_Practice.Collections.Generic.Dictionary
                 Console.WriteLine(item);
             }
             Console.WriteLine();
+
+            //How to get all the Keys and Values of a Dictionary
+            Console.WriteLine("All keys in studentDic dictionary are:-");
+            foreach (int key in studentDic.Keys)
+            {
+                Console.WriteLine(key + " ");
+            }
+            Console.WriteLine();
+
+            Console.WriteLine("All Student values in studentDic dictionary are:-");
+            foreach (Student student in studentDic.Values)
+            {
+                Console.WriteLine(student);
+            }
+            Console.WriteLine();
         }
     }
 
