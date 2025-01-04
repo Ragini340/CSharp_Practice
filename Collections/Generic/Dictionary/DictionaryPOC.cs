@@ -1,4 +1,6 @@
-﻿namespace CSharp_Practice.Collections.Generic.Dictionary
+﻿using System.Numerics;
+
+namespace CSharp_Practice.Collections.Generic.Dictionary
 {
     public class DictionaryPOC
     {
@@ -97,6 +99,8 @@
             dic["Pak"] = "Eslamabad";
             Console.WriteLine($"IND: {dic["IND"]}");
             Console.WriteLine($"Pak: {dic["Pak"]}");
+            //Console.WriteLine($"SLK: {dic["SLK"]}"); //It will throw: Unhandled exception. System.Collections.Generic.KeyNotFoundException: The given key 'SLK' was not
+                                                     //present in the dictionary.
             Console.WriteLine();
 
             //Generic dictionary collection with complex type
@@ -112,6 +116,65 @@
             }
             Console.WriteLine();
 
+            //Adding more data into complexDic
+            Student student1 = new Student();
+            student1.Id = 103;
+            student1.Name = "Mike";
+            student1.Branch = "EE";
+            Student student2 = new Student();
+            student2.Id = 104;
+            student2.Name = "Zach";
+            student2.Branch = "Civil";
+
+            complexDic.Add(student1.Id, student1);
+            complexDic.Add(student2.Id, student2);
+            foreach (KeyValuePair<int, Student> item in complexDic)
+            {
+                Console.WriteLine(item);
+            }
+            Console.WriteLine();
+
+            //TryGetValue
+            Student s1;
+            if (complexDic.TryGetValue(100, out s1))
+            {
+                Console.WriteLine("Student with Key 100 is found in the dictionary");
+                Console.WriteLine(s1.ToString());
+            }
+            else
+            {
+                Console.WriteLine("Student with Key 100 is not found in the dictionary");
+            }
+
+            Student s2;
+            if (complexDic.TryGetValue(106, out s2))
+            {
+                Console.WriteLine("Student with Key 106 is found in the dictionary");
+                Console.WriteLine(s2.ToString());
+            }
+            else
+            {
+                Console.WriteLine("Student with Key 106 is not found in the dictionary");
+            }
+            Console.WriteLine();
+
+            //Converting an array to a dictionary
+            Student[] arr = new Student[3];
+            arr[0] = new Student() { Id = 200, Name = "Leenet", Branch = "ETC" };
+            arr[1] = new Student() { Id = 201, Name = "Julee", Branch = "E&CS" };
+            arr[2] = new Student() { Id = 202, Name = "Parker", Branch = "Mechanical" };
+
+            Dictionary<int, Student> studentDic = new Dictionary<int, Student>();
+            foreach (Student stu in arr)
+            {
+                studentDic.Add(stu.Id, stu);
+            }
+            Console.WriteLine();
+            foreach (KeyValuePair<int, Student> item in studentDic)
+            {
+                Console.WriteLine(item);
+            }
+            Console.WriteLine();
         }
     }
 
