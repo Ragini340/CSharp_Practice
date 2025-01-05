@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CSharp_Practice.Delegate
+namespace CSharp_Practice.Delegate_POC
 {
     public class DelegatePOC
     {
