@@ -15,7 +15,7 @@ namespace CSharp_Practice.Collections.NonGeneric.ArrayLists
             ArrayList arrayList1 = new ArrayList(5);
             Console.WriteLine("Capacity is: " + arrayList1.Capacity);
             Console.WriteLine("Count is: " + arrayList1.Count);
-
+            
             arrayList1.Add(100);
             arrayList1.Add("Ragini");
             arrayList1.Add("Ragini");
@@ -60,6 +60,14 @@ namespace CSharp_Practice.Collections.NonGeneric.ArrayLists
             }
             Console.WriteLine();
 
+            //AddRange
+            arrayList1.AddRange(arrayList2);
+            Console.WriteLine("\nArrayList1 elements are now:-");
+            foreach (var item in arrayList1)
+            {
+                Console.Write(item + " ");
+            }
+           
             //Updating elements of arrayList2
             arrayList2[0] = "Bree";
             arrayList2[1] = 1000;
@@ -81,9 +89,11 @@ namespace CSharp_Practice.Collections.NonGeneric.ArrayLists
             //Insert
             arrayList2.Insert(0, 1); //Inserting 1 at index 0
             arrayList2.Insert(2, "Susan"); //Inserting Susan at index 2
+            arrayList2.Insert(7, "Rag");
+            Console.WriteLine("\nPrinting arrayList2:-");
             foreach (var item in arrayList2)
             {
-                Console.Write(item + " ");
+                Console.Write(item + "\n");
             }
             Console.WriteLine();
 
