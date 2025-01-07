@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CSharp_Practice.OOPs.Constructor.Single_Inheritance
+namespace CSharp_Practice.OOPs.Inheritance.Single_Inheritance
 {
     public class A
     {
