@@ -6,12 +6,17 @@ namespace CSharp_Practice.Delegate_POC
     public delegate void CallbackMethodHandler(string message);
     public delegate void DoSomeMethodHandler(string message);
 
+    public delegate void WorkPerformedHandlerNew(int hours, WorkType workType);
     public class DelegateExample
     {
         public static void Main(string[] args)
         {
             WorkPerformedHandler workPerformedHandler = new WorkPerformedHandler(Manager_WorkPerformed);
             workPerformedHandler(5, WorkType.Golf);
+
+            //Using lambda operator
+            WorkPerformedHandlerNew work = (x, y) =>Console.WriteLine("Using Lambda expression:-" + "\nWork hours:" + x + "\nWork type:" + y) ;
+             work(10,WorkType.Golf);
 
             DelegateExample delegateExample = new DelegateExample();
             CallbackMethodHandler callbackMethodHandler = new CallbackMethodHandler(delegateExample.CallbackMethod);
