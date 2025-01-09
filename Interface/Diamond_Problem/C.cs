@@ -10,12 +10,17 @@ namespace CSharp_Practice.Interface.Diamond_Problem
     {
         public void Check()
         {
-            Console.WriteLine("Check method");
+            Console.WriteLine("Check method of interface A");
+        }
+
+        void B.Check()
+        {
+            Console.WriteLine("Check method of interface B");
         }
 
         public void Print()
         {
-            Console.WriteLine("Print method");
+            Console.WriteLine("Print method of interface B");
         }
     }
 
@@ -26,6 +31,8 @@ namespace CSharp_Practice.Interface.Diamond_Problem
             C obj = new C();
             obj.Check();
             obj.Print();
+            B b = new C();
+            b.Check();
         }
     }
 
