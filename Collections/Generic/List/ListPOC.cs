@@ -1,4 +1,5 @@
-﻿using CSharp_Practice.Indexer.Indexer_Real_Life_Example;
+﻿using System;
+using CSharp_Practice.Indexer.Indexer_Real_Life_Example;
 
 namespace CSharp_Practice.Collections.Generic.List
 {
@@ -21,7 +22,7 @@ namespace CSharp_Practice.Collections.Generic.List
             {
                 Console.WriteLine(item);
             }
-          
+
             //Creating a list collection using collection initializer 
             List<string> list3 = new List<string>
             {
@@ -36,7 +37,7 @@ namespace CSharp_Practice.Collections.Generic.List
                 var element = list3[i];
                 Console.WriteLine(element);
             }
-      
+
             //Accessing list elements by using the index 
             Console.WriteLine("\nAccessing list3 elements by index position");
             Console.WriteLine($"First element:- {list3[0]}");
@@ -59,7 +60,7 @@ namespace CSharp_Practice.Collections.Generic.List
             }
 
             Console.WriteLine("\nCount of list3 is: " + list3.Count); //Count is 7
-            list3.Insert(7, "Ragini"); 
+            list3.Insert(7, "Ragini");
             Console.WriteLine("\nNow count of list3 is: " + list3.Count);
             Console.WriteLine("\nAccessing list3 after InsertRange at index 7:-");
             foreach (var item in list3)
@@ -73,7 +74,7 @@ namespace CSharp_Practice.Collections.Generic.List
             {
                 Console.WriteLine(item);
             }
-            
+
             //Contains
             Console.WriteLine("Is Mike exists in list 3? " +list3.Contains("Mike"));
 
@@ -153,7 +154,7 @@ namespace CSharp_Practice.Collections.Generic.List
                 EmployeeId = 3,
                 Name = "Gaby",
                 Gender = "F",
-                Salary = 70000
+                Salary = 60000
             };
 
             List<Employee> employeesList = new List<Employee>();
@@ -182,18 +183,81 @@ namespace CSharp_Practice.Collections.Generic.List
                 EmployeeId = 4,
                 Name = "Juli",
                 Gender = "F",
-                Salary = 60000
+                Salary = 100000
             };
             //Insert
             employeesList.Insert(1, employee4);
             Console.WriteLine("\nElements in employeesList after inserting employee4 details at index 1:-");
-            foreach(var item in employeesList)
+            foreach (var item in employeesList)
             {
-                Console.WriteLine(item);    
+                Console.WriteLine(item);
             }
-               
-           // employeesList.Find(e =>( e.EmployeeId ==4 && e.Gender=="F"));
 
+            //Find
+            Employee filteredEmployee = employeesList.Find(e => e.Salary == 60000 && e.Gender == "F");
+            Console.WriteLine("\nFiltered employee on the basis of salary and gender:- " + filteredEmployee);
+
+            //FindLast
+            Employee lastMatchedEmployee = employeesList.FindLast(e => e.Gender == "F" && e.Salary == 100000);
+            Console.WriteLine("\nFiltered last matched employee on given condition:- " + lastMatchedEmployee);
+
+            //FindAll
+            List<Employee> findAllMatchedEmployee = employeesList.FindAll(e => e.Salary == 60000 || e.Gender == "F");
+            Console.WriteLine("\nFiltered employee details on the basis of salary or gender:-");
+            foreach (var item in findAllMatchedEmployee)
+            {
+                Console.WriteLine(item);
+            }
+
+            //FindIndex
+            //int findIndex = employeesList.FindIndex(null); //Unhandled exception. System.ArgumentNullException: Value cannot be null. (Parameter 'match')
+            int findIndex = employeesList.FindIndex(e => e.Salary == 100000 && e.Gender == "F");
+            Console.WriteLine("\nIndex is: " + findIndex);
+
+            //FindLastIndex
+            int lastIndex = employeesList.FindLastIndex(e => e.Salary == 100000 && e.Gender == "F");
+            Console.WriteLine("\nLast index is:" + lastIndex);
+
+            //Exists
+            bool isEmployeeDetailExists = employeesList.Exists(e => e.Salary == 1000 && e.Gender == "F");
+            Console.WriteLine("\nIs employee exists with given condition? " + isEmployeeDetailExists);
+
+            //Contains
+            bool isEmployeeContainsPassedEmployeeObj = employeesList.Contains(employee4);
+            Console.WriteLine("\nIs employee contains passed employee object? " + isEmployeeContainsPassedEmployeeObj);
+
+            //TrueForAll
+            bool isTrueEmployeeCheckedCondition = employeesList.TrueForAll(e => e.Gender == "M");
+            Console.WriteLine("\nEvery element in the list matches the conditions defined by the specified predicate? " + isTrueEmployeeCheckedCondition);
+
+            //TrimExcess to set the capacity to the actual number of elements in the List
+            employeesList.TrimExcess();
+            Console.WriteLine("\nActual number of elements in the list are:- " + employeesList.Capacity);
+
+            //Sort
+            List<int> integerList = new List<int>
+            {
+               2,4,6,1,22,4,5 
+            };
+            integerList.Sort();
+            Console.WriteLine("\nSorted list in ascending order:-");
+            foreach (int list in integerList)
+            {
+                Console.Write(list + " ");
+            }
+            Console.WriteLine();
+
+            //Reverse
+            integerList.Reverse();
+            Console.WriteLine("\nSorted list in decreasing order:-");
+            foreach (int list in integerList)
+            {
+                Console.Write(list + " ");
+            }
+            Console.WriteLine();
+
+            //employeesList.Sort(); //Unhandled exception. System.InvalidOperationException: Failed to compare two elements in the array.
         }
     }
+
 }
