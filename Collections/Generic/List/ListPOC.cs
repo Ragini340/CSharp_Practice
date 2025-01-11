@@ -1,5 +1,4 @@
-﻿using System;
-using CSharp_Practice.Indexer.Indexer_Real_Life_Example;
+﻿using System.Collections.ObjectModel;
 
 namespace CSharp_Practice.Collections.Generic.List
 {
@@ -181,9 +180,16 @@ namespace CSharp_Practice.Collections.Generic.List
             Employee employee4 = new Employee()
             {
                 EmployeeId = 4,
-                Name = "Juli",
-                Gender = "F",
+                Name = "John",
+                Gender = "M",
                 Salary = 100000
+            };
+            Employee employee5 = new Employee()
+            {
+                EmployeeId = 5,
+                Name = "Zach",
+                Gender = "M",
+                Salary = 5000
             };
             //Insert
             employeesList.Insert(1, employee4);
@@ -230,7 +236,16 @@ namespace CSharp_Practice.Collections.Generic.List
             bool isTrueEmployeeCheckedCondition = employeesList.TrueForAll(e => e.Gender == "M");
             Console.WriteLine("\nEvery element in the list matches the conditions defined by the specified predicate? " + isTrueEmployeeCheckedCondition);
 
+            //Readonly
+            Console.WriteLine("Count in employee list: " + employeesList.Count());
+            ReadOnlyCollection<Employee> emp = employeesList.AsReadOnly();
+            Console.WriteLine("Now Count in employee list: " + employeesList.Count());
+
+            //emp.Add(employee4);  //ReadOnlyCollection<Employee> does not contain a definition for 'Add' and no accessible extention
+                                   //method 'Add' accepting a first argument of type ReadOnlyCollection<Employee> could be found
+           
             //TrimExcess to set the capacity to the actual number of elements in the List
+            Console.WriteLine("\nCapacity is : " + employeesList.Capacity);
             employeesList.TrimExcess();
             Console.WriteLine("\nActual number of elements in the list are:- " + employeesList.Capacity);
 
@@ -247,6 +262,13 @@ namespace CSharp_Practice.Collections.Generic.List
             }
             Console.WriteLine();
 
+            //Reverse(int index, int count)
+            integerList.Reverse(1, 5);
+            Console.WriteLine("\nSorting from index 1 to count 5:-");
+            foreach(int list in integerList)
+            {
+                Console.Write(list + " ");
+            }
             //Reverse
             integerList.Reverse();
             Console.WriteLine("\nSorted list in decreasing order:-");
