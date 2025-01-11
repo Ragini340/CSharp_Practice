@@ -1,6 +1,6 @@
-﻿namespace CSharp_Practice.Collections.Generic.List.Sorting.Sorting_IComparable
+﻿namespace CSharp_Practice.Collections.Generic.List.Sorting.Sorting_IComparer
 {
-    public class SortingUsingIComparable
+    public class SortingUsingIComparerDriver
     {
         public static void Main(string[] args)
         {
@@ -30,10 +30,11 @@
            new Employee()
            {
             EmployeeId = 4,
-            Name = "Abhishek",
+            Name = "Abhisheek",
             Gender = "M",
             Salary = 5000000
            }
+
          };
 
             Console.WriteLine("Employee's list:-");
@@ -41,14 +42,14 @@
             {
                 Console.WriteLine(emp);
             }
-          
-            employees.Sort();
-            Console.WriteLine("\nSorting on the basis of salary in ascending order:-");
+
+            SortingUsingIComparer sortByName = new SortingUsingIComparer();
+            employees.Sort(sortByName);
+            Console.WriteLine("\nSorting by employee's Salary and Name in descending order:-");
             foreach (Employee emp in employees)
             {
                 Console.WriteLine(emp);
             }
         }
     }
-
 }

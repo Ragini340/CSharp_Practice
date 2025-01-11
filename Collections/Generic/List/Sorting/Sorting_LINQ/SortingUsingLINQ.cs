@@ -2,7 +2,7 @@
 
 namespace CSharp_Practice.Collections.Generic.List.Sorting.Sorting_LINQ
 {
-    public class SortingUsingLINQ
+    public class SortingUsingLINQ 
     {
         public static void Main(string[] args)
         {
@@ -13,7 +13,7 @@ namespace CSharp_Practice.Collections.Generic.List.Sorting.Sorting_LINQ
             EmployeeId = 1,
             Name = "Bree",
             Gender = "F",
-            Salary = 500000
+            Salary = 5000000
            },
            new Employee()
            {
@@ -36,8 +36,10 @@ namespace CSharp_Practice.Collections.Generic.List.Sorting.Sorting_LINQ
             {
                 Console.WriteLine(emp);
             }
-    
-            employees =  employees.OrderBy(e => e.Name).ToList();
+
+            //Sorting in ascending order with the given customized sorting
+            SortingUsingIComparer sortByName = new SortingUsingIComparer();
+            employees =  employees.OrderBy(e => e,sortByName).ToList();
             Console.WriteLine("\nSorting on the basis of employee's Name:-");
             foreach (Employee emp in employees)
             {

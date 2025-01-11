@@ -1,4 +1,4 @@
-﻿namespace CSharp_Practice.Collections.Generic.List.Sorting.Sorting_IComparer
+﻿namespace CSharp_Practice.Collections.Generic.List
 {
     public class Employee
     {

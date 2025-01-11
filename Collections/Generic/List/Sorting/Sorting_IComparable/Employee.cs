@@ -11,14 +11,22 @@
         {
             if (Salary > employee.Salary) // a - b > 0
             {
-                return 1;
+                return -1;
             }
             else if (Salary < employee.Salary) // a - b < 0
             {
-                return -1;
+                return 1;
             }
             else
             {
+                if (Gender.CompareTo(employee.Gender) < 0)
+                {
+                    return 1;
+                }
+                else
+                {
+                    return -1;
+                }
                 return 0;
             }
         }
