@@ -37,18 +37,33 @@ namespace CSharp_Practice.Collections.Generic.List.Sorting.Sorting_LINQ
                 Console.WriteLine(emp);
             }
 
+            employees = employees.OrderBy(e => e.Name).ToList();
+            Console.WriteLine("Sorting by employee's Name:-");
+            foreach(Employee emp in employees)
+            {
+               Console.WriteLine(emp);
+            }
+
             //Sorting in ascending order with the given customized sorting
             SortingUsingIComparer sortByName = new SortingUsingIComparer();
             employees =  employees.OrderBy(e => e,sortByName).ToList();
-            Console.WriteLine("\nSorting on the basis of employee's Name:-");
+            Console.WriteLine("\nSorting using comparer:-");
             foreach (Employee emp in employees)
             {
                 Console.WriteLine(emp);
             }
 
-            employees = employees.OrderByDescending(e => e.Name).ToList();
+            employees = employees.OrderByDescending(e =>( e.Name )).ToList();
             Console.WriteLine("\nSorting by employee's Name in decreasing order:-");
             foreach (Employee emp in employees)
+            {
+                Console.WriteLine(emp);
+            }
+
+            //Descending order
+            employees = employees.OrderByDescending(e => e, sortByName).ToList();
+            Console.WriteLine("\nSorting using comparer:-");
+            foreach(Employee emp in employees)
             {
                 Console.WriteLine(emp);
             }
