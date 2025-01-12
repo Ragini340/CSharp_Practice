@@ -7,6 +7,8 @@
         public string Gender { get; set; }
         public int Salary { get; set; }
 
+        public partial void PartialMethod();
+     
         public override string ToString()
         {
             return "FirstName: " + FirstName + " LastName: " + LastName + " Gender: " + Gender + " Salary: " + Salary;

@@ -15,6 +15,8 @@
             partialEmployee.DisplayFullName();
             partialEmployee.DisplayEmployeeDetails();
             Console.WriteLine(partialEmployee);
+            partialEmployee.PartialMethod();
+            partialEmployee.PublicMethod();
         }
     }
 }
