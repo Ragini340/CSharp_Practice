@@ -5,42 +5,18 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-
-	  <!--<startupobject>CSharp_Practice.Collections.Generic.List.ListPOC</startupobject>-->
-	  <!--<StartupObject>CSharp_Practice.OOPs.Constructor.ConstructorPOC</StartupObject>-->
-	  <!--<StartupObject>CSharp_Practice.Collections.NonGeneric.hashtable.HashTablePOC</StartupObject>-->
-	  <!--<StartupObject>CSharp_Practice.Collections.NonGeneric.hashtable.Clone_DeepAndShallow_Copy.ShallowAndDeep_CopyCloning</StartupObject>-->
-	  <!--<StartupObject>CSharp_Practice.Collections.Generic.Dictionary.DictionaryCreation</StartupObject>-->
-	  <!--<StartupObject>CSharp_Practice.Collections.Generic.Dictionary.DictionaryPOC</StartupObject>-->
-	  <!--<StartupObject>CSharp_Practice.Delegate_POC.DelegateExample</StartupObject>-->
-	  <!--<StartupObject>CSharp_Practice.CodingQuestions.CheckNearestPrimeNo</StartupObject>-->
-	  <!--<StartupObject>CSharp_Practice.CodingQuestions.Dynamic_Programming.LongestCommonSubsequence</StartupObject>-->
-	  <!--<StartupObject>CSharp_Practice.CodingQuestions.Strings.LongestCommonPrefix</StartupObject>-->
-	  <!--<startupobject>CSharp_Practice.Delegate_POC.DelegateExample</startupobject>-->
-	  <!--<startupobject>CSharp_Practice.Lambda_Expression.LambdaExpression_POC</startupobject>-->
-	  <!--<startupobject>CSharp_Practice.Collections.Generic.List.Sorting.Sorting_LINQ.SortingUsingLINQ</startupobject>-->
-	  <!--<startupobject>CSharp_Practice.Collections.Generic.List.Sorting.Sorting_IComparer.SortingUsingIComparerDriver</startupobject>-->
-	  <!--<startupobject>CSharp_Practice.Collections.Generic.List.Sorting.Sorting_IComparable.SortingUsingIComparable</startupobject>-->
-	  <!--<startupobject>CSharp_Practice.Collections.Generic.List.ListPOC</startupobject>-->
-	  <startupobject>CSharp_Practice.OOPs.ClassAndObjects.PartialClass.PartialClassDriver</startupobject>
-	  <!--<startupobject>CSharp_Practice.Collections.Generic.List.Sorting.Complex_Sorting.SortingOnMultipleCriteria</startupobject>-->
-	  <!--<startupobject>CSharp_Practice.Collections.Generic.List.Sorting.Complex_Sorting.SortingUsingDelegate</startupobject>-->
-	  
-
+    <StartupObject>CSharp_Practice.Threads.MultiThreading.MultiThreadedEx</StartupObject>
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="bin\**" />
     <Compile Remove="CodingQuestions\HashSet\**" />
-    <EmbeddedResource Remove="bin\**" />
     <EmbeddedResource Remove="CodingQuestions\HashSet\**" />
-    <None Remove="bin\**" />
     <None Remove="CodingQuestions\HashSet\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Design_Pattern\Creational_Design_Pattern\Prototype_Design_Pattern\" />
     <Folder Include="ExceptionHandlings\" />
+    <Folder Include="ArrayLists\" />
   </ItemGroup>
 
   <ItemGroup>
