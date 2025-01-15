@@ -87,7 +87,7 @@
             Console.WriteLine();
 
             //IntersectWith
-            List<int> set3 = new List<int>
+            HashSet<int> set3 = new HashSet<int>
             {
                 1, 8, 2, 100
             };
@@ -105,6 +105,20 @@
                 Console.Write(item + " ");
             }
             Console.WriteLine();
+
+            HashSet<int> hashSet1 = new HashSet<int>
+            {
+            };
+            HashSet<int> hashSet2 = new HashSet<int>
+            {
+                1,2
+            };
+            hashSet1.IntersectWith(hashSet2);
+            Console.WriteLine("HashSet with first set empty and second set with data: ");
+            foreach (int item in hashSet1)
+            {
+                Console.WriteLine(item + " ");
+            }
 
             //ExceptWith
             set1.ExceptWith(set3); //The ExceptWith method contains the elements from the first collection which are not present in
@@ -163,7 +177,24 @@
                 Console.WriteLine(emp + " ");
             }
             Console.WriteLine();
-        }
-    }
 
+            //Enumerator that Iterates through HashSet<T> Collection
+            HashSet<string> hashSet = new HashSet<string>
+            {
+                "India",
+                "Pakistan",
+                "China",
+                "USA"
+            };
+
+            HashSet<string>.Enumerator enumerator = hashSet.GetEnumerator();
+            Console.WriteLine("\nPrinting hashSet using Enumerator: ");
+            while (enumerator.MoveNext())
+            {
+                string value = enumerator.Current;
+                Console.Write(value + " ");
+            }
+        }
+
+    }
 }
