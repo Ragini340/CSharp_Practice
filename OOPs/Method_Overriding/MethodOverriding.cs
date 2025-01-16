@@ -1,14 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CSharp_Practice.OOPs.Method_Overriding
+﻿namespace CSharp_Practice.OOPs.Method_Overriding
 {
     public class MethodOverriding
     {
-        public virtual void Show()
+        public void Show()
         {
             Console.WriteLine("Parent class show method");
         }
@@ -16,6 +10,11 @@ namespace CSharp_Practice.OOPs.Method_Overriding
         public virtual void Display()
         {
             Console.WriteLine("Parent class Display method");
+        }
+
+        public void Print()
+        {
+            Console.WriteLine("Print method of parent class has been called");
         }
     }
 }

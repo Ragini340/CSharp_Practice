@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CSharp_Practice.OOPs.Method_Overriding
+﻿namespace CSharp_Practice.OOPs.Method_Overriding
 {
     public class MethodOverridingDriver
     {
@@ -28,6 +22,7 @@ namespace CSharp_Practice.OOPs.Method_Overriding
             Console.WriteLine();
             methodOverriding.Display();
             methodOverridingChild.Display();
+            methodOverriding.Print();
         }
     }
 }
