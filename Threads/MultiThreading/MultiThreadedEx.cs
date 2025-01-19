@@ -1,17 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Threading;
-
-namespace CSharp_Practice.Threads.MultiThreading
+﻿namespace CSharp_Practice.Threads.MultiThreading
 {
     public class MultiThreadedEx
     {
         public static void Method1()
         {
             Console.WriteLine("Method1 started using " + Thread.CurrentThread.Name);
+            Console.WriteLine("Current thread is? " + Thread.CurrentThread);
+         
             for (int i = 1; i <= 5; i++)
             {
                 Console.WriteLine("Method1: " + i);
@@ -22,6 +17,7 @@ namespace CSharp_Practice.Threads.MultiThreading
         public static void Method2()
         {
             Console.WriteLine("Method2 started using " + Thread.CurrentThread.Name);
+            Console.WriteLine("IsBackground thread? " + Thread.CurrentThread.IsBackground);
             for (int i = 1; i <= 5; i++)
             {
                 Console.WriteLine("Method2: " + i);
@@ -50,11 +46,12 @@ namespace CSharp_Practice.Threads.MultiThreading
             Console.WriteLine("Main thread started");
             Thread thread1 = new Thread(Method1)
             {
-                Name = "Thread1"
+               Name = "Thread1"
             };
             Thread thread2 = new Thread(Method2)
             {
-                Name = "Thread2"
+                Name = "Thread2",
+                IsBackground = true
             };
             Thread thread3 = new Thread(Method3)
             {
@@ -65,6 +62,7 @@ namespace CSharp_Practice.Threads.MultiThreading
             thread1.Start();
             thread2.Start();
             thread3.Start();
+            Thread.Sleep(1000000);
             Console.WriteLine("Main thread ended");
         }
 
