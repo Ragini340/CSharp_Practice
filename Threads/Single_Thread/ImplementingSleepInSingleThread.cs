@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CSharp_Practice.Threads.Single_Thread
+﻿namespace CSharp_Practice.Threads.Single_Thread
 {
     public class ImplementingSleepInSingleThread
     {
@@ -21,7 +15,7 @@ namespace CSharp_Practice.Threads.Single_Thread
             for (int i = 0; i < 4; i++)
             {
                 Console.WriteLine("This is Method2: " + i);
-                if (i == 3)
+                if (i == 1)
                 {
                     Console.WriteLine("Performing the Database Operation...");
                     Thread.Sleep(10000);
