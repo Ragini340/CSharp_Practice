@@ -7,12 +7,13 @@
             Console.WriteLine("Method1 started using " + Thread.CurrentThread.Name);
             for (int i = 100; i < 1000; i++)
             {
-                Thread.Sleep(300);
-                Thread.Yield();  //This method causes the calling thread to yield execution to another thread that is ready to run
-                                 //on the current processor. The operating system selects the thread to yield to. It returns true if
-                                 //the operating system switched execution to another thread; otherwise, false.
-
                 Console.WriteLine("Method1: " + i);
+                /*Yield(): This method causes the calling thread to yield execution to another thread that is ready to run on the
+                  current processor. The operating system selects the thread to yield to. It returns true if the operating system
+                  switched execution to another thread; otherwise, false.*/
+                Thread.Yield();
+                Console.WriteLine("Is Thread2 Yield() done? " + Thread.Yield());
+
             }
             Console.WriteLine("Method1 ended using " + Thread.CurrentThread.Name);
         }
@@ -20,7 +21,7 @@
         public static void Method2()
         {
             Console.WriteLine("Method2 started using " + Thread.CurrentThread.Name);
-            for (int i = 1; i < 100; i++)
+            for (int i = 1; i < 999; i++)
             {
                 Console.WriteLine("Method2: " + i);
             }
