@@ -1,24 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CSharp_Practice.Threads.MultiThreading
+﻿namespace CSharp_Practice.Threads.MultiThreading
 {
     public class StatesOfThread
     {
         public void Print()
         {
-            for (int i = 0; i < 2; i++)
+            for (int i = 1; i <= 10; i++)
             {
-                Console.WriteLine("My thread");
+                Console.WriteLine("Thread1: " + i);
             }
         }
-    }
 
-    public class ExOfStatesOfThread
-    {
         public static void Main(string[] args)
         {
             StatesOfThread statesOfThread = new StatesOfThread();
