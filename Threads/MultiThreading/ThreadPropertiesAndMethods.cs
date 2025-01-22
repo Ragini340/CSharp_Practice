@@ -37,17 +37,6 @@
             for (int i = 100; i < 1000; i++)
             {
                 Console.WriteLine("Method1: " + i);
-                try
-                {
-                    /*Abort(): This method is used to terminate the thread. Raises a ThreadAbortException in the thread on which it 
-                      is invoked, to begin the process of terminating the thread. Calling this method usually terminates the thread.*/
-
-                    Thread.CurrentThread.Abort();  //It will print only 1 record from Thread1 and then it will abort.
-                }
-                catch (Exception e)
-                {
-                    Console.WriteLine("Handling ThreadAbortException.");
-                }
             }
 
             Console.WriteLine("Method1 ended using " + Thread.CurrentThread.Name);
