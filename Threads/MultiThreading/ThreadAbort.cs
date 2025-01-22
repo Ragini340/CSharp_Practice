@@ -19,6 +19,12 @@
                 {
                     Console.WriteLine("Handling ThreadAbortException.");
                 }
+
+                /*ResetAbort(): This method is used to an System.Threading.Thread.Abort(System.Object) requested for the current 
+                 thread.*/
+                 //Thread.ResetAbort();  
+                /*Depricated:- System.PlatformNotSupportedException: Thread abort is not supported on this
+                                       platform.*/
             }
             Console.WriteLine("Method1 ended using " + Thread.CurrentThread.Name);
         }
