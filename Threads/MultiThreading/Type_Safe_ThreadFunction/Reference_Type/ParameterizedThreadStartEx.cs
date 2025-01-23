@@ -11,75 +11,72 @@
             }
         }
 
-        public void DisplayEmployeeListUsingDelegate(object employeesList)
-        {
-            List<Employee> emp = (List<Employee>)employeesList;
-            Thread thread2 = new Thread(delegate (object? employeesList)
-            {
-                foreach (var item in emp)
-                {
-                    Console.WriteLine("Using delegate: " + item);
-                }
-            });
-            thread2.Start(employeesList);
-        }
+        public delegate void DisplayEmployeeListUsingAnonymousMethod(object employeesList);
 
-        public void DisplayEmployeeListUsingLambda(object employeesList)
-        {
-            List<Employee> emp = (List<Employee>)employeesList;
-            Thread thread3 = new Thread(employeesList =>
-            {
-                foreach (var item in emp)
-                {
-                    Console.WriteLine("Using Lambda: " + item);
-                }
-            });
-            thread3.Start(employeesList);
-        }
+        public delegate void DisplayEmployeeListUsingLambda(object employeesList);
 
         public static void Main(string[] args)
         {
             Console.WriteLine("Main thread started");
-            Employee employee1 = new Employee()
+            List<Employee> employeesList = new List<Employee>
             {
+                new Employee
+                {
                 EmployeeId = 1,
                 Name = "Ragini",
                 Gender = "F",
                 Salary = 100000
-            };
-            Employee employee2 = new Employee()
-            {
+                },
+                new Employee
+                {
                 EmployeeId = 2,
                 Name = "Bree",
                 Gender = "F",
                 Salary = 80000
-            };
-            Employee employee3 = new Employee()
-            {
+                },
+                new Employee
+                {
                 EmployeeId = 3,
                 Name = "Gaby",
                 Gender = "F",
                 Salary = 60000
-            };
-            Employee employee4 = new Employee()
-            {
+                },
+                new Employee
+                {
                 EmployeeId = 4,
                 Name = "Mike",
                 Gender = "M",
                 Salary = 600000
+                }
             };
-
-            List<Employee> employeesList = new List<Employee>();
-            employeesList.Add(employee1);
-            employeesList.Add(employee2);
-            employeesList.Add(employee3);
-            employeesList.Add(employee4);
 
             ParameterizedThreadStartEx obj = new ParameterizedThreadStartEx();
             Thread thread1 = new Thread(obj.DisplayEmployeeList);
             thread1.Start(employeesList);
-            obj.DisplayEmployeeListUsingDelegate(employeesList);
-            obj.DisplayEmployeeListUsingLambda(employeesList);
+
+            DisplayEmployeeListUsingAnonymousMethod displayEmployeeListUsingAnonymousMethod = delegate (object employeesList)
+            {
+                List<Employee> emp = (List<Employee>)employeesList;
+                foreach (var item in emp)
+                {
+                    Console.WriteLine("Using Anonymous method: " + item);
+                }
+            };
+
+            DisplayEmployeeListUsingLambda displayEmployeeListUsingLambda = employeesList =>
+            {
+                List<Employee> emp = (List<Employee>)employeesList;
+                foreach (var item in emp)
+                {
+                    Console.WriteLine("Using Lambda: " + item);
+                }
+            };
+
+            Thread thread2 = new Thread(displayEmployeeListUsingAnonymousMethod.Invoke);
+            thread2.Start(employeesList);
+
+            Thread thread3 = new Thread(displayEmployeeListUsingLambda.Invoke);
+            thread3.Start(employeesList);
             Console.WriteLine("Main thread ended");
         }
 
