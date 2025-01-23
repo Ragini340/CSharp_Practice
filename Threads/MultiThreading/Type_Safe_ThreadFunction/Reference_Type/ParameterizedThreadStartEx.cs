@@ -7,13 +7,13 @@
             List<Employee> emp = (List<Employee>)employeesList;
             foreach (var item in emp)
             {
-                Console.WriteLine("Normal approach: " + item);
+                Console.WriteLine("Using normal approach: " + item);
             }
         }
 
-        public delegate void DisplayEmployeeListUsingAnonymousMethod(object employeesList);
+        //public delegate void DisplayEmployeeListUsingAnonymousMethod(object employeesList);
 
-        public delegate void DisplayEmployeeListUsingLambda(object employeesList);
+        //public delegate void DisplayEmployeeListUsingLambda(object employeesList);
 
         public static void Main(string[] args)
         {
@@ -51,32 +51,65 @@
             };
 
             ParameterizedThreadStartEx obj = new ParameterizedThreadStartEx();
-            Thread thread1 = new Thread(obj.DisplayEmployeeList);
+            ParameterizedThreadStart parameterizedThreadStart = new ParameterizedThreadStart(obj.DisplayEmployeeList);
+            Thread thread1 = new Thread(parameterizedThreadStart);
             thread1.Start(employeesList);
 
-            DisplayEmployeeListUsingAnonymousMethod displayEmployeeListUsingAnonymousMethod = delegate (object employeesList)
+            ParameterizedThreadStart parameterizedThreadStart1 = delegate (object? employeesList)
             {
                 List<Employee> emp = (List<Employee>)employeesList;
                 foreach (var item in emp)
                 {
-                    Console.WriteLine("Using Anonymous method: " + item);
+                    Console.WriteLine("Thread2 using Anonymous method: " + item);
                 }
             };
+            Thread thread2 = new Thread(parameterizedThreadStart1);
+            thread2.Start(employeesList);
 
-            DisplayEmployeeListUsingLambda displayEmployeeListUsingLambda = employeesList =>
+            ParameterizedThreadStart parameterizedThreadStart2 = employeesList =>
             {
                 List<Employee> emp = (List<Employee>)employeesList;
+                foreach (var item in emp)
+                {
+                    Console.WriteLine("Thread3 using Lambda: " + item);
+                }
+            };
+            Thread thread3 = new Thread(parameterizedThreadStart2);
+            thread3.Start(employeesList);
+
+            //Shortcut to write above thread1, thread2, and thread3 as below in thread4, thread5, and thread6 respectively:-
+            Thread thread4 = new Thread(new ParameterizedThreadStart(obj.DisplayEmployeeList));
+            thread4.Start(employeesList);
+
+            Thread thread5 = new Thread(delegate (object? employeesList)
+            {
+                List<Employee> emp = (List<Employee>)employeesList;
+                foreach (var item in emp)
+                {
+                    Console.WriteLine("Thread5 using Anonymous method: " + item);
+                }
+            });
+            thread5.Start(employeesList);
+
+            Thread thread6 = new Thread(employeesList =>
+            {
+                List<Employee> emp = (List<Employee>)employeesList;
+                foreach (var item in emp)
+                {
+                    Console.WriteLine("Thread6 using Lambda: " + item);
+                }
+            });
+            thread6.Start(employeesList);
+
+            /*Thread thread7 = new Thread(parametrizedThreadStarterObj =>
+            {
+                List<Employee> emp = (List<Employee>)parametrizedThreadStarterObj;
                 foreach (var item in emp)
                 {
                     Console.WriteLine("Using Lambda: " + item);
                 }
-            };
-
-            Thread thread2 = new Thread(displayEmployeeListUsingAnonymousMethod.Invoke);
-            thread2.Start(employeesList);
-
-            Thread thread3 = new Thread(displayEmployeeListUsingLambda.Invoke);
-            thread3.Start(employeesList);
+            });
+            thread7.Start(employeesList);*/
             Console.WriteLine("Main thread ended");
         }
 
