@@ -1,17 +1,13 @@
-﻿namespace CSharp_Practice.Threads.MultiThreading.Synchronization.Lock.WithSynchronization
+﻿namespace CSharp_Practice.Threads.MultiThreading.Synchronization.Locks.WithoutSynchronization
 {
-    public class LockOnSharedResourcesEx
+    public class WithoutLockOnSharedResourcesEx
     {
-        static int Count = 0;
-        private static object LockCount = new object();
+        public static int Count = 0;
         public static void IncrementCount()
         {
             for (int i = 1; i <= 1000000; i++)
             {
-                lock (LockCount)
-                {
-                    Count = Count + 1;
-                }
+                Count = Count + 1;
             }
         }
 

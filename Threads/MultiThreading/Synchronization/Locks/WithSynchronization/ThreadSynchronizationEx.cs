@@ -1,12 +1,16 @@
-﻿namespace CSharp_Practice.Threads.MultiThreading.Synchronization.Lock.WithoutSynchronization
+﻿namespace CSharp_Practice.Threads.MultiThreading.Synchronization.Locks.WithSynchronization
 {
-    public class ExampleWithoutThreadSynchronization
+    public class ThreadSynchronizationEx
     {
+        static object lockObject = new object();
         public static void Method1()
         {
-            for (int i = 1; i <= 10; i++)
+            lock (lockObject)
             {
-                Console.WriteLine("Current thread is: " + Thread.CurrentThread.Name + " => " + i);
+                for (int i = 1; i <= 10; i++)
+                {
+                    Console.WriteLine("Current thread is: " + Thread.CurrentThread.Name + " => " + i);
+                }
             }
         }
 
