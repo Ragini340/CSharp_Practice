@@ -1,4 +1,4 @@
-﻿namespace CSharp_Practice.Threads.MultiThreading.Synchronization.WithSynchronization
+﻿namespace CSharp_Practice.Threads.MultiThreading.Synchronization.Lock.WithSynchronization
 {
     public class LockOnSharedResourcesEx
     {

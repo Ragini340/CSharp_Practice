@@ -1,4 +1,4 @@
-﻿namespace CSharp_Practice.Threads.MultiThreading.Synchronization.Real_Time_Example.WithSynchronization
+﻿namespace CSharp_Practice.Threads.MultiThreading.Synchronization.Lock.Real_Time_Example.WithSynchronization
 {
     public class Driver
     {
