@@ -13,10 +13,11 @@
             {
                 Console.WriteLine(wantedtickets + " booked to " + name);
                 AvailableTickets = AvailableTickets - wantedtickets;
+                Console.WriteLine("Now number of available tickets for: " + Thread.CurrentThread.Name + " are: " + AvailableTickets);
             }
             else
             {
-                Console.WriteLine("No tickets Available to book");
+                Console.WriteLine("No tickets available to book");
             }
         }
 
