@@ -3,7 +3,7 @@
     public class MonitorClassEnterAndExitMethodPOC
     {
         private static object lockPrintNumbers = new object();
-
+       
         public static void PrintNumbers()
         {
             Console.WriteLine(Thread.CurrentThread.Name + " trying to enter into the critical section");
@@ -13,7 +13,7 @@
                 Console.WriteLine(Thread.CurrentThread.Name + " entered into the critical section");
                 for (int i = 1; i < 6; i++)
                 {
-                    Console.WriteLine(i);
+                    Console.WriteLine(Thread.CurrentThread.Name+ " " + i );
                 }
             }
             finally
