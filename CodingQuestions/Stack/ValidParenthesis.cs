@@ -47,18 +47,16 @@
             {
                 return true;
             }
-            else if (top == '{' && element == '}')
+            if (top == '{' && element == '}')
             {
                 return true;
             }
-            else if (top == '[' && element == ']')
+            if (top == '[' && element == ']')
             {
                 return true;
             }
-            else
-            {
-                return false;
-            }
+           
+            return false;  
         }
 
         public static void Main(string[] args)
@@ -71,7 +69,7 @@
             string str6 = "[A+B-(C%D}]";
 
             ValidParenthesis obj = new ValidParenthesis();
-            bool isValid = obj.ValidateParenthesis(str1);
+            bool isValid = obj.ValidateParenthesis(str4);
             Console.WriteLine("Is given parenthesis valid? " + isValid);
         }
 
