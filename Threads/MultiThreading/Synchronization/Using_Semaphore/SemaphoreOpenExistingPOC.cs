@@ -15,8 +15,8 @@
     public class SemaphoreOpenExistingPOC
     {
         private Semaphore _semaphore;
-
-        public void CheckAllSemaphoreFeature()
+  
+        public Semaphore CheckAllSemaphoreFeature()
         {
             try
             {
@@ -26,14 +26,16 @@
             {
                 //If Semaphore not exists, create a semaphore instance.
                 //Here, maximum 2 external threads can access the code at the same time.
-                _semaphore = new Semaphore(2, 2, "SemaphoreDemo");
+               //_semaphore = new Semaphore(2, 2, "SemaphoreDemo");
+               return _semaphore;
             }
+           return _semaphore;
         }
 
         public static void Main(string[] args)
         {
             SemaphoreOpenExistingPOC obj = new SemaphoreOpenExistingPOC();
-            if (obj.CheckAllSemaphoreFeature != null)
+            if (obj.CheckAllSemaphoreFeature() != null)
             {
                 Console.WriteLine("Semaphore exists");
             }
