@@ -1,4 +1,4 @@
-﻿namespace CSharp_Practice.Threads.MultiThreading.Synchronization.Deadlock.Example
+﻿namespace CSharp_Practice.Threads.MultiThreading.Synchronization.Deadlock.Example_Deadlock
 {
     public class AccountManager
     {
@@ -19,7 +19,7 @@
             {
                 Console.WriteLine($"{Thread.CurrentThread.Name} acquired lock on {FromAccount.Id}");
                 Console.WriteLine($"{Thread.CurrentThread.Name} doing some work");
-                //Thread.Sleep(1000);
+                Thread.Sleep(1000);
                 Console.WriteLine($"{Thread.CurrentThread.Name} trying to acquire lock on {ToAccount.Id}");
                 lock (ToAccount)
                 {

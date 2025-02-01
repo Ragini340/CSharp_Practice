@@ -1,4 +1,4 @@
-﻿namespace CSharp_Practice.Threads.MultiThreading.Synchronization.Deadlock.Example
+﻿namespace CSharp_Practice.Threads.MultiThreading.Synchronization.Deadlock.Example_Deadlock
 {
     public class Driver
     {
