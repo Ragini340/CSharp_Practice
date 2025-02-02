@@ -38,8 +38,6 @@ namespace CSharp_Practice.Threads.MultiThreading.Performance_Testing
             Thread thread2 = new Thread(OddNumbersSum);
             thread1.Start();
             thread2.Start();
-            thread1.Join();
-            thread2.Join();
             stopwatch.Stop();
             Console.WriteLine($"Total time in milliseconds : {stopwatch.ElapsedMilliseconds}");
         }
