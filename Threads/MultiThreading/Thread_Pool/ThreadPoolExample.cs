@@ -13,7 +13,7 @@
         public static void Main(string[] args)
         {
             ThreadPoolExample threadPoolExample = new ThreadPoolExample();
-            for (int i = 0; i < 10; i++)
+            for (int i = 0; i < 20; i++)
             {
                 ThreadPool.QueueUserWorkItem(new WaitCallback(threadPoolExample.MyMethod));
             }
