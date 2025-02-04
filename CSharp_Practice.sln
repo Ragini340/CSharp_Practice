@@ -5,7 +5,10 @@ VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharp_Practice", "CSharp_Practice.csproj", "{DF7AB2F0-61FC-472E-88C0-23A3CBA2911B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpecFlowCalculator", "..\SpecFlowCalculator\SpecFlowCalculator.csproj", "{F9AD23AE-05A8-40C0-87B1-F7DEE8169A6A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp_Practice_TestProject", "..\CSharp_Practice_Test_Project\CSharp_Practice_TestProject.csproj", "{BC154AD3-9084-4399-94BB-2B634974F46F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{DF7AB2F0-61FC-472E-88C0-23A3CBA2911B} = {DF7AB2F0-61FC-472E-88C0-23A3CBA2911B}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +20,10 @@ Global
 		{DF7AB2F0-61FC-472E-88C0-23A3CBA2911B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DF7AB2F0-61FC-472E-88C0-23A3CBA2911B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DF7AB2F0-61FC-472E-88C0-23A3CBA2911B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F9AD23AE-05A8-40C0-87B1-F7DEE8169A6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F9AD23AE-05A8-40C0-87B1-F7DEE8169A6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F9AD23AE-05A8-40C0-87B1-F7DEE8169A6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F9AD23AE-05A8-40C0-87B1-F7DEE8169A6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC154AD3-9084-4399-94BB-2B634974F46F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC154AD3-9084-4399-94BB-2B634974F46F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC154AD3-9084-4399-94BB-2B634974F46F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC154AD3-9084-4399-94BB-2B634974F46F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
