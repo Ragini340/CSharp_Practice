@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CSharp_Practice.Indexer.Indexer_Real_Life_Example
+﻿namespace CSharp_Practice.Collections.Generic.Stack.ComplexType
 {
     public class Employee
     {
