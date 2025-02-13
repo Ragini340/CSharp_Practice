@@ -1,14 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CSharp_Practice.CodingQuestions.Dictionary
+﻿namespace CSharp_Practice.CodingQuestions.Dictionary
 {
     public class FindNonRepeatingCharacter
     {
-        public static char? nonRepeatingCharacter(string str)
+        public static char? NonRepeatingCharacter(string str)
         {
             Dictionary<char, int> dic = new Dictionary<char, int>();
             for (int i = 0; i < str.Length; i++)
@@ -44,7 +38,7 @@ namespace CSharp_Practice.CodingQuestions.Dictionary
         {
             Console.WriteLine("Enter the string");
             string name = Console.ReadLine();
-            char? c = nonRepeatingCharacter(name);
+            char? c = NonRepeatingCharacter(name);
 
             if (c.HasValue)
             {

@@ -1,28 +1,22 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Diagnostics;
-using System.Threading;
+﻿using System.Diagnostics;
 
 namespace CSharp_Practice.Asynchronous_Programming
 {
     public class AsynchronousDemo
     {
-        public static void asyncDemo()
+        public static void AsyncDemo()
         {
             var watch = new Stopwatch();
             watch.Start();
-            var task1 = startSchoolAssembly();
-            var task2 = teachClass10();
-            var task3 = teachClass9();
+            var task1 = StartSchoolAssembly();
+            var task2 = TeachClass10();
+            var task3 = TeachClass9();
             Task.WaitAll(task1, task2, task3);
             watch.Stop();
             Console.WriteLine("Execution time: " + watch.ElapsedMilliseconds);
         }
 
-        private static async Task startSchoolAssembly()
+        private static async Task StartSchoolAssembly()
         {
             await Task.Run(() =>
             {
@@ -31,7 +25,7 @@ namespace CSharp_Practice.Asynchronous_Programming
             });
         }
 
-        private static async Task teachClass10()
+        private static async Task TeachClass10()
         {
             await Task.Run(() =>
             {
@@ -40,7 +34,7 @@ namespace CSharp_Practice.Asynchronous_Programming
             });
         }
 
-        private static async Task teachClass9()
+        private static async Task TeachClass9()
         {
             await Task.Run(() =>
             {
@@ -51,7 +45,7 @@ namespace CSharp_Practice.Asynchronous_Programming
 
         public static void Main()
         {
-            asyncDemo();
+            AsyncDemo();
         }
 
     }
