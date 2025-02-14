@@ -1,25 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CSharp_Practice.OOPs.Method_Overloading.Operator_Overloading
+﻿namespace CSharp_Practice.OOPs.Method_Overloading.Operator_Overloading
 {
     public class Box
     {
         private double length;
         private double breadth;
        
-        public double getAdditionOfLengthBreadth()
+        public double GetAdditionOfLengthBreadth()
         {
             return length + breadth;
         }
-        public void setLength(double len)
+        public void SetLength(double len)
         {
             length = len;
         }
-        public void setBreadth(double bre)
+        public void SetBreadth(double bre)
         {
             breadth = bre;
         }

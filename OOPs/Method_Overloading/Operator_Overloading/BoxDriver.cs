@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CSharp_Practice.OOPs.Method_Overloading.Operator_Overloading
+﻿namespace CSharp_Practice.OOPs.Method_Overloading.Operator_Overloading
 {
     public class BoxDriver
     {
@@ -14,10 +8,10 @@ namespace CSharp_Practice.OOPs.Method_Overloading.Operator_Overloading
             Box box2 = new Box();
             Box box3 = new Box();
             Box box4 = new Box();
-            box1.setLength(6.0);
-            box1.setBreadth(7.0);
-            box2.setLength(12.0);
-            box2.setBreadth(13.0);
+            box1.SetLength(6.0);
+            box1.SetBreadth(7.0);
+            box2.SetLength(12.0);
+            box2.SetBreadth(13.0);
 
             Console.WriteLine("Box 1: {0}", box1.ToString());
             Console.WriteLine("Box 2: {0}", box2.ToString());

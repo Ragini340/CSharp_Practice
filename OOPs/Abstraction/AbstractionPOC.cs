@@ -1,22 +1,15 @@
-﻿using CSharp_Practice.OOPs.Abstraction;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CSharp_Practice.OOPs.Abstraction
+﻿namespace CSharp_Practice.OOPs.Abstraction
 {
     public abstract class AbstractionPOC
     {
         //Abstract method
         //We can't declare this abstract method in child class non abstract 
-        public abstract void area();
+        public abstract void Area();
 
         /*Below calculate method cannot be overriden in abstract child class because it is not marked
          with abstract or virtual or override*/
 
-        /*public void calculate()
+        /*public void Calculate()
         {
             Console.WriteLine("I am the parent abstract class");
         }*/
@@ -39,7 +32,7 @@ namespace CSharp_Practice.OOPs.Abstraction
             side = x;
         }
 
-        public override void area()
+        public override void Area()
         {
             Console.Write("Area of Square: ");
             //return (side * side);

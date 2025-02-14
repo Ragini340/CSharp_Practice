@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CSharp_Practice.OOPs.StaticClassPOC
+﻿namespace CSharp_Practice.OOPs.StaticClassPOC
 {
     public class DriverStaticDemo
     {
@@ -16,7 +10,7 @@ namespace CSharp_Practice.OOPs.StaticClassPOC
             */
             StaticDemo.data = 100;
             StaticDemo.Print();
-            StaticDemo.area(2); // We have two methods with same name area but with different no of paramaters called overloading,
+            StaticDemo.Area(2); // We have two methods with same name area but with different no of paramaters called overloading,
                                 // now which method will be called here? It will be decided by compiler with comparing with differences between these methods w.r.t
                                 // no of parameter, return type, etc .. at compile time, so it is called compile time polymorphism.
         }

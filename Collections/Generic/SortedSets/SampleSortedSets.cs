@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CSharp_Practice.Collections.Generic.SortedSets
+﻿namespace CSharp_Practice.Collections.Generic.SortedSets
 {
     public class SampleSortedSets
     {
@@ -64,7 +58,7 @@ namespace CSharp_Practice.Collections.Generic.SortedSets
             }
 
             //RemoveWhere method
-            sortedSet3.RemoveWhere(isEven);
+            sortedSet3.RemoveWhere(IsEven);
             Console.WriteLine("Elements of sortedSet3 after using RemoveWhere method:");
             foreach (int set in sortedSet3)
             {
@@ -72,7 +66,7 @@ namespace CSharp_Practice.Collections.Generic.SortedSets
             }
         }
 
-        private static bool isEven(int value)
+        private static bool IsEven(int value)
         {
             return value % 2 == 0;
         }

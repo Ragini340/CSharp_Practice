@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Formats.Asn1;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CSharp_Practice.OOPs.StaticClassPOC
+﻿namespace CSharp_Practice.OOPs.StaticClassPOC
 {
     public static class StaticDemo
     {
@@ -19,13 +12,13 @@ namespace CSharp_Practice.OOPs.StaticClassPOC
         */
 
         //Area of rectange
-        public static int area(int a, int b)
+        public static int Area(int a, int b)
         {
             return a * b;
         }
 
         //Area of square
-        public static int area(int a)
+        public static int Area(int a)
         {
             return a * a;
         }

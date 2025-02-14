@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CSharp_Practice.Collections.Generic.HashSet
+﻿namespace CSharp_Practice.Collections.Generic.HashSet
 {
     public class RemoveWhereMethodInHashSet
     {
@@ -34,7 +28,7 @@ namespace CSharp_Practice.Collections.Generic.HashSet
             }
 
             //RemoveWhere Method
-            set.RemoveWhere(isEven);
+            set.RemoveWhere(IsEven);
 
             Console.WriteLine("Elements in HashSet after calling RemoveWhere Method:");
             foreach (int value in set)
@@ -43,7 +37,7 @@ namespace CSharp_Practice.Collections.Generic.HashSet
             }
         }
 
-        private static bool isEven(int i)
+        private static bool IsEven(int i)
         {
             return i % 2 == 0;
         }

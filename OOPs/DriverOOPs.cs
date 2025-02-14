@@ -3,7 +3,6 @@ using CSharp_Practice.AccessSpecifiers.Public;
 using CSharp_Practice.OOPs.Abstraction;
 using CSharp_Practice.OOPs.ClassAndObjects;
 using CSharp_Practice.OOPs.Constructor;
-using CSharp_Practice.OOPs.Encapsulation;
 using CSharp_Practice.OOPs.Inheritance;
 
 namespace CSharp_Practice.OOPs
@@ -71,11 +70,11 @@ namespace CSharp_Practice.OOPs
 
             //Abstractions
             ChildAbstract_Implementor childAbstract = new ChildAbstract_Implementor(); //Here reference of child class 
-            childAbstract.area();
-            childAbstract.calculate();
+            childAbstract.Area();
+            childAbstract.Calculate();
 
             ChildAbstract obj = new ChildAbstract_Implementor(); //Here reference of Abstract class, so it is calling calculate of Abstract class method
-            obj.calculate();
+            obj.Calculate();
 
             //PublicAccessSpecifiersPOC
             /*public: The public members can be accessed by any other code in the same assembly or another assembly that references it.*/

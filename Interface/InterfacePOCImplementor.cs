@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CSharp_Practice.Interface
+﻿namespace CSharp_Practice.Interface
 {
     public class InterfacePOCImplementor : InterfacePOC
     {
@@ -31,7 +25,7 @@ namespace CSharp_Practice.Interface
             speed = speed - decrement; //2-1 = 1
         }
 
-        public void printVehicleState()
+        public void PrintVehicleState()
         {
             Console.WriteLine("Speed: " + speed);
             Console.WriteLine("Gear: " + gear);
@@ -45,7 +39,7 @@ namespace CSharp_Practice.Interface
             interfacePOCImplementor.ApplyBrake(1);
             interfacePOCImplementor.SpeedUp(2);
             Console.WriteLine("Print vehicle state: ");
-            interfacePOCImplementor.printVehicleState();
+            interfacePOCImplementor.PrintVehicleState();
         }
 
     }

@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CSharp_Practice.Interface
+﻿namespace CSharp_Practice.Interface
 {
     public class Vehicle : InterfacePOC
     {
@@ -31,7 +25,7 @@ namespace CSharp_Practice.Interface
             speed = speed - dec; //2-0 = 2
         }
 
-        public void state()
+        public void State()
         {
             Console.WriteLine("Vehicle's gear :" + gear);
             Console.WriteLine("Vehicle's speed: " + speed);
@@ -43,7 +37,7 @@ namespace CSharp_Practice.Interface
             vehicle.ChangeGear(5);
             vehicle.SpeedUp(2);
             vehicle.ApplyBrake(0);
-            vehicle.state();
+            vehicle.State();
         }
 
     }
