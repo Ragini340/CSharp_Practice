@@ -1,29 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net.NetworkInformation;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CSharp_Practice.CodingQuestions.Strings
+﻿namespace CSharp_Practice.CodingQuestions.Strings
 {
     /*Write a program to find duplicate letter using array*/
     public class FindDuplicateLettersUsingArray
     {
-        public static void Main(string[] args)
+        public static void FindDuplicateLetters(string str)
         {
-            string str1 = "RaginiR";
-           /* char[] characterArray = new char[str1.Length];
-            for (int i = 0; i < str1.Length; i++)
-            {
-                characterArray[i] = str1[i];
-            }
-            Console.WriteLine(characterArray);*/
+            /* char[] characterArray = new char[str1.Length];
+           for (int i = 0; i < str1.Length; i++)
+           {
+               characterArray[i] = str1[i];
+           }
+           Console.WriteLine(characterArray);*/
 
             //Using ToCharArray() Method
-            char[] characterArray = str1.ToCharArray();
+            char[] characterArray = str.ToCharArray();
             Console.WriteLine(characterArray);
-   
+
             int count;
             Console.WriteLine("Duplicates are: ");
             for (int i = 0; i < characterArray.Length; i++)
@@ -43,7 +35,14 @@ namespace CSharp_Practice.CodingQuestions.Strings
                     Console.WriteLine(characterArray[i]);
                 }
             }
-
         }
+
+        public static void Main(string[] args)
+        {
+            Console.WriteLine("Enter the input string");
+            string str = Console.ReadLine();
+            FindDuplicateLetters(str);
+        }
+
     }
 }
