@@ -1,20 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CSharp_Practice.CodingQuestions.Strings
+﻿namespace CSharp_Practice.CodingQuestions.Strings
 {
     /*Write a program to find duplicate letter using Dictionary*/
     public class FindDuplicateLetters
     {
-        public static void Main(string[] args)
+        public static void FindDuplicateLetter(string str)
         {
-            string str1 = "GeeksforGeeks";
             Dictionary<char, int> dictionary = new Dictionary<char, int>();
 
-            foreach (char c in str1)
+            foreach (char c in str)
             {
                 if (dictionary.ContainsKey(c))
                 {
@@ -31,10 +24,16 @@ namespace CSharp_Practice.CodingQuestions.Strings
             {
                 if (kvps.Value > 1)
                 {
-                    Console.WriteLine("{0} {1}", kvps.Key, kvps.Value);
+                    Console.WriteLine("{0} -> {1}", kvps.Key, kvps.Value);
                 }
             }
+        }
 
+        public static void Main(string[] args)
+        {
+            Console.WriteLine("Enter the input string");
+            string str = Console.ReadLine();
+            FindDuplicateLetter(str);
         }
 
     }
