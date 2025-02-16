@@ -32,7 +32,7 @@
         {
             Console.WriteLine("Enter the string");
             string str = Console.ReadLine();
-            CountOccurrencesOfEachCharacterInString.FindCountOfOccurrencesOfEachCharacter(str);
+            FindCountOfOccurrencesOfEachCharacter(str);
         }
 
     }
