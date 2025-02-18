@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CSharp_Practice.CodingQuestions.Dictionary
+﻿namespace CSharp_Practice.CodingQuestions.Dictionary
 {
     public class Anagram
     {
@@ -19,9 +13,7 @@ namespace CSharp_Practice.CodingQuestions.Dictionary
 
                 if (dic1.ContainsKey(ch))
                 {
-                    int currentCount = dic1[ch];
-                    Console.WriteLine("Current count is ?"+currentCount+" "+ch);
-                    dic1[ch] = currentCount + 1; //Overriding value with new value
+                    dic1[ch]++;
                 }
                 else
                 {
@@ -75,9 +67,8 @@ namespace CSharp_Practice.CodingQuestions.Dictionary
             string str1 = "geeks";
             string str2 = "kseeg";
             bool isAnagram = IsAnagram(str1, str2);
-            Console.WriteLine(isAnagram);
+            Console.WriteLine("Is anagram? " + isAnagram);
         }
 
     }
 }
-
