@@ -51,8 +51,8 @@ namespace CSharp_Practice.Asynchronous_Programming.Task_Class.LimitTheNumberOfCo
         {
             await Task.Delay(1000);
             int i = 0;
-            string message = $"Credit card number: {creditCard.CardNumber} Name: {creditCard.Name} processed" + " " + i;
-            Console.WriteLine($"Credit card number: {creditCard.CardNumber} processed" + " " + i);
+            string message = $"Credit card number: {creditCard.CardNumber} Name: {creditCard.Name} processed";
+            Console.WriteLine($"Credit card number: {creditCard.CardNumber} processed");
             return message;
         }
 
@@ -62,7 +62,7 @@ namespace CSharp_Practice.Asynchronous_Programming.Task_Class.LimitTheNumberOfCo
             Console.WriteLine($"Main thread started");
 
             List<CreditCard> creditCards = LimitTheNumberOfConcurrentTasks.GenerateCreditCards(15);
-            Console.WriteLine($"Credit card generated : {creditCards.Count}");
+            Console.WriteLine($"Credit card generated: {creditCards.Count}");
 
             ProcessCreditCards(creditCards);
 
