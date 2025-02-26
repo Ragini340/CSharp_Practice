@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CSharp_Practice.CodingQuestions
+﻿namespace CSharp_Practice.CodingQuestions
 {
     public class FibonacciSeries
     {
@@ -22,12 +16,16 @@ namespace CSharp_Practice.CodingQuestions
             return a;
         }
 
-        static void Main()
+        public static void Main(string[] args)
         {
-            for (int i = 0; i < 5; i++)
+            Console.WriteLine("Enter the number upto which fibonacci series has to be find: ");
+            int num = int.Parse(Console.ReadLine());
+            Console.WriteLine("Fibonacci series upto " + num + " is: ");
+            for (int i = 0; i <= num; i++)
             {
-                Console.WriteLine(Fibonacci(i));
+                Console.Write(Fibonacci(i) + " ");
             }
         }
+
     }
 }
