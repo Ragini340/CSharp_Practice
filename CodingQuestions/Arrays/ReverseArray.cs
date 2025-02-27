@@ -15,16 +15,27 @@
                 left = left + 1;
                 right = right - 1;
             }
-        }
 
-        public static void Main(string[] args)
-        {
-            int[] arr = { 1, 4, 3, 2, 6, 5 };
-            Reverse(arr);
+            Console.WriteLine("Reversed array: ");
             for (int i = 0; i < arr.Length; i++)
             {
                 Console.Write(arr[i] + " ");
             }
+        }
+
+        public static void Main(string[] args)
+        {
+            Console.WriteLine("Enter the array length: ");
+            int length = int.Parse(Console.ReadLine());
+            int[] arr = new int[length];
+            Console.WriteLine("Elements of array are:-");
+            for (int i = 0; i < length; i++)
+            {
+                Console.Write("Array element {0}: ", i);
+                arr[i] = Convert.ToInt32(Console.ReadLine());
+            }
+
+            Reverse(arr);
         }
 
     }
