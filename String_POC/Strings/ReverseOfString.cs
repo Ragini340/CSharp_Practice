@@ -1,35 +1,25 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CSharp_Practice.String_POC.Strings
+﻿namespace CSharp_Practice.String_POC.Strings
 {
     public class ReverseOfString
     {
         public static string Reverse(string input)
         {
-            //Converting string to character array
             char[] charArray = input.ToCharArray();
-
-            //Declaring an empty string
             string reversedString = string.Empty;
 
-            //Iterating the each character from right to left 
             for (int i = charArray.Length - 1; i > -1; i--)
             {
-                //Appending each character to the reversed string
                 reversedString += charArray[i];
             }
 
-            //Returning the reversed string
             return reversedString;
         }
 
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            Console.WriteLine(Reverse("Best"));
+            Console.WriteLine("Enter the input string:");
+            string str = Console.ReadLine();
+            Console.WriteLine("Reversed string is: " + Reverse(str));
         }
 
     }
