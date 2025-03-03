@@ -78,9 +78,8 @@ namespace CSharp_Practice.OOPs
 
             //PublicAccessSpecifiersPOC
             /*public: The public members can be accessed by any other code in the same assembly or another assembly that references it.*/
-            PublicAccessSpecifiersPOC publicAccessModifierPOC = new PublicAccessSpecifiersPOC();
-            publicAccessModifierPOC.data = 1;
-
+            PublicAccessSpecifiersPOC publicAccessModifierPOC = new PublicAccessSpecifiersPOC(1,"Ragini");
+          
             //PrivateAccessSpecifiersPOC
             /*private: The private members can be accessed only by code in the same class.*/
             PrivateAccessSpecifiersPOC privateAccessModifierPOC = new PrivateAccessSpecifiersPOC();
