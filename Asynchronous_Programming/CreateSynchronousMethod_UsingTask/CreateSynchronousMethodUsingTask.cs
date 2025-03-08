@@ -1,4 +1,4 @@
-﻿namespace CSharp_Practice.Asynchronous_Programming
+﻿namespace CSharp_Practice.Asynchronous_Programming.CreateSynchronousMethod_UsingTask
 {
     public class CreateSynchronousMethodUsingTask
     {
@@ -38,7 +38,6 @@
             TestMethod3();
             TestMethod4();
             Console.WriteLine("Main method completed");
-            Console.ReadKey();
         }
 
     }
