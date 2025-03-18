@@ -1,19 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CSharp_Practice.CodingQuestions.Strings
+﻿namespace CSharp_Practice.CodingQuestions.Strings
 {
     //This program will reverse the whole sentence
     public class ReverseWholeSentence
     {
-        public static void Main(string[] args)
+        public static void ReverseTheSentence(string str1)
         {
-            Console.WriteLine("Enter the sentence: ");
-            string str1 = Console.ReadLine();
-
             string[] arrStr = str1.Split(" ");
             string reverseWord1 = "";
 
@@ -37,6 +28,13 @@ namespace CSharp_Practice.CodingQuestions.Strings
 
             Console.WriteLine("Revered sentence is: " + reverseWord1);
             Console.WriteLine("Length of the revered sentence is: " + reverseWord1.Length);
+        }
+
+        public static void Main(string[] args)
+        {
+            Console.WriteLine("Enter the sentence: ");
+            string str1 = Console.ReadLine();
+            ReverseTheSentence(str1);
         }
 
     }
