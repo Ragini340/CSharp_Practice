@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CSharp_Practice.Solid_Principle.Dependency_Injection.All_Types_Of_DependencyInjection.Common
+namespace CSharp_Practice.Dependency_Injection.All_Types_Of_DependencyInjection.Common
 {
     public class EmployeeDAL : IEmployeeDAL
     {

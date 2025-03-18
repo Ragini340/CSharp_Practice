@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using CSharp_Practice.Solid_Principle.Dependency_Injection.All_Types_Of_DependencyInjection.Common;
+﻿using CSharp_Practice.Dependency_Injection.All_Types_Of_DependencyInjection.Common;
 
-namespace CSharp_Practice.Solid_Principle.Dependency_Injection.All_Types_Of_DependencyInjection.Constructor_Injection
+namespace CSharp_Practice.Dependency_Injection.All_Types_Of_DependencyInjection.Constructor_Injection
 {
     public class Driver
     {
@@ -20,5 +15,6 @@ namespace CSharp_Practice.Solid_Principle.Dependency_Injection.All_Types_Of_Depe
                 Console.WriteLine($"ID = {emp.Id}, Name = {emp.Name}, Department = {emp.Department}");
             }
         }
+
     }
 }

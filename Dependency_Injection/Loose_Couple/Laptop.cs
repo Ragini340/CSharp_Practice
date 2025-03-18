@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CSharp_Practice.Solid_Principle.Dependency_Injection.Loose_Couple
+namespace CSharp_Practice.Dependency_Injection.Loose_Couple
 {
     public class Laptop : IRemote
     {

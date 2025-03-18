@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CSharp_Practice.Solid_Principle.Dependency_Injection.Tightly_Couple
+namespace CSharp_Practice.Dependency_Injection.Tightly_Couple
 {
     /*Disadvantages of Tight coupling: 
     Television without a remote control does not work.

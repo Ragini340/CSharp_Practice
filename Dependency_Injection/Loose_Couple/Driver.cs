@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CSharp_Practice.Solid_Principle.Dependency_Injection.Loose_Couple
+namespace CSharp_Practice.Dependency_Injection.Loose_Couple
 {
     public class Driver
     {
@@ -16,7 +16,7 @@ namespace CSharp_Practice.Solid_Principle.Dependency_Injection.Loose_Couple
             Remote remote2 = new Remote(Laptop.Instance);
             remote2.Run();
 
-            Remote remote3= new Remote(Refrigerator.Instance);
+            Remote remote3 = new Remote(Refrigerator.Instance);
             remote3.Run();
         }
     }

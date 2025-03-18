@@ -4,20 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CSharp_Practice.Solid_Principle.Dependency_Injection.Loose_Couple
+namespace CSharp_Practice.Dependency_Injection.Tightly_Couple
 {
-    public class Television : IRemote
+    public class Television
     {
         private static Television television;
 
-        public void Run()
-        {
-            Console.WriteLine("Television started");
-        }
-
         static Television()
         {
-          television = new Television();
+            television = new Television(); //Creating object of Television in static constructor
         }
 
         public static Television Instance
@@ -26,6 +21,11 @@ namespace CSharp_Practice.Solid_Principle.Dependency_Injection.Loose_Couple
             {
                 return television;
             }
+        }
+
+        public void Run()
+        {
+            Console.WriteLine("Television started");
         }
     }
 }
