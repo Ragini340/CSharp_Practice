@@ -1,16 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CSharp_Practice.CodingQuestions.Strings
+﻿namespace CSharp_Practice.CodingQuestions.Strings
 {
     public class StringPalindrome
     {
         public static bool IsPalindromeString(string str)
         {
-            str = str.ToLower();
             string reverse = "";
 
             for (int i = str.Length - 1; i >= 0; i--)
