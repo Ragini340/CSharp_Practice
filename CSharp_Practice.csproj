@@ -2,25 +2,199 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net9.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>CSharp_Practice.Threads.MultiThreading.MultiThreadedEx</StartupObject>
+	  
+    <!--<StartupObject>CSharp_Practice.Threads.MultiThreading.MultiThreadedEx</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.Threads.MultiThreading.MultiThreadedEx</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.Collections.Generic.HashSet.HashSetCreation</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.Collections.Generic.HashSet.HashSetPOC</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.OOPs.ClassAndObjects.PartialClass.PartialClassWithInterface.Driver</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.Extension_Method.Driver</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.Extension_Method.StringExtension</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.BoxingUnboxing.BoxingUnboxingPOC</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.Threads.ThreadNameProperty</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.OOPs.Inheritance.Single_Inheritance.B</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.CodingQuestions.LCMOfTwoNumbers</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.OOPs.Method_Overriding.MethodOverridingDriver</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.OOPs.Method_Overriding.Method_Hiding.Child</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.CodingQuestions.ToPrintRandomNumbersUsingforeach</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.CodingQuestions.MultiThreading.EvenAndOddNumsUsingMultiThreading</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.CodingQuestions.Strings.StringPalindrome</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.Interface.Default_Method.GooglePay</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.Interface.Default_Method.PopClub</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.Interface.Default_Method.Driver</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.Interface.Diamond_Problem.Diamond_Problem_New.Driver</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.CodingQuestions.Dictionary.StringScramble</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.Threads.Single_Thread.ImplementingSleepInSingleThread</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.Threads.MultiThreading.MultiThreadedEx</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.Threads.MultiThreading.MultipleForegroundAndOneBackgroundThread</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.Threads.MultiThreading.BackgroundAndForegroundThreadEx</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.Threads.MultiThreading.YieldMethodPOC</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.Threads.MultiThreading.ThreadPropertiesAndMethods</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.Threads.MultiThreading.ThreadAbort</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.Threads.MultiThreading.ThreadStatePOC</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.Threads.MultiThreading.ThreadInstanceUsingAnonymousMethod</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.Threads.MultiThreading.ThreadInstanceUsingLambdaExpression</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.Threads.MultiThreading.ThreadFunctionUsingParameter</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.Threads.MultiThreading.Type_Safe_ThreadFunction.Driver</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.Threads.MultiThreading.Type_Safe_ThreadFunction.Reference_Type.ParameterizedThreadStartEx</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.CodingQuestions.Strings.CountOccurrencesOfEachCharacterInString</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.CodingQuestions.SumOfDigits</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.CodingQuestions.Arrays.FindMostFrequentArrayElement</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.OOPs.Abstraction.SimpleExample.Driver</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.Interface.Diamond_Problem.Diamond_Problem_New.Driver</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.Threads.MultiThreading.RetrieveData_From_ThreadFunction.Driver</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.Threads.MultiThreading.JoinMethodPOC</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.Threads.MultiThreading.JoinWithTimeSpanPOC</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.Threads.MultiThreading.Synchronization.ExampleWithoutThreadSynchronization</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.Threads.MultiThreading.Synchronization.Real_Time_Example.WithoutSynchronization.Driver</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.Threads.MultiThreading.Synchronization.Real_Time_Example.WithSynchronization.Driver</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.OOPs.ClassAndObjects.PartialClass.PartialClassDriver</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.Threads.MultiThreading.Synchronization.Monitors.MonitorClassEnterAndExitMethodPOC</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.Threads.MultiThreading.Synchronization.Monitors.MonitorClassOverloadedEnterMethodPOC</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.Threads.MultiThreading.Synchronization.Monitors.MonitorClassTryEnterPOC</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.Threads.MultiThreading.Synchronization.Monitors.MonitorClassTryEnterWithJoinMethod</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.Extension_Method.Driver</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.Threads.MultiThreading.Synchronization.WithoutSynchronization.WithoutLockOnSharedResourcesEx</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.CodingQuestions.Strings.CheckForValidIPAddress</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.CodingQuestions.Arrays.SplitArrayIntoTwoEqualSumSubarrays</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.Destructors.DestructorDriverClass</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.Threads.MultiThreading.Synchronization.Using_Semaphore.SemaphorePOC</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.Threads.MultiThreading.Synchronization.Using_Mutex.MutexClassOpenExistingMethodPOC</StartupObject>-->
+	  <!--startupobject>CSharp_Practice.Threads.MultiThreading.Synchronization.Using_Mutex.CheckMutexState</startupobject>-->
+	  <!--<StartupObject>CSharp_Practice.Threads.MultiThreading.Synchronization.Using_Mutex.ParametrizedWaitOnePOC</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.CodingQuestions.Stack.ValidParenthesis</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.Threads.MultiThreading.Synchronization.Using_Mutex.MutexClassPOC</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.CodingQuestions.Lists.ValidParenthesisGeneration</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.Threads.MultiThreading.Synchronization.Using_Mutex.MutexClassOpenExistingMethodPOC</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.Threads.MultiThreading.Synchronization.Using_Semaphore.SemaphorePOC</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.Threads.MultiThreading.Synchronization.Using_SemaphoreSlim.SemaphoreSlimPOC</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.Threads.MultiThreading.Synchronization.Using_SemaphoreSlim.SemaphoreSlimPOC</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.Threads.MultiThreading.Thread_Pool.ThreadPoolExample</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.Threads.MultiThreading.Performance_Testing.PerfTestingUsingAndWithoutUsingThreadPool</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.Threads.MultiThreading.Performance_Testing.EvenOddSum</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.Threads.MultiThreading.Thread_Pool.ThreadPoolExample</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.Threads.Single_Thread.Performance_Testing.EvenOddSum</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.Threads.MultiThreading.Synchronization.Deadlock.Avoiding_Deadlock.Using_Lock.Driver</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.Threads.MultiThreading.Synchronization.Deadlock.Avoiding_Deadlock.Using_Monitor.Driver</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.Threads.MultiThreading.Synchronization.Deadlock.Example_Deadlock.Driver</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.Threads.MultiThreading.Synchronization.Using_Semaphore.SemaphoreOpenExistingPOC</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.CodingQuestions.Arrays.FindTheSumOfArrayElements</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.CodingQuestions.Strings.ReverseAllWords</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.CodingQuestions.Strings.WordFrequency</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.CodingQuestions.Strings.FindVowelsInString</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.Interface.Diamond_Problem.Diamond_Problem_New.Driver</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.Interface.Diamond_Problem.Driver</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.CodingQuestions.Stack.StringReverseUsingStack</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.Recursion.StringReverseUsingRecursion</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.Collections.Generic.Stack.StackPOC</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.Collections.Generic.Stack.ComplexType.StackPOC</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.Threads.MultiThreading.Synchronization.Using_AutoResetEvent_ManualResetEvent.AutoResetEvents.AutoResetEventPOC</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.Threads.MultiThreading.Synchronization.Using_AutoResetEvent_ManualResetEvent.AutoResetEvents.AutoResetEventWithMainThreadAndOneNewThread</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.Threads.MultiThreading.Synchronization.Using_AutoResetEvent_ManualResetEvent.ManualResetEvents.ManualResetEventPOC</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.Threads.MultiThreading.Synchronization.Using_AutoResetEvent_ManualResetEvent.AutoResetEvents.AutoResetEventWithMultipleWaitOneAndOneSetMethod</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.Threads.MultiThreading.Thread_LifeCycle.ThreadLifeCycle_POC</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.Threads.MultiThreading.ThreadsPriorities.ThreadsPrioritiesPOC</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.Threads.MultiThreading.Thread_Abort.ThreadAbortPOC</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.Threads.MultiThreading.Thread_Abort.ThreadAbortWithOneParameter</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.Threads.MultiThreading.Thread_Abort.CallingAbortMethodOnRunningThread</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.Threads.MultiThreading.Thread_Abort.CallingAbortMethodOnUnstartedThread</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.Threads.MultiThreading.Thread_Abort.CallingAbortMethodOnBlockedThread</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.Threads.MultiThreading.InterThread_Communication.ExampleWithoutWaitAndPulse</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.Threads.MultiThreading.InterThread_Communication.InterthreadCommunicationExWithWaitAndPulse</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.Asynchronous_Programming.WithoutAsyncAndAwait</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.Asynchronous_Programming.ExampleWithAsyncAndAwait</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.Asynchronous_Programming.Task_Class.AsyncAndAwaitPOC</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.Asynchronous_Programming.Task_Class.AsyncWithAwaitOperatorPOC</StartupObjeckct>-->
+	  <!--<StartupObject>CSharp_Practice.CodingQuestions.Arrays.SortTheArrayOfAlphabets</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.CodingQuestions.Arrays.SortTheArrayOfIntegers</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.Asynchronous_Programming.Task_Class.Return_ComplexType_ValueFromTask.ReturnComplexType_FromTask</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.CodingQuestions.Strings.CountOccurrencesOfEachCharacterInString</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.String_POC.Strings.ReverseOfString</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.CodingQuestions.Strings.StringPalindrome</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.CodingQuestions.Strings.FindDuplicateLetters</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.CodingQuestions.Strings.FindDuplicateLettersUsingArray</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.Asynchronous_Programming.Task_Class.ReturnValue_FromTask.TaskWithErrors</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.Asynchronous_Programming.Task_Class.ReturnValue_FromTask.ReturnValueFromTask</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.Asynchronous_Programming.Task_Class.AsyncAndAwaitPOC</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.Asynchronous_Programming.Task_Class.ExecuteMultipleTasks.ExecuteMultipleTasksUsingWhenAllMethod</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.Asynchronous_Programming.Task_Class.ExecuteMultipleTasks.ExecuteMultipleTasksUsingWhenAllMethod</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.Asynchronous_Programming.Task_Class.ExecuteMultipleTasks.OffloadingTheCurrentThread</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.Asynchronous_Programming.Task_Class.ExecuteMultipleTasks.UseTheAwaitMethodBeforeTaskRun</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.Asynchronous_Programming.Task_Class.LimitTheNumberOfConcurrentTasks.LimitTheNumberOfConcurrentTasks</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.LINQ.Select_Methods.SelectMethod</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.Asynchronous_Programming.Task_Cancellation.Realtime_Example.RealtimeEx_ToUnderstand_Cancellation</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.CodingQuestions.Arrays.ReverseArray</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.ADO_DotNet_DataSet_Using_SQLServer.DataSet_Using_SQLServer_Database_Ex</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.ADO_DotNet_DataSet_Using_SQLServer.DataSetWithMultipleDatabaseTable</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.ADO_DotNet_DataSet_Using_SQLServer.Accessing_DataTable_FromDataSet_Using_DefaultTableName</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.ADO_DotNet_DataSet_Using_SQLServer.CopyCloneClearMethodsOfDataSetObject</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.ADO_DotNet_DataSet_Using_SQLServer.RemoveDataTable_From_DataSet</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.ADO_DotNet_Using_StoredProcedures.CallAStoredProcedureWithoutParameters</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.LINQ.Overloaded_VersionOf_WhereMethod.OverloadedVersionOfWhereMethod</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.Asynchronous_Programming.Task_Cancellation.Cooperative_Cancellation.Cooperative_CancellationEx</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.Asynchronous_Programming.Task_Cancellation.Time_Based_Cancellation.TimeBasedCancellation_Ex</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.Asynchronous_Programming.Task_Cancellation.UserInitiated_Cancellation.UserInitiatedCancellation_Ex</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.Asynchronous_Programming.Task_Cancellation.TaskCancellation_UsingCancellationToken</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.LINQ.Where_Methods.WhereMethodEx</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.LINQ.Select_Methods.SelectMethodPOC</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.LINQ.Select_Methods.UserList_SelectMethod</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.Asynchronous_Programming.Task_Class.LimitTheNumberOfConcurrentTasks.RealTimeExample.LimitTheNumberOfConcurrentTasks_RealTimeEx</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.CodingQuestions.FibonacciSeries</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.CodingQuestions.Dictionary.Anagram</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.Asynchronous_Programming.Task_Class.LimitTheNumberOfConcurrentTasks.HandleResponseWithMultipleTasksUsingWhenAllMethod</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.CodingQuestions.SwapTwoNums_WithoutThirdVariable</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.CodingQuestions.CountNumbersHavingZeroAsADigit</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.CodingQuestions.CheckForPrimeNo</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.CodingQuestions.CheckNearestPrimeNo</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.CodingQuestions.Pre_Post_IncrementOperator.PreAndPostIncrementPOC</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.CodingQuestions.CheckIfNumberDivisibleBy3And5</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.CodingQuestions.Dictionary.GroupTheAnagrams</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.AccessSpecifiers.Internal.InternalModifierPOC</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.AccessSpecifiers.Private.PrivateAccessSpecifiersPOC</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.AccessSpecifiers.Internal.InternalModifierPOC</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.AccessSpecifiers.Protected_Internal.Child</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.Return_Using_Out_Keyword.ReturnUsingOutKeyword</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.AccessSpecifiers.Public.PublicAccessSpecifiersPOC</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.AccessSpecifiers.Protected_Private.Child</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.AccessSpecifiers.Protected.Child</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.CodingQuestions.Strings.ReverseString_Without_Affecting_SpecialCharacters</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.CodingQuestions.GroupAnagrams</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.Asynchronous_Programming.CreateSynchronousMethod_UsingTask.CreateSynchronousMethodUsingTask</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.Asynchronous_Programming.RetryPattern.RetryPattern_POC</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.CodingQuestions.FindPrimeNumberFrom1ToN</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.CodingQuestions.Arrays.ToRemoveDuplicateEntriesFromArray</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.ExceptionHandlings.Custom_Exception.CustomExceptionEx</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.Design_Pattern.Creational_Design_Pattern.Prototype_Design_Pattern.Driver</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.CodingQuestions.CheckIfRemainderIsPrime</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.CodingQuestions.Strings.CheckIfAStringIsSubstringOfAnother</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.CodingQuestions.Collections.SortTheBooksBasedOnId</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.CodingQuestions.LINQ.QueryToFetchEvenNumbers</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.CodingQuestions.FindEvenNumbersInVeryLargeNumbers</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.CodingQuestions.Strings.ReverseWholeSentence</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.ExceptionHandlings.Custom_Exception.CustomException</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.Cloning.CallByValueExample</StartupObject>-->
+	  <StartupObject>CSharp_Practice.CodingQuestions.Strings.FindTheNumberOfValidWords</StartupObject>
+
+	 
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="ArrayLists\**" />
     <Compile Remove="CodingQuestions\HashSet\**" />
+    <EmbeddedResource Remove="ArrayLists\**" />
     <EmbeddedResource Remove="CodingQuestions\HashSet\**" />
+    <None Remove="ArrayLists\**" />
     <None Remove="CodingQuestions\HashSet\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="ExceptionHandlings\" />
-    <Folder Include="ArrayLists\" />
-  </ItemGroup>
-
-  <ItemGroup>
+    <PackageReference Include="ADO.Net.Client.Core" Version="1.4.5" />
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="6.0.1" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.9.0" />
   </ItemGroup>
 
 </Project>
