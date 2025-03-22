@@ -1,12 +1,12 @@
 ﻿namespace CSharp_Practice.ExceptionHandlings.Custom_Exception
 {
-    public class CustomExceptionPOC : Exception
+    public class OddNumberException : Exception
     {
         public override string Message
         {
             get
             {
-                return "Divisor Cannot be Odd Number";
+                return "Divisor cannot be odd number";
             }
         }
 
@@ -14,7 +14,7 @@
         {
             get
             {
-                return "Get More Information from here: https://github.com/Ragini340";
+                return "Get more information from here: https://github.com/Ragini340";
             }
         }
 
@@ -23,32 +23,31 @@
             int Number1, Number2, Result;
             try
             {
-                Console.WriteLine("Enter First Number:");
+                Console.WriteLine("Enter the first number:");
                 Number1 = int.Parse(Console.ReadLine());
-
-                Console.WriteLine("Enter Second Number:");
+                Console.WriteLine("Enter the second number:");
                 Number2 = int.Parse(Console.ReadLine());
 
                 if (Number2 % 2 > 0)
                 {
-                    throw new CustomExceptionPOC();
+                    throw new OddNumberException();
                 }
                 Result = Number1 / Number2;
                 Console.WriteLine(Result);
             }
-            catch (CustomExceptionPOC one)
+            catch (OddNumberException ex)
             {
-                Console.WriteLine($"Message: {one.Message}");
-                Console.WriteLine($"HelpLink: {one.HelpLink}");
-                Console.WriteLine($"Source: {one.Source}");
-                Console.WriteLine($"StackTrace: {one.StackTrace}");
+                Console.WriteLine($"Message: {ex.Message}");
+                Console.WriteLine($"HelpLink: {ex.HelpLink}");
+                Console.WriteLine($"Source: {ex.Source}");
+                Console.WriteLine($"StackTrace: {ex.StackTrace}");
             }
         }
 
         public static void Main(string[] args)
         {
             CustomException();
-            Console.WriteLine("End of the Program");
+            Console.WriteLine("End of the program");
         }
 
     }
