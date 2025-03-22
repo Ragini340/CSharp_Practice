@@ -10,18 +10,28 @@
             {
                 int result = b / a;
             }
-            catch (IndexOutOfRangeException ex)
+            catch (DivideByZeroException ex)
             {
-                Console.WriteLine("Exception occurred" + ex);
-            }
-            catch (FileNotFoundException ex)
-            {
-                Console.WriteLine("Exception occurred" + ex);
+                ex.HelpLink = "https://dotnettutorials.net/lesson/exception-handling-csharp/";
+                Console.WriteLine("Message: " + ex.Message);
+                Console.WriteLine("HelpLink: " + ex.StackTrace);
+                Console.WriteLine("Source: " + ex.Source);
+                Console.WriteLine("StackTrace: " + ex.HelpLink);
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Exception occurred: " + ex.Message);
+                Console.WriteLine("Error occurred: " + ex.Message);
             }
+            /*catch (IndexOutOfRangeException ex) //Compile time error: A previous catch clause already catches all exceptions of this or
+                                                 //of a super type ('type')
+            {
+                Console.WriteLine("Exception occurred" + ex);
+            }
+            catch (FileNotFoundException ex) //Compile time error: A previous catch clause already catches all exceptions of this or
+                                            //of a super type ('type')
+            {
+                Console.WriteLine("Exception occurred" + ex);
+            }*/
         }
 
     }
