@@ -12,7 +12,7 @@
             }
             catch (DivideByZeroException ex)
             {
-                ex.HelpLink = "https://dotnettutorials.net/lesson/exception-handling-csharp/";
+                ex.HelpLink = "https://github.com/Ragini340";
                 Console.WriteLine("Message: " + ex.Message);
                 Console.WriteLine("HelpLink: " + ex.StackTrace);
                 Console.WriteLine("Source: " + ex.Source);
