@@ -20,7 +20,7 @@
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex.Message);
+                Console.WriteLine("Exception occurred: " + ex.Message);
             }
         }
 
