@@ -22,7 +22,7 @@
 
         public static void Main(string[] args)
         {
-            try             //Now exception has been handled in Main(), so catch block will handle the excpetion.
+            try             //Now exception has been handled in Main(), so catch block will handle the exception.
                             //If we do not handle the exception here then unhandled exception will occurr.
             {
                 int result = M1();

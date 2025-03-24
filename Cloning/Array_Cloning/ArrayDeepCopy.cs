@@ -23,7 +23,7 @@ namespace CSharp_Practice.Cloning.Array_Cloning
             Console.WriteLine("Aftre changing value at index 3 hashcode of index 3 is: " +clonedArray[3].GetHashCode());
             Console.WriteLine(string.Join(", ", originalArray));
             Console.WriteLine(string.Join(", ", clonedArray));
-            Console.WriteLine("Now cloned array hascode: " + clonedArray.GetHashCode());
+            Console.WriteLine("Now cloned array hashcode: " + clonedArray.GetHashCode());
 
             //So we can conclude that Clone() method is doing deep copy i.e if we are doing any changes in copied object
             //and not changing original object and vice versa.
