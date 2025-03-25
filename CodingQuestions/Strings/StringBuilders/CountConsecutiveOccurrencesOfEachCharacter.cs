@@ -1,6 +1,6 @@
 ﻿using System.Text;
 
-namespace CSharp_Practice.String_POC.StringBuilder_POC
+namespace CSharp_Practice.CodingQuestions.Strings.StringBuilders
 {
     /*Input: Test
       Output: 1T1E1S1T
@@ -30,7 +30,7 @@ namespace CSharp_Practice.String_POC.StringBuilder_POC
 
         public static void Main(string[] args)
         {
-            Console.WriteLine("Enter the input string");
+            Console.WriteLine("Enter the input string:");
             string str = Console.ReadLine();
             string result = FindCharacterCountString(str);
             Console.WriteLine(result.ToUpper());
