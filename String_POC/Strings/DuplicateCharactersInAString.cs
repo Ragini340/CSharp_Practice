@@ -1,21 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CSharp_Practice.String_POC.Strings
+﻿namespace CSharp_Practice.String_POC.Strings
 {
     public class DuplicateCharactersInAString
     {
-        public static void Main()
+        public static void FindDuplicateCharacters(string str)
         {
-            string inputString = "Hello";
             int[] count = new int[256];
 
             Console.WriteLine("Duplicate characters in the string and their counts are:");
 
-            foreach (char c in inputString)
+            foreach (char c in str)
             {
                 count[c] = count[c] + 1;
             }
@@ -29,5 +22,11 @@ namespace CSharp_Practice.String_POC.Strings
             }
         }
 
+        public static void Main()
+        {
+            string inputString = "Hello";
+            FindDuplicateCharacters(inputString);
+        }
+          
     }
 }
