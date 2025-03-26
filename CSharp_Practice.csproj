@@ -176,9 +176,27 @@
 	  <!--<StartupObject>CSharp_Practice.CodingQuestions.Strings.ReverseWholeSentence</StartupObject>-->
 	  <!--<StartupObject>CSharp_Practice.ExceptionHandlings.Custom_Exception.CustomException</StartupObject>-->
 	  <!--<StartupObject>CSharp_Practice.Cloning.CallByValueExample</StartupObject>-->
-	  <StartupObject>CSharp_Practice.CodingQuestions.Strings.FindTheNumberOfValidWords</StartupObject>
-
-	 
+	  <!--<StartupObject>CSharp_Practice.CodingQuestions.Strings.FindTheNumberOfValidWords</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.ExceptionHandlings.Exception_Handling</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.ExceptionHandlings.Custom_Exception.CustomException</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.ExceptionHandlings.Custom_Exception.OddNumberException</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.ExceptionHandlings.Custom_Exception.EmploymentForm</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.ExceptionHandlings.Inner_Exception.InnerException</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.ExceptionHandlings.FinallyBlock.FinallyBlockPOC</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.ExceptionHandlings.FinallyBlock.Try_FinallyBlockWithoutCatchBlock</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.ExceptionHandlings.ExceptionDepthConcept</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.ExceptionHandlings.ExceptionHandling_Abuse.ExceptionHandlingAbuse</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.ExceptionHandlings.ExceptionHandling_Abuse.PreventingExceptionHandlingAbuse</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.String_POC.Strings.DuplicateCharactersInAString</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.String_POC.Strings.ArrayOfString</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.String_POC.StringBuilder_POC.StringBuilderPOC</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.CodingQuestions.Strings.StringBuilders.CountConsecutiveOccurrencesOfEachCharacter</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.CodingQuestions.SwapTwoNums_WithoutThirdVariable</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.CodingQuestions.ReverseANumber_WithoutUsing_ModulusOperator</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.CodingQuestions.PrintAlphabetLetters_OneUppercase_And_OneLowerCase</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.CodingQuestions.Arrays.FindLargestConsecutiveSequenceInArray</StartupObject>-->
+	  <StartupObject>CSharp_Practice.CodingQuestions.SquareRootOfANumber</StartupObject>
+	  
   </PropertyGroup>
 
   <ItemGroup>
