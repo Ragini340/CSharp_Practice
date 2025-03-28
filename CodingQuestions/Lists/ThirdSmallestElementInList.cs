@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CSharp_Practice.CodingQuestions.Lists
+﻿namespace CSharp_Practice.CodingQuestions.Lists
 {
     //Program to find third smallest number in a list
     /*Time Complexity: O(N + N) = O(2N) = N 
@@ -13,26 +6,15 @@ namespace CSharp_Practice.CodingQuestions.Lists
     */
     public class ThirdSmallestElementInList
     {
-        public static void Main(string[] args)
+        public static void ThirdSmallestElementOfList(List<int> lists)
         {
-            List<int> lists = new List<int> { 5, 4, 3, 2, 2, 7, 7, 6, 7, 7, 7 };
-            //Checking for negative scenario with below list:-
-            // List<int> lists = new List<int> { 2, 2, 2 };
-            Console.WriteLine("Elements of list are: ");
-            foreach (int list in lists)
-            {
-                Console.WriteLine(list);
-            }
-            Console.WriteLine();
-
             lists.Sort();
-            Console.WriteLine("Sorted list's elements in ascending order are: ");
+            Console.WriteLine("\nSorted list's elements in ascending order are: ");
             for (int i = 0; i < lists.Count; i++)
             {
                 int num = lists[i];
                 Console.WriteLine(num);
             }
-            Console.WriteLine();
 
             int index = 0;
             for (int i = 1; i < lists.Count; i++)
@@ -40,13 +22,12 @@ namespace CSharp_Practice.CodingQuestions.Lists
                 if (lists[0] != lists[i])
                 {
                     int num = lists[i];
-                    Console.WriteLine("Second smallest number is: " + num);
+                    Console.WriteLine("\nSecond smallest number is: " + num);
                     index = i;
-                    Console.WriteLine("Index of second smallest number is: " + i);
+                    Console.WriteLine("\nIndex of second smallest number is: " + i);
                     break;
                 }
             }
-            Console.WriteLine();
 
             bool flag = false;
             int thirdSmallest = int.MaxValue;
@@ -64,13 +45,27 @@ namespace CSharp_Practice.CodingQuestions.Lists
             }
             if (flag)
             {
-                Console.WriteLine("Third smallest number is: " + thirdSmallest);
+                Console.WriteLine("\nThird smallest number is: " + thirdSmallest);
             }
             else
             {
                 Console.WriteLine("Element not found");
             }
         }
-        
+
+        public static void Main(string[] args)
+        {
+            List<int> lists = new List<int> { 5, 4, 3, 2, 2, 7, 7, 6, 7, 7, 7 };
+            //Checking for negative scenario with below list:-
+            // List<int> lists = new List<int> { 2, 2, 2 };
+            Console.WriteLine("Elements of list are: ");
+            foreach (int list in lists)
+            {
+                Console.WriteLine(list);
+            }
+
+            ThirdSmallestElementOfList(lists);
+        }
+
     }
 }
