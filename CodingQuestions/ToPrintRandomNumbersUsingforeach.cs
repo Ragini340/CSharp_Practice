@@ -5,9 +5,8 @@
    */
     public class ToPrintRandomNumbersUsingforeach
     {
-        public static void Main(string[] args)
+        public static void PrintRandomNumbersUsingforeach(List<int> list)
         {
-            List<int> list = new List<int>();
             Random random = new Random();
             for (int i = 0; i < 10; i++)
             {
@@ -20,6 +19,12 @@
             {
                 Console.Write(num + " ");
             }
+        }
+
+        public static void Main(string[] args)
+        {
+            List<int> list = new List<int>();
+            PrintRandomNumbersUsingforeach(list);
         }
 
     }

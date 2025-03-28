@@ -6,7 +6,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
 	  
-    <!--<StartupObject>CSharp_Practice.Threads.MultiThreading.MultiThreadedEx</StartupObject>-->
+      <!--<StartupObject>CSharp_Practice.Threads.MultiThreading.MultiThreadedEx</StartupObject>-->
 	  <!--<StartupObject>CSharp_Practice.Threads.MultiThreading.MultiThreadedEx</StartupObject>-->
 	  <!--<StartupObject>CSharp_Practice.Collections.Generic.HashSet.HashSetCreation</StartupObject>-->
 	  <!--<StartupObject>CSharp_Practice.Collections.Generic.HashSet.HashSetPOC</StartupObject>-->
@@ -195,8 +195,16 @@
 	  <!--<StartupObject>CSharp_Practice.CodingQuestions.ReverseANumber_WithoutUsing_ModulusOperator</StartupObject>-->
 	  <!--<StartupObject>CSharp_Practice.CodingQuestions.PrintAlphabetLetters_OneUppercase_And_OneLowerCase</StartupObject>-->
 	  <!--<StartupObject>CSharp_Practice.CodingQuestions.Arrays.FindLargestConsecutiveSequenceInArray</StartupObject>-->
-	  <StartupObject>CSharp_Practice.CodingQuestions.SquareRootOfANumber</StartupObject>
-	  
+	  <!--<StartupObject>CSharp_Practice.CodingQuestions.SquareRootOfANumber</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.CodingQuestions.LINQ.ListTupleAndDictionaryComprehensions</StartupObjekuct>-->
+	  <!--<StartupObject>CSharp_Practice.CodingQuestions.Lists.SecondLargestElementInList</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.CodingQuestions.Lists.SecondSmallestElementInList</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.CodingQuestions.Lists.ThirdLargestElementInList</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.CodingQuestions.Lists.ThirdSmallestElementInList</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.CodingQuestions.Strings.ReverseAllWords</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.CodingQuestions.Strings.ReverseWord</StartupObject>-->
+	  <StartupObject>CSharp_Practice.CodingQuestions.ToPrintRandomNumbersUsingforeach</StartupObject>
+  
   </PropertyGroup>
 
   <ItemGroup>
