@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CSharp_Practice.OOPs.Constructor
+﻿namespace CSharp_Practice.OOPs.Constructor
 {
     public class ParameterizedConstructor
     {
@@ -15,6 +9,13 @@ namespace CSharp_Practice.OOPs.Constructor
         {
             this.name = name;
             this.id = id;
+        }
+
+        public static void Main(string[] args)
+        {
+            ParameterizedConstructor parameterizedConstructor = new ParameterizedConstructor("Rag", 340);
+            Console.WriteLine("Name is: " + parameterizedConstructor.name);
+            Console.WriteLine("Id is: " + parameterizedConstructor.id);
         }
 
     }

@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CSharp_Practice.OOPs.Constructor
+﻿namespace CSharp_Practice.OOPs.Constructor
 {
     public class DefaultConstructor
     {
@@ -14,6 +8,13 @@ namespace CSharp_Practice.OOPs.Constructor
         public DefaultConstructor()
         {
             Console.WriteLine("Default constructor called");
+        }
+
+        public static void Main(string[] args)
+        {
+            DefaultConstructor defaultConstructor = new DefaultConstructor();
+            Console.WriteLine(defaultConstructor.num);
+            Console.WriteLine(defaultConstructor.age);
         }
 
     }

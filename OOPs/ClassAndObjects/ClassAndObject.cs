@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CSharp_Practice.OOPs.ClassAndObjects
+﻿namespace CSharp_Practice.OOPs.ClassAndObjects
 {
     public class ClassAndObject
     {
@@ -15,8 +9,7 @@ namespace CSharp_Practice.OOPs.ClassAndObjects
         String color;
 
         // Constructor Declaration of Class
-        public ClassAndObject(String name, String breed,
-                    int age, String color)
+        public ClassAndObject(String name, String breed, int age, String color)
         {
             this.name = name;
             this.breed = breed;
@@ -51,10 +44,14 @@ namespace CSharp_Practice.OOPs.ClassAndObjects
         // Method 1
         public String PrintProperties()
         {
-            return ("My name is " + this.GetName()
-                    + ".\nMy breed, age and color are " + this.GetBreed()
-                    + ", " + this.GetAge().ToString() + ", " + this.GetColor());
+            return ("My name is " + this.GetName() + ".\nMy breed, age and color are " + this.GetBreed() + ", " + this.GetAge().ToString() + ", " + this.GetColor());
         }
 
+        public static void Main(string[] args)
+        {
+            ClassAndObject classAndObject = new ClassAndObject("Rag", "Abc", 5, "white");
+            Console.WriteLine(classAndObject.PrintProperties());
+        }
+           
     }
 }

@@ -203,8 +203,15 @@
 	  <!--<StartupObject>CSharp_Practice.CodingQuestions.Lists.ThirdSmallestElementInList</StartupObject>-->
 	  <!--<StartupObject>CSharp_Practice.CodingQuestions.Strings.ReverseAllWords</StartupObject>-->
 	  <!--<StartupObject>CSharp_Practice.CodingQuestions.Strings.ReverseWord</StartupObject>-->
-	  <StartupObject>CSharp_Practice.CodingQuestions.ToPrintRandomNumbersUsingforeach</StartupObject>
-  
+	  <!--<StartupObject>CSharp_Practice.CodingQuestions.ToPrintRandomNumbersUsingforeach</StartupObject>-->
+	  <!--<StartupObject>CSharps_Practice.ExceptionHandlings.UnhandledExceptionPOC</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.OOPs.Constructor.CopyConstructor</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.OOPs.ClassAndObjects.ClassAndObject</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.OOPs.Constructor.ParameterizedConstructor</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.OOPs.Inheritance.AnimalDriver</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.OOPs.Abstraction.AbstractionPOCDriver</StartupObject>-->
+	  <StartupObject>CSharp_Practice.OOPs.PublicAccessSpecifiersPOC_Driver</StartupObject>
+	  
   </PropertyGroup>
 
   <ItemGroup>

@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CSharp_Practice.OOPs.Constructor
+﻿namespace CSharp_Practice.OOPs.Constructor
 {
     public class CopyConstructor
     {
@@ -14,8 +8,8 @@ namespace CSharp_Practice.OOPs.Constructor
         //Copy constructor declaration
         public CopyConstructor(CopyConstructor copyConstructor)
         {
-           month = copyConstructor.month;
-           year = copyConstructor.year;
+            month = copyConstructor.month;
+            year = copyConstructor.year;
         }
 
         //Instace constructor
@@ -32,6 +26,15 @@ namespace CSharp_Practice.OOPs.Constructor
             {
                 return "Month: " + month + "\nYear: " + year.ToString();
             }
+        }
+
+        public static void Main(string[] args)
+        {
+            CopyConstructor copyConstructor1 = new CopyConstructor("Aug", 2000);
+            //Copying copyConstructor1 details copying to copyConstructor2
+            CopyConstructor copyConstructor2 = new CopyConstructor(copyConstructor1);
+            Console.WriteLine("CopyConstructor: ");
+            Console.WriteLine(copyConstructor2.Details);
         }
 
     }
