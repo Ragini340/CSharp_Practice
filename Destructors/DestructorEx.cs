@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CSharp_Practice.Destructors
+﻿namespace CSharp_Practice.Destructors
 {
     public class DestructorEx
     {
@@ -36,6 +30,13 @@ namespace CSharp_Practice.Destructors
         ~DestructorEx()
         {
             Console.WriteLine("Destructor was called");
+        }
+
+        public static void Main(string[] args)
+        {
+            DestructorEx destructorEx = new DestructorEx();
+            destructorEx.SetValues(2, 3);
+            destructorEx.DisplayValue();
         }
 
     }
