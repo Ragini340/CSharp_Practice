@@ -210,7 +210,8 @@
 	  <!--<StartupObject>CSharp_Practice.OOPs.Constructor.ParameterizedConstructor</StartupObject>-->
 	  <!--<StartupObject>CSharp_Practice.OOPs.Inheritance.AnimalDriver</StartupObject>-->
 	  <!--<StartupObject>CSharp_Practice.OOPs.Abstraction.AbstractionPOCDriver</StartupObject>-->
-	  <StartupObject>CSharp_Practice.OOPs.PublicAccessSpecifiersPOC_Driver</StartupObject>
+	  <!--<StartupObject>CSharp_Practice.OOPs.PublicAccessSpecifiersPOC_Driver</StartupObject>-->
+	  <StartupObject>CSharp_Practice.Cloning.CallByReferenceExample</StartupObject>
 	  
   </PropertyGroup>
 
