@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CSharp_Practice.OOPs.Constructor
+﻿namespace CSharp_Practice.OOPs.Constructor
 {
     public class StaticConstructor
     {
@@ -25,6 +19,14 @@ namespace CSharp_Practice.OOPs.Constructor
         {
             //The non-static constructors are never called implicitly, they are always called explicitly.
             Console.WriteLine("Default constructor has been called");
+        }
+
+        public static void Main(string[] args)
+        {
+            StaticConstructor staticConstructor = new StaticConstructor();
+            Console.WriteLine("Main method execution has been started");
+            Console.WriteLine(staticConstructor.i);
+            Console.WriteLine(StaticConstructor.j);
         }
 
     }

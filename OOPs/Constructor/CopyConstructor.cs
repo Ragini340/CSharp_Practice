@@ -28,14 +28,5 @@
             }
         }
 
-        public static void Main(string[] args)
-        {
-            CopyConstructor copyConstructor1 = new CopyConstructor("Aug", 2000);
-            //Copying copyConstructor1 details copying to copyConstructor2
-            CopyConstructor copyConstructor2 = new CopyConstructor(copyConstructor1);
-            Console.WriteLine("CopyConstructor: ");
-            Console.WriteLine(copyConstructor2.Details);
-        }
-
     }
 }

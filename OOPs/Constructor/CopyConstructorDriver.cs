@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CSharp_Practice.OOPs.Constructor
+﻿namespace CSharp_Practice.OOPs.Constructor
 {
     public class CopyConstructorDriver
     {
@@ -15,7 +9,6 @@ namespace CSharp_Practice.OOPs.Constructor
             CopyConstructor obj2 = new CopyConstructor("Apr", 2000);//Passing all pramater again to create obj2. This is error prone and time consuming if huge data is there in constructor parameter
                                                                     //Console.WriteLine(obj1.ToString());
                                                                     //Console.WriteLine(obj2.ToString());
-
 
             //Here, if we know that obj12 needs same data like obj11 then we do not use obj11, so we are using obj11 to copy same data in obj12.
             CopyConstructor obj11 = new CopyConstructor("Jun", 2000);
@@ -45,6 +38,12 @@ namespace CSharp_Practice.OOPs.Constructor
             Console.WriteLine(employee8.ToString());
             Console.WriteLine(employee9.ToString());
             Console.WriteLine(employee10.ToString());
+
+            CopyConstructor copyConstructor1 = new CopyConstructor("Aug", 2000);
+            //Copying copyConstructor1 details copying to copyConstructor2
+            CopyConstructor copyConstructor2 = new CopyConstructor(copyConstructor1);
+            Console.WriteLine("CopyConstructor: ");
+            Console.WriteLine(copyConstructor2.Details);
         }
 
     }

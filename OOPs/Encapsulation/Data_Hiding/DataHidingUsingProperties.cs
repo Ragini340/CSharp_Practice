@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CSharp_Practice.OOPs.Encapsulation.Data_Hiding
+﻿namespace CSharp_Practice.OOPs.Encapsulation.Data_Hiding
 {
     public class DataHidingUsingProperties
     {
@@ -28,11 +22,8 @@ namespace CSharp_Practice.OOPs.Encapsulation.Data_Hiding
                 }
             }
         }
-    }
 
-    public class DataHidingUsingPropertiesDriver
-    {
-        public static void Main()
+        public static void Main(string[] args)
         {
             try
             {
@@ -47,6 +38,6 @@ namespace CSharp_Practice.OOPs.Encapsulation.Data_Hiding
                 Console.WriteLine(ex.Message);
             }
         }
-    }
 
+    }
 }

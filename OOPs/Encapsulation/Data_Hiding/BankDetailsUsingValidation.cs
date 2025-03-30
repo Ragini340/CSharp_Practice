@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CSharp_Practice.OOPs.Encapsulation.Data_Hiding
+﻿namespace CSharp_Practice.OOPs.Encapsulation.Data_Hiding
 {
     public class BankDetailsUsingValidation
     {
@@ -26,10 +20,7 @@ namespace CSharp_Practice.OOPs.Encapsulation.Data_Hiding
                 throw new Exception("Please enter a positive value");
             }
         }
-    }
 
-    class BankDetailsUsingValidationDriver
-    {
         public static void Main(string[] args)
         {
             try
@@ -45,6 +36,6 @@ namespace CSharp_Practice.OOPs.Encapsulation.Data_Hiding
                 Console.WriteLine(ex.Message);
             }
         }
-    }
 
+    }
 }

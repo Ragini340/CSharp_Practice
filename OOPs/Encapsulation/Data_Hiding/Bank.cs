@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CSharp_Practice.OOPs.Encapsulation.Data_Hiding
+﻿namespace CSharp_Practice.OOPs.Encapsulation.Data_Hiding
 {
     public class Bank
     {
@@ -19,15 +13,13 @@ namespace CSharp_Practice.OOPs.Encapsulation.Data_Hiding
         {
             this.balance = balance;
         }
-    }
 
-    public class Driver
-    {
-        public static void Main()
+        public static void Main(string[] args)
         {
             Bank bank = new Bank();
             bank.SetBalance(100);
             Console.WriteLine("Balance is: " + bank.GetBalance());
         }
+
     }
 }
