@@ -211,7 +211,20 @@
 	  <!--<StartupObject>CSharp_Practice.OOPs.Inheritance.AnimalDriver</StartupObject>-->
 	  <!--<StartupObject>CSharp_Practice.OOPs.Abstraction.AbstractionPOCDriver</StartupObject>-->
 	  <!--<StartupObject>CSharp_Practice.OOPs.PublicAccessSpecifiersPOC_Driver</StartupObject>-->
-	  <StartupObject>CSharp_Practice.Cloning.CallByReferenceExample</StartupObject>
+	  <!--<StartupObject>CSharp_Practice.Cloning.CallByReferenceExample</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.String_POC.Strings.StringPalindrome</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.Collections.Generic.WhatIsGeneric.GenericsPOC</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.Destructors.DestructorEx</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.Indexer.Employee</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.OOPs.Constructor.StaticConstructor</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.OOPs.Constructor.CopyConstructorDriver</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.OOPs.Encapsulation.Data_Hiding.Bank</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.OOPs.Encapsulation.Data_Hiding.BankDetailsUsingValidation</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.OOPs.Method_Overloading.MethodOverloadingPOCs</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.OOPs.StaticClassPOC.StaticDemo</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.Recursion.Factorial</StartupObject>-->
+	  <!--<StartupObject>CSharp_Practice.Recursion.PrintArrayUsingRecursion</StartupObject>-->
+	  <StartupObject>CSharp_Practice.Recursion.SumOfNumbers</StartupObject>
 	  
   </PropertyGroup>
 

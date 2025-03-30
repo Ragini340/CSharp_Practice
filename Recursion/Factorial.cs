@@ -1,14 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CSharp_Practice.Recursion
+﻿namespace CSharp_Practice.Recursion
 {
     public class Factorial
     {
-        int n = 1;
         public int FindFactorial(int n)
         {
             if (n == 0 || n == 1)
@@ -17,10 +10,7 @@ namespace CSharp_Practice.Recursion
             }
             return FindFactorial(n - 1) * n;
         }
-    }
 
-    public class FactorialDriver
-    {
         public static void Main(string[] args)
         {
             int n = 5;
@@ -28,5 +18,6 @@ namespace CSharp_Practice.Recursion
             int fact = factorial.FindFactorial(n);
             Console.WriteLine(fact);
         }
+
     }
 }
