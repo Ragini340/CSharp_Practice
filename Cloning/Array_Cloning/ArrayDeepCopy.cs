@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CSharp_Practice.Cloning.Array_Cloning
+﻿namespace CSharp_Practice.Cloning.Array_Cloning
 {
     public class ArrayDeepCopy
     {
@@ -14,13 +8,13 @@ namespace CSharp_Practice.Cloning.Array_Cloning
             string[] clonedArray = (string[])originalArray.Clone();
             Console.WriteLine(string.Join(", ", originalArray));
             Console.WriteLine(string.Join(", ", clonedArray));
-            Console.WriteLine("Original array hascode: " + originalArray.GetHashCode());
-            Console.WriteLine("Cloned array hascode: " + clonedArray.GetHashCode());
-            Console.WriteLine("Hashcode at index 3 for original array: " +originalArray[3].GetHashCode());
-            Console.WriteLine("Hashcode at index 3 for cloned array: " +clonedArray[3].GetHashCode());
+            Console.WriteLine("Original array hashcode: " + originalArray.GetHashCode());
+            Console.WriteLine("Cloned array hashcode: " + clonedArray.GetHashCode());
+            Console.WriteLine("Hashcode at index 3 for original array: " + originalArray[3].GetHashCode());
+            Console.WriteLine("Hashcode at index 3 for cloned array: " + clonedArray[3].GetHashCode());
 
             clonedArray[3] = "demo";
-            Console.WriteLine("Aftre changing value at index 3 hashcode of index 3 is: " +clonedArray[3].GetHashCode());
+            Console.WriteLine("After changing value at index 3 hashcode of index 3 is: " + clonedArray[3].GetHashCode());
             Console.WriteLine(string.Join(", ", originalArray));
             Console.WriteLine(string.Join(", ", clonedArray));
             Console.WriteLine("Now cloned array hashcode: " + clonedArray.GetHashCode());
