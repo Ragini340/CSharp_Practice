@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 namespace CSharp_Practice.LINQ.Join_Methods
 {
     /*Write a C# program using LINQ to join Employees and Departments and display Employee Name with Department Name.*/
+
     public class JoinMethod_POC
     {
         public static void GetEmployeeDepartments()
