@@ -42,3 +42,7 @@ SELECT Department,
        MAX(Salary) AS HighestSalary
 FROM Employee
 GROUP BY Department;
+
+8. Find Average Salary
+SELECT AVG(Salary) AS AverageSalary
+FROM Employee;
