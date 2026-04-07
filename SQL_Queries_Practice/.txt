@@ -5,3 +5,10 @@ WHERE Salary < (
     SELECT MAX(Salary)
     FROM Employee
 );
+
+2. Find Duplicate Records
+SELECT Name,
+       COUNT(*) AS DuplicateCount
+FROM Employee
+GROUP BY Name
+HAVING COUNT(*) > 1;
