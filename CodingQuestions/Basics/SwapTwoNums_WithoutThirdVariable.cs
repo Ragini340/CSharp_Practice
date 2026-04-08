@@ -1,4 +1,4 @@
-﻿namespace CSharp_Practice.CodingQuestions
+﻿namespace CSharp_Practice.CodingQuestions.Basics
 {
     public class SwapTwoNums_WithoutThirdVariable
     {
