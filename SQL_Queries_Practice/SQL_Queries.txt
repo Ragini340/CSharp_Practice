@@ -46,3 +46,11 @@ GROUP BY Department;
 8. Find Average Salary
 SELECT AVG(Salary) AS AverageSalary
 FROM Employee;
+
+9. Employees Earning More Than Average Salary
+SELECT *
+FROM Employee
+WHERE Salary > (
+    SELECT AVG(Salary)
+    FROM Employee
+);
