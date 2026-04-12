@@ -20,3 +20,8 @@ WHERE Salary = (
     SELECT MAX(Salary)
     FROM Employee
 );
+
+4. Employees Whose Name Starts With 'A'
+SELECT *
+FROM Employee
+WHERE Name LIKE 'A%';
