@@ -54,3 +54,7 @@ WHERE Salary > (
     SELECT AVG(Salary)
     FROM Employee
 );
+
+10. Update Salary By 10%
+UPDATE Employee
+SET Salary = Salary + (Salary * 0.10);
