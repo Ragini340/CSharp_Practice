@@ -25,3 +25,8 @@ WHERE Salary = (
 SELECT *
 FROM Employee
 WHERE Name LIKE 'A%';
+
+5. Get Top 3 Salaries
+SELECT DISTINCT TOP 3 Salary
+FROM Employee
+ORDER BY Salary DESC;
