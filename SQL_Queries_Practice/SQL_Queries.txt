@@ -58,3 +58,13 @@ WHERE Salary > (
 10. Update Salary By 10%
 UPDATE Employee
 SET Salary = Salary + (Salary * 0.10);
+
+11. Create Employee Table
+CREATE TABLE Employee
+(
+    Id INT PRIMARY KEY IDENTITY(1,1),
+    Name VARCHAR(100),
+    Salary DECIMAL(10,2),
+    Department VARCHAR(50),
+    JoiningDate DATE
+);
