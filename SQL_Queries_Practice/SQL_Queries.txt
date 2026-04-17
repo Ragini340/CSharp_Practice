@@ -30,3 +30,9 @@ WHERE Name LIKE 'A%';
 SELECT DISTINCT TOP 3 Salary
 FROM Employee
 ORDER BY Salary DESC;
+
+6. Find Total Salary Department Wise
+SELECT Department,
+       SUM(Salary) AS TotalSalary
+FROM Employee
+GROUP BY Department;
