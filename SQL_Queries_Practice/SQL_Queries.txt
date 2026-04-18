@@ -36,3 +36,9 @@ SELECT Department,
        SUM(Salary) AS TotalSalary
 FROM Employee
 GROUP BY Department;
+
+7. Maximum Salary Department Wise
+SELECT Department,
+       MAX(Salary) AS HighestSalary
+FROM Employee
+GROUP BY Department;
