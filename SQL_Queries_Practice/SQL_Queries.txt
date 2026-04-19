@@ -197,3 +197,20 @@ SELECT TOP 5 *
 FROM Employees
 ORDER BY Salary DESC;
 ==========================================
+
+23. Difference between UNION and UNION ALL
+
+UNION
+
+Removes duplicates:
+SELECT Name FROM Table1
+UNION
+SELECT Name FROM Table2;
+
+UNION ALL
+
+Keeps duplicates:
+SELECT Name FROM Table1
+UNION ALL
+SELECT Name FROM Table2;
+==========================================
