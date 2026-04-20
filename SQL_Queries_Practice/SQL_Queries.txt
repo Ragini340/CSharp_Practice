@@ -214,3 +214,12 @@ SELECT Name FROM Table1
 UNION ALL
 SELECT Name FROM Table2;
 ==========================================
+
+24. Find Employees Without Department
+
+SELECT e.*
+FROM Employees e
+LEFT JOIN Departments d
+ON e.DepartmentID = d.DepartmentID
+WHERE d.DepartmentID IS NULL;
+==========================================
