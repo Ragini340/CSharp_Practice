@@ -223,3 +223,15 @@ LEFT JOIN Departments d
 ON e.DepartmentID = d.DepartmentID
 WHERE d.DepartmentID IS NULL;
 ==========================================
+
+25. What is a CTE (Common Table Expression)?
+
+WITH EmployeeCTE AS
+(
+    SELECT *
+    FROM Employees
+    WHERE Salary > 5000
+)
+SELECT *
+FROM EmployeeCTE;
+==========================================
