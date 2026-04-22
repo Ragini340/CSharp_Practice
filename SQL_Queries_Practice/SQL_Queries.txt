@@ -145,6 +145,13 @@ SELECT e.Name, d.DepartmentName
 FROM Employees e
 LEFT JOIN Departments d
 ON e.DepartmentID = d.DepartmentID;
+
+SELF JOIN
+SELECT E.EmployeeName,
+       M.EmployeeName AS Manager
+FROM Employees E
+LEFT JOIN Employees M
+ON E.ManagerID = M.EmployeeID;
 ==========================================
 
 17. Find Duplicate Records
