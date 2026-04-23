@@ -242,3 +242,19 @@ WITH EmployeeCTE AS
 SELECT *
 FROM EmployeeCTE;
 ==========================================
+
+26. What are Temporary Tables?
+Local:
+
+CREATE TABLE #Temp
+(
+    ID INT
+);
+
+Global:
+
+CREATE TABLE ##Temp
+(
+    ID INT
+);
+==========================================
