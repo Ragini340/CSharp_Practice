@@ -191,3 +191,9 @@ SELECT
     ROW_NUMBER() OVER (ORDER BY Salary DESC) AS RowNum
 FROM Employees;
 ==========================================
+
+22. Retrieve Top 5 Highest Salaries
+SELECT TOP 5 *
+FROM Employees
+ORDER BY Salary DESC;
+==========================================
