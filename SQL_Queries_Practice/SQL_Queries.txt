@@ -183,3 +183,11 @@ Only one clustered index per table.
 CREATE CLUSTERED INDEX IX_EmployeeID
 ON Employees(EmployeeID);
 ==========================================
+
+21. ROW_NUMBER Example
+SELECT
+    Name,
+    Salary,
+    ROW_NUMBER() OVER (ORDER BY Salary DESC) AS RowNum
+FROM Employees;
+==========================================
