@@ -175,3 +175,11 @@ WHERE Salary >
     FROM Employees
 );
 ==========================================
+
+20. What is a Clustered Index?
+Physically sorts data in the table.
+Only one clustered index per table.
+
+CREATE CLUSTERED INDEX IX_EmployeeID
+ON Employees(EmployeeID);
+==========================================
