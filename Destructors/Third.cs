@@ -19,5 +19,6 @@ namespace CSharp_Practice.Destructors
             obj = null;
             GC.Collect();
         }
+
     }
 }
