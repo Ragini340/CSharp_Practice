@@ -164,4 +164,14 @@ FROM Employees;
 
 Use: SELECT * FROM EmployeeView;
 ==========================================
- 
+
+ 19. Find Employees Earning More Than Average Salary
+
+SELECT *
+FROM Employees
+WHERE Salary >
+(
+    SELECT AVG(Salary)
+    FROM Employees
+);
+==========================================
