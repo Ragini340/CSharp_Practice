@@ -146,3 +146,10 @@ FROM Employees e
 LEFT JOIN Departments d
 ON e.DepartmentID = d.DepartmentID;
 ==========================================
+
+17. Find Duplicate Records
+SELECT Name, COUNT(*)
+FROM Employees
+GROUP BY Name
+HAVING COUNT(*) > 1;
+==========================================
