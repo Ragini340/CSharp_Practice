@@ -153,3 +153,15 @@ FROM Employees
 GROUP BY Name
 HAVING COUNT(*) > 1;
 ==========================================
+
+18. What is a View?
+
+A view is a virtual table based on a query.
+
+CREATE VIEW EmployeeView AS
+SELECT Name, Salary
+FROM Employees;
+
+Use: SELECT * FROM EmployeeView;
+==========================================
+ 
