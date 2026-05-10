@@ -113,3 +113,19 @@ WHERE Salary <
     FROM Employee
 );
 ==========================================
+
+15. Difference between WHERE and HAVING
+
+WHERE
+
+Filters rows before grouping.
+
+HAVING
+
+Filters groups after aggregation.
+
+SELECT DepartmentID, COUNT(*)
+FROM Employees
+GROUP BY DepartmentID
+HAVING COUNT(*) > 5;
+==========================================
