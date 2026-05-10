@@ -129,3 +129,20 @@ FROM Employees
 GROUP BY DepartmentID
 HAVING COUNT(*) > 5;
 ==========================================
+
+16. What are Joins?
+
+Joins combine data from multiple tables.
+
+INNER JOIN
+SELECT e.Name, d.DepartmentName
+FROM Employees e
+INNER JOIN Departments d
+ON e.DepartmentID = d.DepartmentID;
+
+LEFT JOIN
+SELECT e.Name, d.DepartmentName
+FROM Employees e
+LEFT JOIN Departments d
+ON e.DepartmentID = d.DepartmentID;
+==========================================
