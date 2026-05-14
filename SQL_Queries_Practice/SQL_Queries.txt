@@ -96,3 +96,20 @@ TRUNCATE TABLE Employees;
 DROP TABLE Employees;
 ==========================================
 
+14. Find the 2nd Highest Salary
+
+Table: Employee
+
+EmpID	Salary
+1	    5000
+2	    7000
+3	    6000
+
+SELECT MAX(Salary) AS SecondHighestSalary
+FROM Employee
+WHERE Salary <
+(
+    SELECT MAX(Salary)
+    FROM Employee
+);
+==========================================
