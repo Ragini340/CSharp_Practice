@@ -85,3 +85,14 @@ SELECT *
 FROM Employee
 WHERE Department IS NULL;
 ==========================================
+
+13. Difference between DELETE, TRUNCATE, and DROP
+Example:
+
+DELETE FROM Employees WHERE EmployeeID = 10;
+
+TRUNCATE TABLE Employees;
+
+DROP TABLE Employees;
+==========================================
+
