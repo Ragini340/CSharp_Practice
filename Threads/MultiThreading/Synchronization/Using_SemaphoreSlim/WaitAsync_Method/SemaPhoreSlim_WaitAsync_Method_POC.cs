@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace CSharp_Practice.Threads.MultiThreading.Synchronization.Using_SemaphoreSlim
+namespace CSharp_Practice.Threads.MultiThreading.Synchronization.Using_SemaphoreSlim.WaitAsync_Method
 {
     public class SemaPhoreSlim_WaitAsync_Method_POC
     {

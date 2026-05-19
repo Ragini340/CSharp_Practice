@@ -1,4 +1,4 @@
-﻿namespace CSharp_Practice.Threads.MultiThreading.Synchronization.Using_SemaphoreSlim
+﻿namespace CSharp_Practice.Threads.MultiThreading.Synchronization.Using_SemaphoreSlim.Wait_Method
 {
     public class SemaphoreSlimPOC
     {
