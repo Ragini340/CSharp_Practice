@@ -3,7 +3,7 @@
     public class SemaphoreSlimPOC
     {
         //Only 3 threads can access resource simulteniously
-        public SemaphoreSlim _semaphoreSlim = new SemaphoreSlim(initialCount: 3);
+        public SemaphoreSlim _semaphoreSlim = new SemaphoreSlim(3);
 
         public void SemaphoreSlimFunction()
         {
