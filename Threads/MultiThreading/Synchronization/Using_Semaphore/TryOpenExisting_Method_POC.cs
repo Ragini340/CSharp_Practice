@@ -19,7 +19,7 @@ namespace CSharp_Practice.Threads.MultiThreading.Synchronization.Using_Semaphore
             }
             else
             {
-                sem = new Semaphore(1, 1, "NewSemaphoreDemoObject");
+                sem = new Semaphore(1, 1, "SemaphoreDemoObject");
                 Console.WriteLine("New semaphore created.");
             }
         }
