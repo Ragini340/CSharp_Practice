@@ -19,11 +19,9 @@
             try
             {
                 semaphore.WaitOne();
-                for (int i = 1; i < 6; i++)
-                {
-                    Console.WriteLine(Thread.CurrentThread.Name + " " + i);
-                }
-                Console.WriteLine("Exit: " + Thread.CurrentThread.Name + " is completed its task");
+                Console.WriteLine("Success: " + Thread.CurrentThread.Name + " is Doing its work");
+                Thread.Sleep(5000);
+                Console.WriteLine(Thread.CurrentThread.Name + " Exit.");
             }
             finally
             {
