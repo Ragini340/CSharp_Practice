@@ -1,9 +1,9 @@
 ﻿namespace CSharp_Practice.Threads.MultiThreading.Synchronization.Using_Mutex
 {
-    public class CheckMutexState
+    public class UseDestructor_InsteadOf_ReleaseMutex
     {
         private Mutex _mutex;
-        public CheckMutexState(bool initiallyOwned, string? name)
+        public UseDestructor_InsteadOf_ReleaseMutex(bool initiallyOwned, string? name)
         {
             _mutex = new Mutex(true, "MyMutex");
         }
@@ -28,14 +28,14 @@
             Console.WriteLine(mutexTryOpen);
         }
 
-        ~CheckMutexState()
+        ~UseDestructor_InsteadOf_ReleaseMutex()
         {
             _mutex.Dispose();
         }
 
         public static void Main(string[] args)
         {
-            CheckMutexState obj = new CheckMutexState(true, "MyMutex");
+            UseDestructor_InsteadOf_ReleaseMutex obj = new UseDestructor_InsteadOf_ReleaseMutex(true, "MyMutex");
             obj.CheckAllMutexFeature();
         }
 
