@@ -65,8 +65,9 @@
             evenThread.Start();
             Thread.Sleep(100);
             oddThread.Start();
-            oddThread.Join();
-            evenThread.Join();
+            //Join method is not required
+            // oddThread.Join();
+            //evenThread.Join();
         }
 
     }
