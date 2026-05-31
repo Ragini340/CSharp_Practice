@@ -21,13 +21,12 @@
                 _mutex = new Mutex(true, "MyMutex");
                 return _mutex;
             }
-            return _mutex;
         }
 
         public static void Main(string[] args)
         {
             MutexClassOpenExistingMethodPOC obj = new MutexClassOpenExistingMethodPOC();
-            if (obj.IsSingleInstance != null)
+            if (obj.IsSingleInstance ()!= null)
             {
                 Console.WriteLine("Mutex name MyMutex is available"); 
             }
