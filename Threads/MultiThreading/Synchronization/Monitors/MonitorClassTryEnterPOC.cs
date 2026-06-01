@@ -5,19 +5,20 @@
         private static object lockPrintNumbers = new object();
         public static void PrintNumbers()
         {
-            TimeSpan timeout = TimeSpan.FromMilliseconds(1000);
+            TimeSpan timeout = TimeSpan.FromMilliseconds(1000); //If we increase the time, all threads might get a chance to enter the critical section.
             bool lockTaken = false;
 
             try
             {
                 Console.WriteLine(Thread.CurrentThread.Name + " trying to enter into the critical section");
                 Monitor.TryEnter(lockPrintNumbers, timeout, ref lockTaken);
+                Console.WriteLine(Thread.CurrentThread.Name + "Value of lockToen" + lockTaken);
                 if (lockTaken)
                 {
                     Console.WriteLine(Thread.CurrentThread.Name + " entered into the critical section");
                     for (int i = 1; i < 11; i++)
                     {
-                        Thread.Sleep(100);  
+                        Thread.Sleep(10);  
                         Console.WriteLine(Thread.CurrentThread.Name + " " + i);
                     }
                 }
