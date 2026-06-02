@@ -26,8 +26,8 @@
             {
                 //If Semaphore not exists, create a semaphore instance.
                 //Here, maximum 2 external threads can access the code at the same time.
-               //_semaphore = new Semaphore(2, 2, "SemaphoreDemo");
-               return _semaphore;
+               _semaphore = new Semaphore(2, 2, "SemaphoreDemo");
+                return _semaphore;
             }
            return _semaphore;
         }
