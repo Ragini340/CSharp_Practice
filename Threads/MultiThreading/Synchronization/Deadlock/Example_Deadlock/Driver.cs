@@ -24,7 +24,7 @@
             thread1.Join();
             thread2.Join();
 
-            Console.WriteLine("Main thread completed");
+            Console.WriteLine("Main thread completed"); //This line will not be printed due to deadlock.
         }
 
     }
