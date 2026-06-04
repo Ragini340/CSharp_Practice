@@ -7,9 +7,9 @@
 
         public void SemaphoreSlimFunction()
         {
-            Task[] task = new Task[5];
             Console.WriteLine(Thread.CurrentThread.Name + " wants to enter into critical section for processing");
             _semaphoreSlim.Wait();
+            Console.WriteLine(Thread.CurrentThread.Name + " entered into critical section");
             for (int i = 1; i < 6; i++)
             {
                 Console.WriteLine(Thread.CurrentThread.Name + " " + i);
