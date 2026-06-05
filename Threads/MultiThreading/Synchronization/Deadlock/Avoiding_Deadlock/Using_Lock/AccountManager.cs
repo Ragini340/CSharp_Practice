@@ -43,9 +43,10 @@ namespace CSharp_Practice.Threads.MultiThreading.Synchronization.Deadlock.Avoidi
                     FromAccount.WithdrawMoney(TransferAmount);
                     ToAccount.DepositMoney(TransferAmount);
                 }
-                Console.WriteLine($"{Thread.CurrentThread.Name} released lock on {((Account)_lock2).Id}"); 
-                Console.WriteLine($"{Thread.CurrentThread.Name} released lock on {((Account)_lock1).Id}");
+                Console.WriteLine($"{Thread.CurrentThread.Name} released lock on {((Account)_lock2).Id}");             
             }
+
+            Console.WriteLine($"{Thread.CurrentThread.Name} released lock on {((Account)_lock1).Id}");
         }
 
     }
