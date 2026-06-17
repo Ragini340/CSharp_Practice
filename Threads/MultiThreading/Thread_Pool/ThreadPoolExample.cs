@@ -3,7 +3,7 @@
     //https://stackoverflow.com/questions/16705313/why-threadpool-thread-doesnt-print-anything-to-console-unless-main-thread-print
     public class ThreadPoolExample
     {
-        public void MyMethod(object obj)
+        public static void MyMethod(object obj)
         {
             Thread thread = Thread.CurrentThread;
             string message = $"Background: {thread.IsBackground}, Thread Pool: {thread.IsThreadPoolThread}, Thread ID: {thread.ManagedThreadId}";
@@ -12,10 +12,11 @@
 
         public static void Main(string[] args)
         {
-            ThreadPoolExample threadPoolExample = new ThreadPoolExample();
             for (int i = 0; i < 20; i++)
             {
-                ThreadPool.QueueUserWorkItem(new WaitCallback(threadPoolExample.MyMethod));
+                ThreadPool.QueueUserWorkItem(new WaitCallback(MyMethod));
+                Console.WriteLine("Value of i: " + i);
+                Thread.Sleep(10);
             }
             Console.Read();
         }
