@@ -13,13 +13,6 @@
             }
             Console.WriteLine("Set() has been called from Thread1");
             manualResetEvent.Set();
-            Thread.Sleep(1000);
-            Console.WriteLine("WaitOne() has been called on Thread1");
-            manualResetEvent.WaitOne();
-            for (int i = 41; i < 51; i++)
-            {
-                Console.WriteLine(Thread.CurrentThread.Name + " " + i);
-            }
         }
 
         public void Thread2Method()
@@ -32,12 +25,6 @@
             Console.WriteLine("WaitOne() has been called on Thread2");
             manualResetEvent.WaitOne();
             for (int i = 11; i < 21; i++)
-            {
-                Console.WriteLine(Thread.CurrentThread.Name + " " + i);
-            }
-            Console.WriteLine("WaitOne() has been called on Thread2");
-            manualResetEvent.WaitOne();
-            for (int i = 21; i < 31; i++)
             {
                 Console.WriteLine(Thread.CurrentThread.Name + " " + i);
             }
@@ -55,7 +42,6 @@
                 Name = "Thread2"
             };
             thread2.Start();
-            Thread.Sleep(1000);
             thread1.Start();
         }
 
